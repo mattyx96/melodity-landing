@@ -25,16 +25,20 @@ export default {
 				icon: "bxl-twitter",
 			},
 			{
-				url: "#",
-				icon: "bxl-tiktok",
+				url: "https://discord.com/invite/Fzs9Dqx8NW",
+				icon: "bxl-discord-alt",
 			},
 			{
-				url: "#",
-				icon: "bxl-linkedin",
+				url: "https://www.reddit.com/u/melodityofficial",
+				icon: "bxl-reddit",
 			},
 			{
-				url: "#",
-				icon: "bxl-youtube",
+				url: "https://t.me/Melodity_Official_Community",
+				icon: "bxl-telegram",
+			},
+			{
+				url: "https://medium.com/@melodityofficial",
+				icon: "bxl-medium",
 			},
 		]
 	})

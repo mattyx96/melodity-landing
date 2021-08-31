@@ -11,7 +11,7 @@
 			</div>
 			<img src="@/assets/images/apple.webp" alt="apple" class="mt-12 p-8">
 		</div>
-		<div class="px-12 py-20">
+		<div class="pl-6 pr-20 py-20 pt-8">
 			<h2 class="font-bold text-4xl">
 				The Decentralized Protocol for Musicians
 			</h2>

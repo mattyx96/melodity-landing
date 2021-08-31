@@ -10,4 +10,7 @@ import "boxicons/css/boxicons.min.css"
 import "boxicons/css/animations.css"
 import "boxicons/css/transformations.css"
 
+// glide
+import "@glidejs/glide/dist/css/glide.core.min.css"
+
 createApp(App).use(router).mount('#app')

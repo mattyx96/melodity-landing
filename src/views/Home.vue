@@ -26,7 +26,7 @@
 					Begin!
 				</h1>
 				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-60 right-[-65%] z-[-1] scale-90">
-				<div class="mt-48 p-8 relative">
+				<div class="mt-48 p-12 relative">
 					<img src="@/assets/images/back-1.webp" alt="background#1"
 					     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
@@ -38,7 +38,8 @@
 				</div>
 			</container>
 			<container>
-				<div class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] px-32 py-12 grid grid-cols-4 text-white absolute top-0 left-0 translate-y-2">
+				<div
+					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] px-32 py-12 grid grid-cols-4 text-white absolute top-0 left-0 translate-y-2">
 					<h3 class="font-bold text-2xl">
 						Live chart
 					</h3>
@@ -53,18 +54,35 @@
 				</div>
 			</container>
 			<AboutExtended :random-listings="getRandomListings()" :buy-meld-url="buy_meld_url"></AboutExtended>
-			<container>
-				<div class="-translate-y-24 w-full rounded-[3rem] relative">
-					<div class="p-8 relative text-white">
-						<img src="@/assets/images/back-3.webp" alt="background#3"
-						     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
-						test
+			<PriceConverter></PriceConverter>
+			<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
+			<Tokenomics></Tokenomics>
+			<Roadmap></Roadmap>
+			<ecosystem :details="details" :medias="medias" :partners="partners"
+			           :upcoming-projects="upcoming_projects"></ecosystem>
+			<faq :faq="faq"></faq>
+			<subscription></subscription>
+		</main>
+		<footer class="col-span-full bg-[#10151c] text-white pt-96">
+			<div class="px-48 pb-24 grid grid-cols-3 gap-12">
+				<div class="w-full flex justify-start items-start">
+					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain w-2/3">
+				</div>
+				<div class="col-span-2 w-full p-8 py-6 grid grid-cols-3 gap-20">
+					<div v-for="(elem, id) of Object.entries(footer)" :key="id">
+						<h4 class="font-semibold text-xl">
+							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
+						</h4>
+						<ul class="mt-8">
+							<li v-for="(e, i) of elem[1]" :key="i">
+								<a :href="e.url" target="_blank" rel="noopener">
+									{{ e.label }}
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</container>
-		</main>
-		<footer class="col-span-full">
-			footer
+			</div>
 		</footer>
 	</div>
 </template>
@@ -74,16 +92,32 @@ import SocialsButtons from "@/components/SocialsButtons";
 import About from "@/components/About";
 import Container from "@/components/Container";
 import AboutExtended from "@/components/AboutExtended";
+import PriceConverter from "@/components/PriceConverter";
+import MostImportantFaq from "@/components/MostImportantFaq";
+import Tokenomics from "@/components/Tokenomics";
+import Roadmap from "@/components/Roadmap";
+import Glide from '@glidejs/glide'
+import Ecosystem from "@/components/Ecosystem";
+import Faq from "@/components/Faq";
+import Subscription from "@/components/Subscription";
 
 export default {
 	name: 'Home',
 	components: {
+		Subscription,
+		Faq,
+		Ecosystem,
+		Roadmap,
+		Tokenomics,
+		MostImportantFaq,
+		PriceConverter,
 		AboutExtended,
 		Container,
 		About,
 		SocialsButtons
 	},
 	data: () => ({
+		glide: undefined,
 		urls: [
 			{
 				url: "#",
@@ -118,34 +152,346 @@ export default {
 		listings: [
 			{
 				name: "CoinMarketCap",
-				logo: "#",
+				logo: require("@/assets/images/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: "#",
+				logo: require("@/assets/images/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: "#",
+				logo: require("@/assets/images/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: "#",
+				logo: require("@/assets/images/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: "#",
+				logo: require("@/assets/images/boubles.webp"),
 				url: "#",
 			},
-		]
+		],
+		most_important_faq: [
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				label: "MELD powers",
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				label: "MELD powers",
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				label: "MELD powers",
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				label: "MELD powers",
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				label: "MELD powers",
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				label: "MELD powers",
+				url: "#"
+			},
+		],
+		faq: [
+			{
+				active: false,
+				animating: false,
+				label: "aaaaa",
+				content: `mmlcdmcldmlcdmcldmcldm`,
+			},
+			{
+				active: false,
+				animating: false,
+				label: "aaaaa",
+				content: `mmlcdmcldmlcdmcldmcldm`,
+			},
+			{
+				active: false,
+				animating: false,
+				label: "aaaaa",
+				content: `mmlcdmcldmlcdmcldmcldm`,
+			},
+			{
+				active: false,
+				animating: false,
+				label: "aaaaa",
+				content: `mmlcdmcldmlcdmcldmcldm`,
+			},
+			{
+				active: false,
+				animating: false,
+				label: "aaaaa",
+				content: `mmlcdmcldmlcdmcldmcldm`,
+			},
+			{
+				active: false,
+				animating: false,
+				label: "aaaaa",
+				content: `mmlcdmcldmlcdmcldmcldm`,
+			},
+		],
+		upcoming_projects: [
+			{
+				pic: null,
+				url: null,
+			},
+			{
+				pic: null,
+				url: null,
+			},
+			{
+				pic: require("@/assets/images/logo-doduet-white.webp"),
+				url: "#",
+			},
+			{
+				pic: require("@/assets/images/logo-beats-white.webp"),
+				url: "#",
+			},
+			{
+				pic: null,
+				url: null,
+			},
+			{
+				pic: null,
+				url: null,
+			}
+		],
+		partners: [
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				name: "Pippo"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				name: "Pippo"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				name: "Pippo"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				name: "Pippo"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				name: "Pippo"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				name: "Pippo"
+			},
+		],
+		medias: [
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+		],
+		details: [
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+			{
+				pic: require("@/assets/images/boubles.webp"),
+				url: "#"
+			},
+		],
+		footer: {
+			getting_started: [
+				{
+					label: "Documentation",
+					url: "#",
+				},
+				{
+					label: "Run a Node",
+					url: "#",
+				},
+				{
+					label: "Join Genesis",
+					url: "#",
+				},
+				{
+					label: "Apply for grants",
+					url: "#",
+				},
+			],
+			resources: [
+				{
+					label: "About the Tech",
+					url: "#",
+				},
+				{
+					label: "Getting started",
+					url: "#",
+				},
+				{
+					label: "Technical Whitepaper",
+					url: "#",
+				},
+				{
+					label: "Economics Whitepaper",
+					url: "#",
+				},
+				{
+					label: "Media",
+					url: "#",
+				},
+			],
+			join_us: [
+				{
+					label: "Validators",
+					url: "#",
+				},
+				{
+					label: "Investors",
+					url: "#",
+				},
+				{
+					label: "Partnerships",
+					url: "#",
+				},
+				{
+					label: "Sponsor",
+					url: "#",
+				},
+				{
+					label: "Careers",
+					url: "#",
+				},
+			],
+			community: [
+				{
+					label: "Forums",
+					url: "#",
+				},
+				{
+					label: "Discord",
+					url: "#",
+				},
+				{
+					label: "Reddit",
+					url: "#",
+				},
+				{
+					label: "Telegram",
+					url: "#",
+				},
+			],
+			socials: [
+				{
+					label: "Facebook",
+					url: "#",
+				},
+				{
+					label: "Twitter",
+					url: "#",
+				},
+				{
+					label: "Instagram",
+					url: "#",
+				},
+				{
+					label: "Linkedin",
+					url: "#",
+				},
+			],
+			support: [
+				{
+					label: "Discord",
+					url: "#",
+				},
+				{
+					label: "Forums",
+					url: "#",
+				},
+				{
+					label: "Github",
+					url: "#",
+				},
+				{
+					label: "Wiki",
+					url: "#",
+				},
+				{
+					label: "Contact Us",
+					url: "#",
+				},
+			],
+		}
 	}),
 	methods: {
 		shuffleArray(array) {
-			for(let i = array.length - 1; i > 0; i--) {
+			for (let i = array.length - 1; i > 0; i--) {
 
 				// Generate random number
 				let j = Math.floor(Math.random() * (i + 1));
@@ -166,12 +512,13 @@ export default {
 			}
 
 			return extracted
-		}
+		},
 	},
 	computed: {
 		urlsTargets() {
 			return this.urls.map(v => ({target: v.external ? "_blank" : "", rel: v.external ? "noopener" : ""}))
 		},
+
 		tokenStatsEntries() {
 			return Object.entries(this.token_stats)
 		},
@@ -182,5 +529,18 @@ export default {
 			return this.tokenStatsEntries.map(v => v[0] === "market_cap" || v[0] === "total_liquidity" ? "$" : "")
 		},
 	},
+	mounted() {
+		this.glide = new Glide(".glide", {
+			type: "carousel",
+			perView: 6,
+			focusAt: 0,
+			gap: 60,
+			autoplay: 4000,
+			hoverpause: true,
+			animationTimingFunc: "linear",
+			animationDuration: 4000,
+			peek: 100,
+		}).mount()
+	}
 }
 </script>

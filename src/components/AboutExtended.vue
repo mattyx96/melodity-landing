@@ -11,7 +11,7 @@
 				</h2>
 			</div>
 
-			<div class="grid grid-cols-2 mt-48 mb-32">
+			<div class="grid grid-cols-2 mt-48 mb-32 gap-12">
 				<div class="border-t py-6 pr-12">
 					<h3 class="text-2xl font-semibold mb-16">
 						Our vision
@@ -28,13 +28,13 @@
 						Join us and spread this new love!
 					</p>
 				</div>
-				<div class="flex items-center justify-center">
+				<div class="flex items-center justify-end pl-4">
 					<img src="@/assets/images/boubles.webp" alt="boubles">
 				</div>
 			</div>
 
-			<div class="grid grid-cols-2 mt-48 mb-32">
-				<div class="flex items-center justify-center">
+			<div class="grid grid-cols-2 mt-48 mb-32 gap-12">
+				<div class="flex items-center justify-start pr-12">
 					<img src="@/assets/images/boubles-2.webp" alt="boubles">
 				</div>
 				<div class="border-t py-6 pr-12">
@@ -58,7 +58,7 @@
 				</div>
 			</div>
 
-			<div class="grid grid-cols-2 mt-48 mb-32">
+			<div class="grid grid-cols-2 mt-48 mb-32 gap-12">
 				<div class="border-t py-6 pr-12">
 					<h3 class="text-2xl font-semibold mb-16">
 						Our goal
@@ -73,7 +73,7 @@
 						scene.
 					</p>
 				</div>
-				<div class="flex items-center justify-center">
+				<div class="flex items-center justify-end pl-8">
 					<img src="@/assets/images/boubles-3.webp" alt="boubles">
 				</div>
 			</div>

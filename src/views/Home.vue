@@ -6,13 +6,13 @@
 					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain w-2/3">
 				</div>
 				<template v-for="(elem, id) of urls">
-					<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url" target="_blank"
-					   rel="noopener"
+					<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"
+					   :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
 					   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
 							via-[#f56ec6] bg-left flex items-center justify-center p-4">
 						{{ elem.label }}
 					</a>
-					<a v-else :key="id" :href="elem.url" target="_blank" rel="noopener"
+					<a v-else :key="id" :href="elem.url" :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
 					   class="text-white text-center p-4 font-bold flex items-center justify-center">
 						{{ elem.label }}
 					</a>
@@ -37,12 +37,25 @@
 					</div>
 				</div>
 			</container>
-			<AboutExtended :random-listings="getRandomListings()" :buy-meld-url="buy_meld_url"
-				:token-stats-entries="tokenStatsEntries" :token-stats-label="tokenStatsLabel"
-				:token-stats-value-suffix="tokenStatsValueSuffix"></AboutExtended>
 			<container>
-				<div class="-translate-y-48 w-full rounded-[3rem] relative">
-					<div class="mt-48 p-8 relative text-white">
+				<div class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] px-32 py-12 grid grid-cols-4 text-white absolute top-0 left-0 translate-y-2">
+					<h3 class="font-bold text-2xl">
+						Live chart
+					</h3>
+					<div v-for="(elem, id) of tokenStatsEntries" :key="id"
+					     class="flex flex-col items-center justify-center">
+						<div class="text-[#14f195] text-3xl">
+							{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
+							{{ tokenStatsValueSuffix[id] }}
+						</div>
+						<small class="uppercase">{{ tokenStatsLabel[id] }}</small>
+					</div>
+				</div>
+			</container>
+			<AboutExtended :random-listings="getRandomListings()" :buy-meld-url="buy_meld_url"></AboutExtended>
+			<container>
+				<div class="-translate-y-24 w-full rounded-[3rem] relative">
+					<div class="p-8 relative text-white">
 						<img src="@/assets/images/back-3.webp" alt="background#3"
 						     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
 						test
@@ -89,9 +102,10 @@ export default {
 				label: "Ecosystem",
 			},
 			{
-				url: "#",
+				url: "https://siasky.net/AABVVg4xWKCx9upY3F4qoO9DUEE3t43TYTfmNUTFsyklVg/",
 				label: "Whitepaper",
 				type: "button",
+				external: true,
 			},
 		],
 		buy_meld_url: "#",
@@ -155,6 +169,9 @@ export default {
 		}
 	},
 	computed: {
+		urlsTargets() {
+			return this.urls.map(v => ({target: v.external ? "_blank" : "", rel: v.external ? "noopener" : ""}))
+		},
 		tokenStatsEntries() {
 			return Object.entries(this.token_stats)
 		},

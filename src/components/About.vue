@@ -31,7 +31,7 @@
 					Buy MELD
 				</a>
 				<a class="mx-auto rounded-full p-4 px-16 border border-2 bg-[#10151c] border-[#f56ec6] text-center
-								font-bold text-lg" :href="urls[urls.length -1]" target="_blank" rel="noopener">
+								font-bold text-lg" :href="urls[urls.length -1].url" target="_blank" rel="noopener">
 					Whitepaper
 				</a>
 			</div>

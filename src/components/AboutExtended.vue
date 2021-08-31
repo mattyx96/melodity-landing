@@ -3,20 +3,7 @@
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-0 left-0 z-[-1]">
 		<container>
-			<div class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] px-32 py-12 grid grid-cols-4">
-				<h3 class="font-bold text-2xl">
-					Live chart
-				</h3>
-				<div v-for="(elem, id) of tokenStatsEntries" :key="id"
-				     class="flex flex-col items-center justify-center">
-					<div class="text-[#14f195] text-3xl">
-						{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-						{{ tokenStatsValueSuffix[id] }}
-					</div>
-					<small class="uppercase">{{ tokenStatsLabel[id] }}</small>
-				</div>
-			</div>
-			<div class="flex items-center justify-center my-24">
+			<div class="flex items-center justify-center my-24 mt-64">
 				<h2 class="text-5xl font-bold">
 					Scaling Decentralized Music
 					<br>
@@ -97,7 +84,7 @@
 				Buy MELD
 			</a>
 
-			<div class="text-center mt-32 mb-64">
+			<div class="text-center mt-32 mb-96">
 				<h3 class="text-2xl mb-8">
 					MELD are available on
 				</h3>
@@ -125,18 +112,6 @@ export default {
 		},
 		buyMeldUrl: {
 			type: String,
-			required: true,
-		},
-		tokenStatsEntries: {
-			type: Array,
-			required: true,
-		},
-		tokenStatsValueSuffix: {
-			type: Array,
-			required: true,
-		},
-		tokenStatsLabel: {
-			type: Array,
 			required: true,
 		},
 	},

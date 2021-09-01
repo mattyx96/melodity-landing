@@ -1,29 +1,30 @@
 <template>
 	<container>
 		<div class="-translate-y-24 w-full rounded-[3rem] relative">
-			<div class="p-8 relative text-white">
+			<div class="xl:p-8 relative text-white">
 				<img src="@/assets/images/back-3.webp" alt="background#3"
 				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
-				<div class="relative p-8">
+				<div class="relative 2xl:p-8 xl:p-4 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none
+					rounded-[1.7rem] xl:h-auto h-96">
 					<h3 class="w-full text-center font-semibold font-raleway text-4xl">MELD Prices</h3>
-					<div class="grid grid-cols-2 gap-4 my-32">
-						<div class="text-lg flex flex-col justify-center pr-20 font-raleway font-thin">
-							<p class="text-justify">
+					<div class="grid xl:grid-cols-2 gap-4 2xl:my-32 my-8">
+						<div class="text-lg flex flex-col justify-center xl:pr-20 px-4 font-raleway font-thin">
+							<p class="">
 								Become a MELD holder and join the ever growing Do Labs community.
 							</p>
-							<p class="text-justify mt-6">
+							<p class="xl:mt-6 mt-3">
 								The top six holders will be included in the Beats chain's decentralized council
 								and will help growing this enormous environment.
 							</p>
-							<p class="text-justify mt-6">
+							<p class="xl:mt-6 mt-3">
 								Remember that council members are refreshed every six months so keep holding
 								your MELD if you want to sit in the council!
 							</p>
 						</div>
-						<div class="flex items-center justify-center">
-							<div class="rounded-[3rem] bg-[#141a25] p-4 w-full font-raleway font-thin">
+						<div class="flex items-center justify-center xl:block hidden">
+							<div class="rounded-[3rem] bg-[#141a25] 2xl:p-4 p-2 w-full font-raleway font-thin">
 								<h4 class="w-full text-center text-xl font-semibold font-raleway">Current MELD pricing</h4>
-								<div class="mx-6 bg-[#141414] rounded-[2rem] p-6 my-8">
+								<div class="mx-6 bg-[#141414] rounded-[2rem] 2xl:p-6 p-4 2xl:my-8 my-4">
 									<h5 class="text-xl font-semibold font-raleway">Buy</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
 										<input type="text" placeholder="0.00"

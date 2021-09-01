@@ -1,10 +1,10 @@
 <template>
 	<container>
-		<div class="p-12 absolute w-full -translate-y-64 z-10">
+		<div class="p-12 absolute w-full xl:-translate-y-64 -translate-y-32 z-10">
 			<img src="@/assets/images/back-2.webp" alt="background#2"
 			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
-			<div class="text-white grid grid-cols-2">
-				<div class="h-96 flex items-center justify-center">
+			<div class="text-white grid xl:grid-cols-2">
+				<div class="xl:h-96 xl:mb-0 mb-8 flex items-center justify-center">
 					<h2 class="text-4xl text-white font-semibold font-raleway">
 						Stay updated!
 					</h2>

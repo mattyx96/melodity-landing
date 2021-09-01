@@ -48,12 +48,12 @@
 					</h5>
 				</div>
 			</div>
-			<div class="grid grid-cols-2 my-32">
+			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
 				<div class="flex flex-col items-center justify-center">
 					<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-raleway">
 						Melodity in medias
 					</h3>
-					<div class="grid grid-cols-4 gap-6">
+					<div class="grid xl:grid-cols-4 grid-cols-2 gap-6">
 						<div v-for="(elem, id) of medias" :key="id" class="flex flex-col items-center justify-center">
 							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener">
@@ -66,7 +66,7 @@
 					<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-raleway">
 						Melodity details
 					</h3>
-					<div class="grid grid-cols-4 gap-6">
+					<div class="grid xl:grid-cols-4 grid-cols-2 gap-6">
 						<div v-for="(elem, id) of details" :key="id" class="flex flex-col items-center justify-center">
 							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener">

@@ -5,7 +5,7 @@
 
 html, body {
 	scroll-behavior: smooth;
-	scroll-padding: 20rem;
+	/*scroll-padding: 5rem;*/
 	overflow-x: hidden !important;
 	max-width: 100vw;
 }
@@ -14,4 +14,24 @@ body {
 	overflow-y: hidden !important;
 	background: url("/images/wallpaper.webp") no-repeat center center;
 	background-size: cover;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #E592FD;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #A78CFF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #70409A;
 }

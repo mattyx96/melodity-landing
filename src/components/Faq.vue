@@ -1,16 +1,16 @@
 <template>
 	<container>
 		<div class="rounded-[3rem] w-full bg-[#141a25] p-16 text-white -translate-y-3/4">
-			<h2 class="font-semibold text-4xl text-center w-full">
+			<h2 class="text-4xl text-center w-full font-semibold font-raleway">
 				FAQ
 			</h2>
 			<div class="grid grid-cols-2 gap-8 mt-24">
 				<div v-for="(elem, id) of faq" :key="id"
 				     class="rounded-[3rem] w-full bg-[#141414] transition-all duration-300">
-					<div class="p-6 rounded-t-[3rem] w-full cursor-pointer text-xl" @click="openFaq(id)">
+					<div class="p-6 rounded-t-[3rem] w-full cursor-pointer text-xl font-semibold font-raleway" @click="openFaq(id)">
 						{{ elem.label }}
 					</div>
-					<div :class="faqClasses[id]" v-html="elem.content"></div>
+					<div :class="[faqClasses[id], 'font-thin font-raleway']" v-html="elem.content"></div>
 				</div>
 			</div>
 		</div>

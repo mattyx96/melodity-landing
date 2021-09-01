@@ -1,10 +1,10 @@
 <template>
-	<div class="col-span-full grid grid-cols-12 relative text-white mt-20 overflow-hidden">
+	<div class="col-span-full grid grid-cols-12 relative text-white overflow-hidden">
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-0 left-0 z-[-1]">
 		<container>
 			<div class="items-center justify-center my-64">
-				<h2 class="text-5xl font-bold text-center w-full mb-20">
+				<h2 class="text-5xl font-bold text-center w-full mb-20 font-semibold font-raleway">
 					Tokenomics
 				</h2>
 				<img src="@/assets/images/tokenomics.webp" alt="Tokenomics">

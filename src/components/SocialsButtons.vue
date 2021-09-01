@@ -13,16 +13,12 @@ export default {
 	data: () => ({
 		socials: [
 			{
-				url: "#",
-				icon: "bxl-facebook",
-			},
-			{
-				url: "#",
+				url: "https://instagram.com/melodityofficial",
 				icon: "bxl-instagram",
 			},
 			{
-				url: "#",
-				icon: "bxl-twitter",
+				url: "https://www.twitch.tv/melodityofficial",
+				icon: "bxl-twitch",
 			},
 			{
 				url: "https://discord.com/invite/Fzs9Dqx8NW",

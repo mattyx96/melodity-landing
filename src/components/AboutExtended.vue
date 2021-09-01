@@ -3,8 +3,8 @@
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-0 left-0 z-[-1]">
 		<container>
-			<div class="flex items-center justify-center my-24 mt-64">
-				<h2 class="text-5xl font-bold">
+			<div class="flex items-center justify-center my-24 mt-96">
+				<h2 class="text-5xl font-semibold font-raleway">
 					Scaling Decentralized Music
 					<br>
 					Across Protocols & Borders
@@ -12,8 +12,8 @@
 			</div>
 
 			<div class="grid grid-cols-2 mt-48 mb-32 gap-12">
-				<div class="border-t py-6 pr-12">
-					<h3 class="text-2xl font-semibold mb-16">
+				<div class="border-t py-6 pr-12 font-raleway font-light">
+					<h3 class="text-2xl font-semibold mb-16 font-semibold font-raleway">
 						Our vision
 					</h3>
 					<p class="text-lg text-justify">
@@ -37,8 +37,8 @@
 				<div class="flex items-center justify-start pr-12">
 					<img src="@/assets/images/boubles-2.webp" alt="boubles">
 				</div>
-				<div class="border-t py-6 pr-12">
-					<h3 class="text-2xl font-semibold mb-16">
+				<div class="border-t py-6 pr-12 font-raleway font-light">
+					<h3 class="text-2xl font-semibold mb-16 font-semibold font-raleway">
 						The problems of the music industry
 					</h3>
 					<p class="text-lg text-justify">
@@ -59,8 +59,8 @@
 			</div>
 
 			<div class="grid grid-cols-2 mt-48 mb-32 gap-12">
-				<div class="border-t py-6 pr-12">
-					<h3 class="text-2xl font-semibold mb-16">
+				<div class="border-t py-6 pr-12 font-raleway font-light">
+					<h3 class="text-2xl font-semibold mb-16 font-semibold font-raleway">
 						Our goal
 					</h3>
 					<p class="text-lg text-justify">
@@ -78,14 +78,15 @@
 				</div>
 			</div>
 
-			<a :href="buyMeldUrl" target="_blank" rel="noopener"
+			<a :href="buyMeldUrl" id="buy-meld"
 			   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
-							via-[#f56ec6] bg-left flex items-center justify-center p-4 w-1/3 mx-auto my-48">
+							via-[#f56ec6] bg-left flex items-center justify-center p-4 w-1/3 mx-auto my-48
+						font-mulish font-medium">
 				Buy MELD
 			</a>
 
 			<div class="text-center mt-32 mb-96">
-				<h3 class="text-2xl mb-8">
+				<h3 class="text-2xl mb-8 font-semibold font-raleway">
 					MELD are available on
 				</h3>
 				<div class="grid grid-cols-5">

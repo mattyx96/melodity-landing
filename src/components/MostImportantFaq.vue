@@ -1,13 +1,13 @@
 <template>
-	<container class="text-white">
-		<h2 class="text-5xl font-bold text-center w-full mt-12 mb-32">
+	<container class="text-white mb-20">
+		<h2 class="text-5xl font-bold text-center w-full mt-12 mb-32 font-semibold font-raleway text-[#141a25]">
 			Why Melodity Token?
 		</h2>
 		<div class="grid grid-cols-3 gap-8">
 			<a v-for="(elem, id) of faq" :key="id" :href="elem.url"
 			   class="flex flex-col item-center justify-center w-full my-16">
 				<img :src="elem.pic" :alt="elem.label">
-				<h4 class="text-center font-semibold text-xl mt-6">{{ elem.label }}</h4>
+				<h4 class="text-center font-semibold text-xl mt-6 font-semibold font-raleway text-[#141a25]">{{ elem.label }}</h4>
 			</a>
 		</div>
 	</container>
@@ -15,6 +15,7 @@
 
 <script>
 import Container from "@/components/Container";
+
 export default {
 	name: "MostImportantFaq",
 	components: {Container},
@@ -22,7 +23,9 @@ export default {
 		faq: {
 			type: Array,
 			required: true,
-			validate: (v) => { return v.length === 6 }
+			validate: (v) => {
+				return v.length === 6
+			}
 		}
 	}
 }

@@ -5,9 +5,9 @@
 				<img src="@/assets/images/back-3.webp" alt="background#3"
 				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
 				<div class="relative p-8">
-					<h3 class="w-full text-center font-semibold text-4xl">MELD Prices</h3>
+					<h3 class="w-full text-center font-semibold font-raleway text-4xl">MELD Prices</h3>
 					<div class="grid grid-cols-2 gap-4 my-32">
-						<div class="text-lg flex flex-col justify-center pr-20">
+						<div class="text-lg flex flex-col justify-center pr-20 font-raleway font-thin">
 							<p class="text-justify">
 								Become a MELD holder and join the ever growing Do Labs community.
 							</p>
@@ -21,10 +21,10 @@
 							</p>
 						</div>
 						<div class="flex items-center justify-center">
-							<div class="rounded-[3rem] bg-[#141a25] p-4 w-full">
-								<h4 class="w-full text-center text-xl font-semibold">Current MELD pricing</h4>
+							<div class="rounded-[3rem] bg-[#141a25] p-4 w-full font-raleway font-thin">
+								<h4 class="w-full text-center text-xl font-semibold font-raleway">Current MELD pricing</h4>
 								<div class="mx-6 bg-[#141414] rounded-[2rem] p-6 my-8">
-									<h5 class="text-xl font-bold">Buy</h5>
+									<h5 class="text-xl font-semibold font-raleway">Buy</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
 										<input type="text" placeholder="0.00"
 										       class="appearance-none text-xl text-white bg-transparent
@@ -34,7 +34,7 @@
 									</div>
 								</div>
 								<div class="mx-6 bg-[#141414] rounded-[2rem] p-6 my-8">
-									<h5 class="text-xl font-bold">Get</h5>
+									<h5 class="text-xl font-semibold font-raleway">Get</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
 										<input type="text" placeholder="0.00"
 										       class="appearance-none text-xl text-white bg-transparent

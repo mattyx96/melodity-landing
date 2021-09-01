@@ -1,15 +1,15 @@
 <template>
 	<div class="grid grid-cols-12">
-		<header class="col-span-full grid grid-cols-12">
-			<nav class="col-start-2 col-span-10 grid grid-cols-8 mt-12 place-items-center">
-				<div class="col-span-2 flex items-center justify-end">
+		<header class="col-span-full grid grid-cols-12 font-raleway fixed z-50 bg-white bg-gray-800 bg-opacity-75">
+			<nav class="col-start-2 col-span-10 grid grid-cols-8 mt-12 place-items-center mb-12">
+				<div class="col-span-2 flex items-center justify-start">
 					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain w-2/3">
 				</div>
 				<template v-for="(elem, id) of urls">
 					<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"
 					   :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
 					   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
-							via-[#f56ec6] bg-left flex items-center justify-center p-4">
+							via-[#f56ec6] bg-left flex items-center justify-center p-4 col-start-8">
 						{{ elem.label }}
 					</a>
 					<a v-else :key="id" :href="elem.url" :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
@@ -19,9 +19,9 @@
 				</template>
 			</nav>
 		</header>
-		<main class="col-span-full grid grid-cols-12 py-20 relative">
+		<main class="col-span-full grid grid-cols-12 py-20 relative mt-48">
 			<container>
-				<h1 class="text-white text-center mx-auto text-[8em] font-semibold leading-none	">
+				<h1 class="text-white text-center mx-auto text-[9.5em] font-bold leading-none font-montserrat tracking-tighter">
 					Let the Music<br>
 					Begin!
 				</h1>
@@ -40,25 +40,30 @@
 			<container>
 				<div
 					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] px-32 py-12 grid grid-cols-4 text-white absolute top-0 left-0 translate-y-2">
-					<h3 class="font-bold text-2xl">
+					<h3 class="font-semibold text-2xl font-raleway">
 						Live chart
 					</h3>
 					<div v-for="(elem, id) of tokenStatsEntries" :key="id"
-					     class="flex flex-col items-center justify-center">
+					     class="flex flex-col items-center justify-center font-inter font-black">
 						<div class="text-[#14f195] text-3xl">
 							{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
 							{{ tokenStatsValueSuffix[id] }}
 						</div>
-						<small class="uppercase">{{ tokenStatsLabel[id] }}</small>
+						<small class="uppercase font-mulish font-medium">{{ tokenStatsLabel[id] }}</small>
 					</div>
 				</div>
 			</container>
-			<AboutExtended :random-listings="getRandomListings()" :buy-meld-url="buy_meld_url"></AboutExtended>
-			<PriceConverter></PriceConverter>
-			<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
-			<Tokenomics></Tokenomics>
-			<Roadmap></Roadmap>
-			<ecosystem :details="details" :medias="medias" :partners="partners"
+			<AboutExtended id="about" :random-listings="getRandomListings()"
+			               :buy-meld-url="buy_meld_url"></AboutExtended>
+			<div class="col-span-full relative text-white grid grid-cols-12">
+				<img src="@/assets/images/back-4.webp" alt="background#4"
+				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
+				<PriceConverter></PriceConverter>
+				<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
+			</div>
+			<Tokenomics id="tokenomics"></Tokenomics>
+			<Roadmap id="roadmap"></Roadmap>
+			<ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
 			           :upcoming-projects="upcoming_projects"></ecosystem>
 			<faq :faq="faq"></faq>
 			<subscription></subscription>
@@ -70,10 +75,10 @@
 				</div>
 				<div class="col-span-2 w-full p-8 py-6 grid grid-cols-3 gap-20">
 					<div v-for="(elem, id) of Object.entries(footer)" :key="id">
-						<h4 class="font-semibold text-xl">
+						<h4 class="font-semibold text-xl font-semibold font-raleway">
 							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
 						</h4>
-						<ul class="mt-8">
+						<ul class="mt-8 font-thin font-raleway">
 							<li v-for="(e, i) of elem[1]" :key="i">
 								<a :href="e.url" target="_blank" rel="noopener">
 									{{ e.label }}
@@ -81,6 +86,15 @@
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="text-xl font-semibold font-raleway">
+					<h4 class="mb-8">Join the conversation</h4>
+					<socials-buttons class="-ml-8"></socials-buttons>
+				</div>
+				<div class="col-span-full row-start-3 border-t pt-4 text-lg font-thin font-raleway">
+					<p>
+						Copyright &copy; DoLabs - {{ (new Date()).getFullYear() }}
+					</p>
 				</div>
 			</div>
 		</footer>
@@ -120,19 +134,19 @@ export default {
 		glide: undefined,
 		urls: [
 			{
-				url: "#",
+				url: "#about",
 				label: "About",
 			},
 			{
-				url: "#",
+				url: "#tokenomics",
 				label: "Tokenomics",
 			},
 			{
-				url: "#",
+				url: "#roadmap",
 				label: "Roadmap",
 			},
 			{
-				url: "#",
+				url: "#ecosystem",
 				label: "Ecosystem",
 			},
 			{
@@ -142,7 +156,7 @@ export default {
 				external: true,
 			},
 		],
-		buy_meld_url: "#",
+		buy_meld_url: "#buy-meld",
 		initial_logos: false,
 		token_stats: {
 			current_holders: 66,
@@ -274,96 +288,96 @@ export default {
 		],
 		partners: [
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				name: "Pippo"
+				pic: null,
+				name: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				name: "Pippo"
+				pic: null,
+				name: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				name: "Pippo"
+				pic: null,
+				name: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				name: "Pippo"
+				pic: null,
+				name: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				name: "Pippo"
+				pic: null,
+				name: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				name: "Pippo"
+				pic: null,
+				name: null
 			},
 		],
 		medias: [
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 		],
 		details: [
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
-				url: "#"
+				pic: null,
+				url: null
 			},
 		],
 		footer: {
@@ -396,7 +410,7 @@ export default {
 				},
 				{
 					label: "Technical Whitepaper",
-					url: "#",
+					url: "https://siasky.net/AABVVg4xWKCx9upY3F4qoO9DUEE3t43TYTfmNUTFsyklVg/",
 				},
 				{
 					label: "Economics Whitepaper",
@@ -436,15 +450,15 @@ export default {
 				},
 				{
 					label: "Discord",
-					url: "#",
+					url: "https://discord.com/invite/Fzs9Dqx8NW",
 				},
 				{
 					label: "Reddit",
-					url: "#",
+					url: "https://www.reddit.com/u/melodityofficial",
 				},
 				{
 					label: "Telegram",
-					url: "#",
+					url: "https://t.me/Melodity_Official_Community",
 				},
 			],
 			socials: [
@@ -458,7 +472,7 @@ export default {
 				},
 				{
 					label: "Instagram",
-					url: "#",
+					url: "https://instagram.com/melodityofficial",
 				},
 				{
 					label: "Linkedin",
@@ -468,7 +482,7 @@ export default {
 			support: [
 				{
 					label: "Discord",
-					url: "#",
+					url: "https://discord.com/invite/Fzs9Dqx8NW",
 				},
 				{
 					label: "Forums",
@@ -476,7 +490,7 @@ export default {
 				},
 				{
 					label: "Github",
-					url: "#",
+					url: "https://github.com/DoLabs-studio",
 				},
 				{
 					label: "Wiki",
@@ -484,7 +498,7 @@ export default {
 				},
 				{
 					label: "Contact Us",
-					url: "#",
+					url: "mailto:support@melodity.org",
 				},
 			],
 		}

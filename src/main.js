@@ -13,4 +13,6 @@ import "boxicons/css/transformations.css"
 // glide
 import "@glidejs/glide/dist/css/glide.core.min.css"
 
+window.axios = require("axios")
+
 createApp(App).use(router).mount('#app')

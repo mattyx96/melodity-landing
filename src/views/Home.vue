@@ -510,7 +510,8 @@ export default {
 		scroll: {
 			trigger: 200,
 			animated: false,
-		}
+		},
+		online_data: undefined,
 	}),
 	methods: {
 		shuffleArray(array) {
@@ -593,7 +594,14 @@ export default {
 			},
 		}).mount()
 	},
-	created() {
+	async created() {
+		// dynamically populates the component data object, this acts as a fake backend
+		let res = await axios.get("https://raw.githubusercontent.com/DoLabs-studio/melodity-landing/dataset/data.json")
+		// this dynamically populates the data of the component
+		for (let [key, value] of Object.entries(res.data)) {
+			this.$data[key] = value
+		}
+
 		let _this = this
 		document.addEventListener('scroll', function (e) {
 			console.log(window.scrollY)

@@ -1,7 +1,7 @@
 <template>
-	<div class="flex items-center justify-center text-gray-800">
+	<div class="flex items-center justify-center flex-wrap text-gray-800">
 		<a v-for="(elem, id) of socials" :key="id" :href="elem.url" target="_blank" rel="noopener"
-			class="rounded-full p-2 bg-white flex items-center justify-center text-2xl mx-3">
+			class="rounded-full p-2 bg-white flex items-center justify-center text-2xl mx-3 mb-3">
 			<i :class="['bx', elem.icon]"></i>
 		</a>
 	</div>

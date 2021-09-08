@@ -3,9 +3,9 @@
 		<div class="-translate-y-24 w-full rounded-[3rem] relative">
 			<div class="xl:p-8 relative text-white">
 				<img src="@/assets/images/back-3.webp" alt="background#3"
-				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
+				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] lg:scale-100 scale-125">
 				<div class="relative 2xl:p-8 xl:p-4 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none
-					rounded-[1.7rem] xl:h-auto h-96">
+					rounded-[1.7rem] xl:h-auto h-96 lg:w-full w-[125%] lg:ml-0 -ml-16 -translate-y-16">
 					<h3 class="w-full text-center font-semibold font-raleway text-4xl">MELD Prices</h3>
 					<div class="grid xl:grid-cols-2 gap-4 2xl:my-32 my-8">
 						<div class="text-lg flex flex-col justify-center xl:pr-20 px-4 font-raleway font-thin">

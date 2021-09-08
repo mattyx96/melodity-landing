@@ -1,6 +1,7 @@
 <template>
 	<container>
-		<div class="rounded-[3rem] w-full bg-[#141a25] p-16 text-white xl:-translate-y-3/4 -translate-y-1/2">
+		<div class="rounded-[3rem] w-full bg-[#141a25] p-16 text-white xl:-translate-y-3/4 -translate-y-1/2 lg:w-full
+			w-[125%] lg:ml-0 -ml-16">
 			<h2 class="text-4xl text-center w-full font-semibold font-raleway">
 				FAQ
 			</h2>

@@ -1,6 +1,6 @@
 <template>
-	<div class="text-white grid 2xl:grid-cols-2 xl:grid-cols-3">
-		<div class="flex flex-col items-center p-12">
+	<div class="text-white grid 2xl:grid-cols-2 xl:grid-cols-3 grid-cols-1">
+		<div class="xl:flex lg:hidden flex flex-col items-center p-12 lg:mt-0 -my-12">
 			<div class="2xl:ml-12 text-center font-montserrat">
 				<h3 class="text-4xl font-bold">
 					Melodity
@@ -9,17 +9,17 @@
 					Token
 				</h4>
 			</div>
-			<img src="@/assets/images/apple.webp" alt="apple" class="mt-12 p-8">
+			<img src="@/assets/images/apple.webp" alt="apple" class="lg:mt-12 lg:p-8 mt-0 lg:p-12 p-6">
 		</div>
-		<div class="pl-6 pr-20 py-20 pt-8 2xl:col-span-1 col-span-2">
-			<h2 class="font-semibold text-4xl font-raleway">
+		<div class="pl-6 xl:pr-20 pr-6 lg:py-20 py-0 lg:mt-0 mt-4 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
+			<h2 class="font-semibold lg:text-4xl text-3xl font-raleway">
 				The Decentralized Protocol for Musicians
 			</h2>
-			<p class="mt-12 text-lg font-raleway font-light tracking-wider">
+			<p class="xl:mt-12 lg:mt-8 mt-6 text-lg font-raleway font-light tracking-wider">
 				Melodity token (ticker $MELD) is a DeFi token hosted on the Binance Smart Chain (BSC).
 				They are the store of value for the whole Do Labs environment acting as a company share token.
 			</p>
-			<p class="mt-6 text-lg font-raleway font-light tracking-wider 2xl:block hidden">
+			<p class="lg:mt-6 mt-4 text-lg font-raleway font-light tracking-wider 2xl:block hidden">
 				Melodity tokens have a fixed and immutable supply of one billion units, no minting or burning is
 				allowed.
 				<br>
@@ -27,7 +27,7 @@
 			</p>
 			<div class="flex my-8 font-mulish font-medium">
 				<a class="mx-auto rounded-full p-4 px-16 border border-2 bg-[#f56ec6] border-[#f56ec6] text-center
-								font-bold text-lg" :href="buyMeldUrl">
+								font-bold text-lg lg:block hidden" :href="buyMeldUrl">
 					Buy MELD
 				</a>
 				<a class="mx-auto rounded-full p-4 px-16 border border-2 bg-[#10151c] border-[#f56ec6] text-center
@@ -35,7 +35,7 @@
 					Whitepaper
 				</a>
 			</div>
-			<socials-buttons class="mt-12 xl:block hidden"></socials-buttons>
+			<socials-buttons class="mt-12 xl:flex hidden"></socials-buttons>
 		</div>
 	</div>
 </template>

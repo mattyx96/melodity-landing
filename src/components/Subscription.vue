@@ -1,6 +1,6 @@
 <template>
 	<container>
-		<div class="p-12 absolute w-full xl:-translate-y-64 -translate-y-32 z-10">
+		<div class="p-12 absolute w-full xl:-translate-y-64 -translate-y-32 z-10 lg:scale-100 w-[125%] lg:ml-0 -ml-16">
 			<img src="@/assets/images/back-2.webp" alt="background#2"
 			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1]">
 			<div class="text-white grid xl:grid-cols-2">

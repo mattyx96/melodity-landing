@@ -29,7 +29,7 @@
 			<container>
 				<div
 					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] xl:px-32 px-8 py-12 grid lg:grid-cols-4
-						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full w-[125%] md:ml-0 -ml-6">
+						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full w-[125%] md:ml-0 ">
 					<h3 class="font-semibold text-2xl font-raleway lg:text-left text-center">
 						Live chart
 					</h3>
@@ -63,7 +63,7 @@
 			               :buy-meld-url="buy_meld_url"></AboutExtended>
 			<div class="col-span-full relative text-white grid grid-cols-12">
 				<img src="@/assets/images/back-4.webp" alt="background#4"
-				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] -translate-y-1/3">
+				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] md:translate-y-0 -translate-y-1/3">
 				<img src="@/assets/images/back-4.webp" alt="background#4"
 				     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden scale-y-[-1] md:translate-y-[80%]
 						translate-y-[-175%]">
@@ -90,7 +90,7 @@
 					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full">
 				</div>
 				<div class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
-					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12"
+					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
 						:class="id % 2 === 0 ? 'text-right' : 'text-left'">
 						<h4 class="font-semibold text-xl font-semibold font-raleway">
 							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
@@ -104,11 +104,11 @@
 						</ul>
 					</div>
 				</div>
-				<div class="xl:col-span-1 col-span-full xl:text-left text-center text-xl font-semibold font-raleway">
+				<div class="col-span-full text-center text-xl font-semibold font-raleway">
 					<h4 class="mb-8">Join the conversation</h4>
 					<socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
 				</div>
-				<div class="col-span-full border-t pt-4 text-lg font-thin font-raleway lg:text-left text-center">
+				<div class="col-span-full border-t pt-4 text-lg font-thin font-raleway text-center">
 					<p>
 						Copyright &copy; DoLabs - {{ (new Date()).getFullYear() }}
 					</p>

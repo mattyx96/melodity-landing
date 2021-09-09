@@ -11,7 +11,7 @@
 			</div>
 			<img src="@/assets/images/apple.webp" alt="apple" class="lg:mt-12 lg:p-8 mt-0 lg:p-12 p-6">
 		</div>
-		<div class="pl-6 xl:pr-20 pr-6 lg:py-20 py-0 lg:mt-0 md:mt-4 -mt-8 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
+		<div class="pl-6 xl:pr-20 pr-6 lg:py-20 lg:pt-0 py-0 lg:mt-0 md:mt-4 -mt-8 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
 			<h2 class="font-semibold lg:text-4xl text-3xl font-raleway">
 				The Decentralized Protocol for Musicians
 			</h2>
@@ -31,7 +31,7 @@
 					Buy MELD
 				</a>
 				<a class="mx-auto rounded-full p-4 px-16 border border-2 bg-[#10151c] border-[#f56ec6] text-center
-								font-bold text-lg md:my-0 mt-24 mb-16" :href="urls[urls.length -1].url" target="_blank" rel="noopener">
+								font-bold text-lg md:my-0 mt-20 mb-20" :href="urls[urls.length -1].url" target="_blank" rel="noopener">
 					Whitepaper
 				</a>
 			</div>

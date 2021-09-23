@@ -1,5 +1,7 @@
 <template>
-	<div class="text-white grid 2xl:grid-cols-2 xl:grid-cols-3 grid-cols-1 md:w-full w-[125%] md:ml-0 -ml-6">
+	<div class="text-white grid 2xl:grid-cols-2 xl:grid-cols-3 grid-cols-1 md:m-0 m-2
+		bg-cover rounded-[3rem] md:p-12 pt-12"
+		:style="`background-image: url(${require('@/assets/images/back-1.svg')})`">
 		<div class="xl:flex lg:hidden md:flex hidden flex-col items-center p-12 lg:mt-0 -my-12">
 			<div class="2xl:ml-12 text-center font-montserrat">
 				<h3 class="text-4xl font-bold">
@@ -9,9 +11,9 @@
 					Token
 				</h4>
 			</div>
-			<img src="@/assets/images/apple.webp" alt="apple" class="lg:mt-12 lg:p-8 mt-0 lg:p-12 p-6">
+			<img src="@/assets/images/apple.webp" alt="apple" class="lg:mt-12 mt-0">
 		</div>
-		<div class="pl-6 xl:pr-20 pr-6 lg:py-20 lg:pt-0 py-0 lg:mt-0 md:mt-4 -mt-8 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
+		<div class="pl-6 xl:pr-20 pr-6 py-0 lg:mt-0 md:mt-4 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
 			<h2 class="font-semibold lg:text-4xl text-3xl font-raleway">
 				The Decentralized Protocol for Musicians
 			</h2>
@@ -25,13 +27,14 @@
 				<br>
 				MELD is the only currency publicly tradable of the whole Do Labs environment.
 			</p>
-			<div class="flex my-8 font-mulish font-medium">
-				<a class="mx-auto rounded-full p-4 px-16 border border-2 bg-[#f56ec6] border-[#f56ec6] text-center
-								font-bold text-lg lg:block hidden" :href="buyMeldUrl">
+			<div class="flex flex-wrap md:my-8 font-mulish font-medium">
+				<a class="mx-auto rounded-full p-3 px-8 border border-2 bg-[#f56ec6] border-[#f56ec6] text-center
+								font-bold text-lg lg:block hidden flex items-center justify-center" :href="buyMeldUrl">
 					Buy MELD
 				</a>
-				<a class="mx-auto rounded-full p-4 px-16 border border-2 bg-[#10151c] border-[#f56ec6] text-center
-								font-bold text-lg md:my-0 mt-20 mb-20" :href="urls[urls.length -1].url" target="_blank" rel="noopener">
+				<a class="mx-auto rounded-full p-3 px-8 border border-2 bg-[#10151c] border-[#f56ec6] text-center
+								font-bold text-lg md:my-0 mt-20 mb-20 flex items-center justify-center"
+				   :href="urls[urls.length -1].url" target="_blank" rel="noopener">
 					Whitepaper
 				</a>
 			</div>

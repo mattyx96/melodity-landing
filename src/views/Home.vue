@@ -13,11 +13,13 @@
 				</h1>
 				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-60 right-[-65%] z-[-1] xl:scale-90
 					scale-100">
-				<div class="mt-48 md:p-12 relative">
+				<div class="mt-48 relative">
+<!--					<img src="@/assets/images/back-1.svg" alt="background#1"
+					     class="w-full h-full z-[-1] xl:scale-100 scale-110 lg:block hidden">
 					<img src="@/assets/images/back-1.webp" alt="background#1"
 					     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] xl:scale-100 scale-110 lg:block hidden">
 					<img src="@/assets/images/back-5.webp" alt="background#5"
-					     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden md:scale-100 scale-[1.4]">
+					     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden md:scale-100 scale-[1.4]">-->
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
 					<div class="flex items-center justify-center text-white font-semibold text-3xl xl:my-20">
 						<div v-if="initial_logos" class="mx-20">BOI</div>

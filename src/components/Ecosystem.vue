@@ -3,7 +3,7 @@
 		<div class="col-span-full flex items-center justify-center my-64 relative">
 			<img src="@/assets/images/waves-1.webp" alt="waves" class="scale-125 rotate-180">
 			<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
-						md:-translate-x-1/3 md:pr-96 lg:scale-80 md:scale-125 -translate-x-1/2 md:mt-0 -mt-16">
+						md:-translate-x-1/3 md:pr-96 lg:scale-80 md:scale-90 -translate-x-1/2 md:mt-0 -mt-16">
 			<img src="@/assets/images/logo-dolabs-ecosystem.webp" alt="do labs ecosystem" class="absolute
 						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8">
 		</div>

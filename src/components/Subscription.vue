@@ -1,7 +1,7 @@
 <template>
 	<container>
 		<div class="md:p-12 p-4 lg:w-full absolute w-full xl:-translate-y-64 -translate-y-32 z-10 lg:scale-100 md:w-[125%]
-			lg:ml-0 md:-ml-16 ">
+			lg:ml-0 md:-ml-16 xs:pl-0">
 			<img src="@/assets/images/back-2.webp" alt="background#2"
 			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] md:block hidden">
 			<img src="@/assets/images/back-6.webp" alt="background#6"

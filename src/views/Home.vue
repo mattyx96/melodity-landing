@@ -63,7 +63,8 @@
 			               :buy-meld-url="buy_meld_url"></AboutExtended>
 			<div class="col-span-full relative text-white grid grid-cols-12">
 				<img src="@/assets/images/back-4.webp" alt="background#4"
-				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] md:translate-y-0 -translate-y-1/3">
+				     class="absolute top-0 left-1/2 -translate-x-1/2 md:z-[-1] md:translate-y-0 -translate-y-1/3
+				        2xs:translate-y-[-60%] xs:translate-y-[-85%] z-[-2]">
 				<img src="@/assets/images/back-4.webp" alt="background#4"
 				     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden scale-y-[-1] md:translate-y-[80%]
 						translate-y-[-175%]">

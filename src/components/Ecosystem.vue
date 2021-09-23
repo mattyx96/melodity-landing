@@ -8,7 +8,7 @@
 						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8">
 		</div>
 		<container>
-			<h2 class="text-5xl text-center mb-48 font-semibold -mt-12 font-semibold font-raleway lg:block hidden">
+			<h2 class="text-5xl text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-raleway lg:block hidden">
 				Artists, fans, distributors and labels in one single great,
 				<br>
 				efficient and transparent channel.
@@ -22,7 +22,7 @@
 				<ul class="glide__slides">
 					<li v-for="(elem, id) of upcomingProjects" :key="id"
 					    class="glide__slide bg-[#141a25] rounded-[2rem]">
-						<div class="rounded-[2rem] h-56 md:w-64 w-40 p-0 bg-[#141a25] flex items-center justify-center">
+						<div class="rounded-[2rem] h-56 md:w-64 w-40 p-0 bg-[#141a25] flex items-center justify-center mx-auto">
 							<a v-if="elem.url !== null && elem.pic != null"
 							   class="rounded-[2rem] h-full w-full bg-[#141a25] flex items-center justify-center"
 							   :href="elem.url" target="_blank" rel="noopener">

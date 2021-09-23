@@ -1,13 +1,14 @@
 <template>
 	<container>
-		<div class="md:p-12 p-4 lg:w-full absolute w-full xl:-translate-y-64 -translate-y-32 z-10 lg:scale-100 md:w-[125%]
-			lg:ml-0 md:-ml-16 xs:pl-0">
-			<img src="@/assets/images/back-2.webp" alt="background#2"
+		<div class="md:p-12 p-4 lg:w-full absolute w-full xl:-translate-y-64 -translate-y-16 z-10 lg:scale-100 md:w-[125%]
+			lg:ml-0 md:-ml-16 bg-center bg-cover rounded-[2rem]"
+			:style="`background-image: url(${require('@/assets/images/back-6.webp')})`">
+<!--			<img src="@/assets/images/back-2.webp" alt="background#2"
 			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] md:block hidden">
 			<img src="@/assets/images/back-6.webp" alt="background#6"
-			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] scale-150 md:hidden">
-			<div class="text-white grid xl:grid-cols-2 grid-cols-1 md:w-full w-[125%] md:ml-0 -ml-4">
-				<div class="xl:h-96 xl:mb-0 md:mb-8 mb-2 flex items-center justify-center md:mt-0 -mt-4">
+			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] scale-150 md:hidden">-->
+			<div class="text-white grid xl:grid-cols-2 grid-cols-1 md:w-full">
+				<div class="xl:h-96 xl:mb-0 md:mb-8 mb-2 flex items-center justify-center md:mt-0">
 					<h2 class="md:text-4xl text-3xl text-white font-semibold font-raleway">
 						Stay updated!
 					</h2>

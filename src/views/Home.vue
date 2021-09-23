@@ -14,12 +14,6 @@
 				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-60 right-[-65%] z-[-1] xl:scale-90
 					scale-100">
 				<div class="mt-48 relative">
-<!--					<img src="@/assets/images/back-1.svg" alt="background#1"
-					     class="w-full h-full z-[-1] xl:scale-100 scale-110 lg:block hidden">
-					<img src="@/assets/images/back-1.webp" alt="background#1"
-					     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] xl:scale-100 scale-110 lg:block hidden">
-					<img src="@/assets/images/back-5.webp" alt="background#5"
-					     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden md:scale-100 scale-[1.4]">-->
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
 					<div class="flex items-center justify-center text-white font-semibold text-3xl xl:my-20">
 						<div v-if="initial_logos" class="mx-20">BOI</div>
@@ -31,7 +25,7 @@
 			<container>
 				<div
 					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] xl:px-32 px-8 py-12 grid lg:grid-cols-4
-						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full w-[125%] md:ml-0 ">
+						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:ml-0 ">
 					<h3 class="font-semibold text-2xl font-raleway lg:text-left text-center">
 						Live chart
 					</h3>
@@ -63,19 +57,8 @@
 			</container>
 			<AboutExtended id="about" :random-listings="getRandomListings()"
 			               :buy-meld-url="buy_meld_url"></AboutExtended>
-			<div class="col-span-full relative text-white grid grid-cols-12">
-				<img src="@/assets/images/back-4.webp" alt="background#4"
-				     class="absolute top-0 left-1/2 -translate-x-1/2 md:z-[-1] md:translate-y-0 -translate-y-1/3
-				        2xs:translate-y-[-60%] xs:translate-y-[-85%] z-[-2]">
-				<img src="@/assets/images/back-4.webp" alt="background#4"
-				     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden scale-y-[-1] md:translate-y-[80%]
-						translate-y-[-175%]">
-				<img src="@/assets/images/back-4.webp" alt="background#4"
-				     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden scale-y-[1] md:translate-y-[80%]
-						md:hidden translate-y-[-80%]">
-				<img src="@/assets/images/back-4.webp" alt="background#4"
-				     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] lg:hidden scale-y-[-1] md:translate-y-[80%]
-						md:hidden translate-y-[20%]">
+			<div class="col-span-full relative text-white grid grid-cols-12 bg-cover"
+				:style="`background-image: url(${require('@/assets/images/back-4.svg')})`">
 				<PriceConverter class="md:flex hidden"></PriceConverter>
 				<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
 			</div>

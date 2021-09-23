@@ -1,8 +1,8 @@
 <template>
 	<div class="col-span-full grid grid-cols-12 relative text-white mt-20 overflow-hidden">
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
-		     class="absolute top-0 left-0 z-[-1]">
-		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
+		     class="absolute top-0 left-0 z-[-1] scale-y-[100]">
+<!--		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:translate-y-[-225%] left-0 z-[-1]
 		     2xl:hidden block translate-y-[-500%]">
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
@@ -16,8 +16,11 @@
 		     md:hidden block translate-y-[-215%]">
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:-translate-y-2/3 left-0 z-[-1]
-		     md:hidden block translate-y-[-120%]">
+		     md:hidden block translate-y-[-120%]">-->
 		<container>
+			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-0 z-[-1] scale-[2]">
+			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-1/3 z-[-1] scale-[2]">
+			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-2/3 z-[-1] scale-[2]">
 			<div class="md:flex hidden items-center justify-center lg:my-24 lg:mt-48 mt-48">
 				<h2 class="lg:text-5xl text-4xl font-semibold font-raleway">
 					Scaling Decentralized Music

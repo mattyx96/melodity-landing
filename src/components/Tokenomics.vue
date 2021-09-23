@@ -7,10 +7,12 @@
 				<h2 class="md:text-5xl text-4xl font-bold text-center w-full lg:mb-20 mb-28 font-semibold font-raleway">
 					Tokenomics
 				</h2>
-				<img src="@/assets/images/tokenomics.webp" alt="Tokenomics"
-				     class="lg:scale-100 scale-150 md:block hidden">
-				<img src="@/assets/images/tokenomics-vertical.webp" alt="Tokenomics"
-				     class="lg:scale-100 scale-125 md:hidden block">
+				<div class="h-full w-full p-2">
+					<img src="@/assets/images/tokenomics.webp" alt="Tokenomics"
+					     class="lg:scale-100 scale-150 md:block hidden">
+					<img src="@/assets/images/tokenomics-vertical.webp" alt="Tokenomics"
+					     class="lg:scale-100 md:hidden block">
+				</div>
 			</div>
 		</container>
 	</div>

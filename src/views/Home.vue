@@ -154,7 +154,7 @@ export default {
 				label: "Ecosystem",
 			},
 			{
-				url: "https://siasky.net/AABVVg4xWKCx9upY3F4qoO9DUEE3t43TYTfmNUTFsyklVg/",
+				url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
 				label: "Whitepaper",
 				type: "button",
 				external: true,

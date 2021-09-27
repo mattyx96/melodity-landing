@@ -1,5 +1,5 @@
 <template>
-	<header class="col-span-full grid xl:grid-cols-12 grid-cols-10 font-raleway transition-all duration-300"
+	<header class="col-span-full grid xl:grid-cols-12 grid-cols-10 font-poppins transition-all duration-300"
 	        :class="navAnimationClasses.wrapper">
 		<nav
 			class="xl:col-start-2 xl:px-0 px-8 col-span-10 grid lg:grid-cols-8 grid-cols-4 place-items-center transition-all duration-300"

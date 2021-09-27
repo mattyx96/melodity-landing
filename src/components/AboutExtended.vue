@@ -22,7 +22,7 @@
 			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-1/3 z-[-1] scale-[2]">
 			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-2/3 z-[-1] scale-[2]">
 			<div class="md:flex hidden items-center justify-center lg:my-24 lg:mt-48 mt-48">
-				<h2 class="lg:text-5xl text-4xl font-semibold font-raleway">
+				<h2 class="lg:text-5xl text-4xl font-semibold font-poppins">
 					Scaling Decentralized Music
 					<br>
 					Across Protocols & Borders
@@ -30,8 +30,8 @@
 			</div>
 
 			<div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-48 lg:mt-32 mt-40 mb-32 lg:gap-12">
-				<div class="py-6 lg:pr-12 font-raleway font-light">
-					<h3 class="text-2xl font-semibold mb-16 font-semibold font-raleway relative lg:text-left text-center
+				<div class="py-6 lg:pr-12 font-poppins font-light">
+					<h3 class="text-2xl font-semibold mb-16 font-semibold font-poppins relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
 						Our vision
@@ -57,8 +57,8 @@
 				<div class="flex items-center justify-start pr-12">
 					<img src="@/assets/images/boubles-2.webp" alt="boubles">
 				</div>
-				<div class="py-6 lg:pr-12 font-raleway font-light">
-					<h3 class="text-2xl font-semibold mb-16 font-semibold font-raleway relative lg:text-left text-center
+				<div class="py-6 lg:pr-12 font-poppins font-light">
+					<h3 class="text-2xl font-semibold mb-16 font-semibold font-poppins relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
 						The problems of the music industry
@@ -81,8 +81,8 @@
 			</div>
 
 			<div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-48 lg:mt-32 mb-32 lg:gap-12">
-				<div class="py-6 lg:pr-12 font-raleway font-light">
-					<h3 class="text-2xl font-semibold mb-16 font-semibold font-raleway relative lg:text-left text-center
+				<div class="py-6 lg:pr-12 font-poppins font-light">
+					<h3 class="text-2xl font-semibold mb-16 font-semibold font-poppins relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
 						Our goal
@@ -105,12 +105,12 @@
 			<a :href="buyMeldUrl" id="buy-meld"
 			   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
 							via-[#f56ec6] bg-left flex items-center justify-center p-4 md:w-1/3 mx-auto lg:my-48 my-12
-						font-mulish font-medium w-full">
+						font-poppins font-medium w-full">
 				Buy MELD
 			</a>
 
 			<div class="text-center mt-32 mb-96">
-				<h3 class="text-2xl mb-8 font-semibold font-raleway">
+				<h3 class="text-2xl mb-8 font-semibold font-poppins">
 					MELD are available on
 				</h3>
 				<div class="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8">

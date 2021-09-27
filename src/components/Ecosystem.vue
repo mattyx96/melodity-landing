@@ -8,12 +8,12 @@
 						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8">
 		</div>
 		<container>
-			<h2 class="text-5xl text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-raleway lg:block hidden">
+			<h2 class="text-5xl text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-poppins lg:block hidden">
 				Artists, fans, distributors and labels in one single great,
 				<br>
 				efficient and transparent channel.
 			</h2>
-			<h3 class="text-2xl text-center font-semibold mb-8 font-semibold font-raleway">
+			<h3 class="text-2xl text-center font-semibold mb-8 font-semibold font-poppins">
 				Upcoming Projects
 			</h3>
 		</container>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<container>
-			<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-raleway">
+			<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-poppins">
 				Melodity major partners
 			</h3>
 			<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
@@ -43,7 +43,7 @@
 						<img v-if="elem?.pic && elem.pic !== null" :src="elem.pic" :alt="elem.name"
 						     class="object-contain">
 					</div>
-					<h5 class="font-semibold text-center text-xl font-semibold font-raleway">
+					<h5 class="font-semibold text-center text-xl font-semibold font-poppins">
 						{{ elem.name !== null ? elem.name : "" }}
 					</h5>
 				</div>
@@ -54,7 +54,7 @@
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
 				<div class="lg:col-span-1 col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-raleway">
+					<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-poppins">
 						Melodity in medias
 					</h3>
 					<div v-if="medias.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
@@ -72,7 +72,7 @@
 					</a>
 				</div>
 				<div class="lg:col-span-1 col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-raleway">
+					<h3 class="text-2xl text-center font-semibold mb-16 mt-36 font-semibold font-poppins">
 						Melodity details
 					</h3>
 					<div v-if="details.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">

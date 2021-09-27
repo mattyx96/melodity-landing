@@ -1,6 +1,6 @@
 <template>
 	<container class="text-white mb-20">
-		<h2 class="text-5xl font-bold text-center w-full mt-12 mb-32 font-semibold font-raleway text-[#141a25]">
+		<h2 class="text-5xl font-bold text-center w-full mt-12 mb-32 font-semibold font-poppins text-[#141a25]">
 			Why Melodity Token?
 		</h2>
 		<div class="grid md:grid-cols-3 gap-8">
@@ -8,7 +8,7 @@
 			   class="md:flex flex-col item-center justify-center w-full my-16"
 				:class="id < 3 ? 'flex' : 'hidden'">
 				<img :src="elem.pic" :alt="elem.label">
-				<h4 class="text-center font-semibold text-xl mt-6 font-semibold font-raleway text-[#141a25]">{{ elem.label }}</h4>
+				<h4 class="text-center font-semibold text-xl mt-6 font-semibold font-poppins text-[#141a25]">{{ elem.label }}</h4>
 			</a>
 		</div>
 	</container>

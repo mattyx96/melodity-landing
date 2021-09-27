@@ -26,28 +26,28 @@
 				<div
 					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] xl:px-32 px-8 py-12 grid lg:grid-cols-4
 						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:ml-0 ">
-					<h3 class="font-semibold text-2xl font-raleway lg:text-left text-center">
+					<h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
 						Live chart
 					</h3>
 					<div v-for="(elem, id) of tokenStatsEntries" :key="id"
-					     class="lg:flex hidden flex-col items-center justify-center font-inter font-black">
+					     class="lg:flex hidden flex-col items-center justify-center font-poppins font-black">
 						<div class="text-[#14f195] text-3xl">
 							{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
 							{{ tokenStatsValueSuffix[id] }}
 						</div>
-						<small class="uppercase font-mulish font-medium">{{ tokenStatsLabel[id] }}</small>
+						<small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
 					</div>
 					<div class="lg:hidden glide-stats mt-4">
 						<div class="glide__track" data-glide-el="track">
 							<ul class="glide__slides">
 								<li v-for="(elem, id) of tokenStatsEntries" :key="id"
 								    class="glide__slide bg-[#141a25] rounded-[2rem]">
-									<div class="flex flex-col items-center justify-center font-inter font-black">
+									<div class="flex flex-col items-center justify-center font-poppins font-black">
 										<div class="text-[#14f195] text-3xl">
 											{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
 											{{ tokenStatsValueSuffix[id] }}
 										</div>
-										<small class="uppercase font-mulish font-medium">{{ tokenStatsLabel[id] }}</small>
+										<small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
 									</div>
 								</li>
 							</ul>
@@ -78,10 +78,10 @@
 				<div class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
 					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
 						:class="id % 2 === 0 ? 'text-right' : 'text-left'">
-						<h4 class="font-semibold text-xl font-semibold font-raleway">
+						<h4 class="font-semibold text-xl font-semibold font-poppins">
 							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
 						</h4>
-						<ul class="mt-8 font-thin font-raleway">
+						<ul class="mt-8 font-thin font-poppins">
 							<li v-for="(e, i) of elem[1]" :key="i">
 								<a :href="e.url" target="_blank" rel="noopener">
 									{{ e.label }}
@@ -90,11 +90,11 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-span-full text-center text-xl font-semibold font-raleway">
+				<div class="col-span-full text-center text-xl font-semibold font-poppins">
 					<h4 class="mb-8">Join the conversation</h4>
 					<socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
 				</div>
-				<div class="col-span-full border-t pt-4 text-lg font-thin font-raleway text-center">
+				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
 					<p>
 						Copyright &copy; DoLabs - {{ (new Date()).getFullYear() }}
 					</p>
@@ -196,32 +196,32 @@ export default {
 		],
 		most_important_faq: [
 			{
-				pic: require("@/assets/images/boubles.webp"),
+				pic: require("@/assets/images/why-1.webp"),
 				label: "MELD powers",
 				url: "#"
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
+				pic: require("@/assets/images/why-2.webp"),
 				label: "MELD powers",
 				url: "#"
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
+				pic: require("@/assets/images/why-3.webp"),
 				label: "MELD powers",
 				url: "#"
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
+				pic: require("@/assets/images/why-4.webp"),
 				label: "MELD powers",
 				url: "#"
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
+				pic: require("@/assets/images/why-5.webp"),
 				label: "MELD powers",
 				url: "#"
 			},
 			{
-				pic: require("@/assets/images/boubles.webp"),
+				pic: require("@/assets/images/why-6.webp"),
 				label: "MELD powers",
 				url: "#"
 			},
@@ -384,33 +384,25 @@ export default {
 			get_started: [
 				{
 					label: "Documentation",
-					url: "#",
+					url: "https://docs.melodity.org/",
 				},
 				{
 					label: "Run a Node",
-					url: "#",
+					url: "https://docs.melodity.org/node-operators/i-wanna-be...-a-node-operator",
 				},
 				{
-					label: "Join Genesis",
-					url: "#",
-				},
-				{
-					label: "Apply for grants",
-					url: "#",
+					label: "Storyboard",
+					url: "https://docs.melodity.org/whitepaper-storyboard/storyboard-2021",
 				},
 			],
 			resources: [
 				{
-					label: "About the Tech",
-					url: "#",
-				},
-				{
 					label: "Getting started",
-					url: "#",
+					url: "https://docs.melodity.org/getting-started",
 				},
 				{
 					label: "Whitepaper",
-					url: "https://siasky.net/AABVVg4xWKCx9upY3F4qoO9DUEE3t43TYTfmNUTFsyklVg/",
+					url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
 				},
 				{
 					label: "Media",
@@ -420,30 +412,26 @@ export default {
 			join_us: [
 				{
 					label: "Validators",
-					url: "#",
+					url: "https://forms.gle/TGbnVTsgwQJ1vb5G9",
 				},
 				{
 					label: "Investors",
-					url: "#",
+					url: "https://forms.gle/TGbnVTsgwQJ1vb5G9",
 				},
 				{
 					label: "Partnerships",
-					url: "#",
+					url: "https://forms.gle/TGbnVTsgwQJ1vb5G9",
 				},
 				{
 					label: "Sponsor",
-					url: "#",
+					url: "https://forms.gle/TGbnVTsgwQJ1vb5G9",
 				},
 				{
 					label: "Careers",
-					url: "#",
+					url: "mailto:careers@dolabs.studio",
 				},
 			],
 			community: [
-				{
-					label: "Forums",
-					url: "#",
-				},
 				{
 					label: "Discord",
 					url: "https://discord.com/invite/Fzs9Dqx8NW",
@@ -457,7 +445,7 @@ export default {
 					url: "https://t.me/Melodity_Official_Community",
 				},
 			],
-			socials: [
+			/*socials: [
 				{
 					label: "Facebook",
 					url: "#",
@@ -474,15 +462,11 @@ export default {
 					label: "Linkedin",
 					url: "#",
 				},
-			],
+			],*/
 			support: [
 				{
 					label: "Discord",
 					url: "https://discord.com/invite/Fzs9Dqx8NW",
-				},
-				{
-					label: "Forums",
-					url: "#",
 				},
 				{
 					label: "Github",
@@ -490,7 +474,7 @@ export default {
 				},
 				{
 					label: "Wiki",
-					url: "#",
+					url: "https://docs.melodity.org/wiki/wiki",
 				},
 				{
 					label: "Contact Us",

@@ -4,7 +4,7 @@
 		     class="absolute top-0 left-0 z-[-1]">
 		<container>
 			<div class="items-center justify-center md:my-64 my-32">
-				<h2 class="md:text-5xl text-4xl font-bold text-center w-full lg:mb-20 mb-28 font-semibold font-raleway">
+				<h2 class="md:text-5xl text-4xl font-bold text-center w-full lg:mb-20 mb-28 font-semibold font-poppins">
 					Tokenomics
 				</h2>
 				<div class="h-full w-full p-2">

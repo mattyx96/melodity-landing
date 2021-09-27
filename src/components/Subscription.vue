@@ -9,12 +9,12 @@
 			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] scale-150 md:hidden">-->
 			<div class="text-white grid xl:grid-cols-2 grid-cols-1 md:w-full">
 				<div class="xl:h-96 xl:mb-0 md:mb-8 mb-2 flex items-center justify-center md:mt-0">
-					<h2 class="md:text-4xl text-3xl text-white font-semibold font-raleway">
+					<h2 class="md:text-4xl text-3xl text-white font-semibold font-poppins">
 						Stay updated!
 					</h2>
 				</div>
 				<!-- Begin Mailchimp Signup Form -->
-				<div id="mc_embed_signup" class="flex items-center justify-center font-raleway font-thin">
+				<div id="mc_embed_signup" class="flex items-center justify-center font-poppins font-thin">
 					<form ref="mailchimp"
 					      action="https://studio.us6.list-manage.com/subscribe/post?u=db37477a78610a7fd68c1eb65&amp;id=39e8d41aaf"
 					      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
@@ -26,7 +26,7 @@
 							<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
 							        class="text-white text-center font-bold rounded-full md:w-full bg-gradient-to-tr
 									            from-[#f56ec6] to-[#e94ac8] via-[#f56ec6] bg-left flex items-center
-									            justify-center md:p-4 p-2 px-3 md:px-6 font-mulish font-medium
+									            justify-center md:p-4 p-2 px-3 md:px-6 font-poppins font-medium
 												md:mt-0 mt-2 w-3/4 mx-auto">
 								Subscribe
 							</button>

@@ -5,7 +5,7 @@
 		<main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
 		      :class="navAnimationClasses.content">
 			<container>
-				<h1 class="text-white text-center mx-auto md:text-[9.5em] text-6xl font-bold leading-none font-montserrat
+				<h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
 					tracking-tighter">
 					Let the Music
 					<br>
@@ -13,7 +13,7 @@
 				</h1>
 				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
 					scale-100">
-				<div class="mt-48 relative">
+				<div class="md:mt-48 mt-24 relative">
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
 					<div class="flex items-center justify-center text-white font-semibold text-3xl xl:my-20">
 						<div v-if="initial_logos" class="mx-20">BOI</div>
@@ -24,8 +24,8 @@
 			</container>
 			<container>
 				<div
-					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
-						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:ml-0 ">
+					class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
+						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:mx-0 mx-6">
 					<h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
 						Live chart
 					</h3>
@@ -437,24 +437,6 @@ export default {
 					url: "https://t.me/Melodity_Official_Community",
 				},
 			],
-			/*socials: [
-				{
-					label: "Facebook",
-					url: "#",
-				},
-				{
-					label: "Twitter",
-					url: "#",
-				},
-				{
-					label: "Instagram",
-					url: "https://instagram.com/melodityofficial",
-				},
-				{
-					label: "Linkedin",
-					url: "#",
-				},
-			],*/
 			support: [
 				{
 					label: "Discord",
@@ -546,7 +528,7 @@ export default {
 				},
 				nav: {
 					"my-4": this.scroll.animated,
-					"my-12": !this.scroll.animated,
+					"my-6": !this.scroll.animated,
 				},
 				content: {
 					"mt-64": this.scroll.animated,

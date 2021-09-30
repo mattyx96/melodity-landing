@@ -5,21 +5,19 @@
 			<div class="relative text-white">
 <!--				<img src="@/assets/images/back-3.webp" alt="background#3"
 				     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] lg:scale-100 scale-125">-->
-				<div class="relative 2xl:p-8 xl:p-4 md:pt-6 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none
-					rounded-[3rem]">
-					<h3 class="w-full text-center font-semibold font-poppins text-4xl">MELD Prices</h3>
+				<div class="relative xl:py-16 xl:px-12 md:pt-6 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none
+					rounded-[4rem]">
+					<h3 class="w-full text-center font-semibold font-poppins text-4xl leading-none tracking-tighter">Powered by a Growing Community</h3>
 					<div class="grid xl:grid-cols-2 gap-4 2xl:mt-24 mt-8">
 						<div class="text-lg flex flex-col justify-center xl:pr-20 px-4 font-poppins font-thin">
 							<p class="">
-								Become a MELD holder and join the ever growing Do Labs community.
+								Direct lines of communication between music creators and fans.
 							</p>
 							<p class="xl:mt-6 mt-3">
-								The top six holders will be included in the Beats chain's decentralized council
-								and will help growing this enormous environment.
+								The Melodity ecosystem is powered by you.
 							</p>
 							<p class="xl:mt-6 mt-3">
-								Remember that council members are refreshed every six months so keep holding
-								your MELD if you want to sit in the council!
+								Our inclusive community unites people from all over the world with a passion for music.
 							</p>
 						</div>
 						<div class="flex items-center justify-center xl:block hidden">

@@ -10,10 +10,10 @@
 		     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] xs:translate-y-[90%] 2xs:translate-y-[65%]
 		        translate-y-[55%] md:hidden">-->
 		<div class="items-center justify-center my-64">
-			<h2 class="text-5xl font-bold text-center w-full mb-20 font-semibold font-poppins text-[#141a25]">
+			<h2 class="text-4xl leading-none tracking-tighter font-bold text-center w-full mb-20 font-semibold font-poppins text-[#141a25]">
 				Roadmap
 			</h2>
-			<img src="@/assets/images/roadmap.webp" alt="Roadmap" class="md:block hidden">
+			<img src="@/assets/images/roadmap.webp" alt="Roadmap" class="md:block hidden lg:max-w-[80%] mx-auto">
 			<img src="@/assets/images/roadmap-vertical.webp" alt="Roadmap" class="md:hidden block">
 		</div>
 	</div>

@@ -2,7 +2,7 @@
 	<div class="grid grid-cols-12">
 		<heading :nav-animation-classes="navAnimationClasses" :urls="urls" :urls-targets="urlsTargets"
 			@mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"></heading>
-		<main class="col-span-full grid grid-cols-12 py-20 relative transition-all duration-300"
+		<main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
 		      :class="navAnimationClasses.content">
 			<container>
 				<h1 class="text-white text-center mx-auto md:text-[9.5em] text-6xl font-bold leading-none font-montserrat
@@ -11,7 +11,7 @@
 					<br>
 					Begin!
 				</h1>
-				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-60 right-[-65%] z-[-1] xl:scale-90
+				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
 					scale-100">
 				<div class="mt-48 relative">
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
@@ -24,26 +24,26 @@
 			</container>
 			<container>
 				<div
-					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] xl:px-32 px-8 py-12 grid lg:grid-cols-4
+					class="-translate-y-1/2 rounded-[3rem] w-full bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
 						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:ml-0 ">
 					<h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
 						Live chart
 					</h3>
 					<div v-for="(elem, id) of tokenStatsEntries" :key="id"
-					     class="lg:flex hidden flex-col items-center justify-center font-poppins font-black">
-						<div class="text-[#14f195] text-3xl">
+					     class="lg:flex hidden flex-col items-center justify-center font-poppins font-semibold">
+						<div class="text-[#14f195] text-4xl tracking-[-.01rem]">
 							{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
 							{{ tokenStatsValueSuffix[id] }}
 						</div>
-						<small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
+						<small class="uppercase font-poppins font-extralight tracking-wider leading-[3rem]">{{ tokenStatsLabel[id] }}</small>
 					</div>
 					<div class="lg:hidden glide-stats mt-4">
 						<div class="glide__track" data-glide-el="track">
 							<ul class="glide__slides">
 								<li v-for="(elem, id) of tokenStatsEntries" :key="id"
 								    class="glide__slide bg-[#141a25] rounded-[2rem]">
-									<div class="flex flex-col items-center justify-center font-poppins font-black">
-										<div class="text-[#14f195] text-3xl">
+									<div class="flex flex-col items-center justify-center font-poppins font-semibold">
+										<div class="text-[#14f195] text-4xl">
 											{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
 											{{ tokenStatsValueSuffix[id] }}
 										</div>
@@ -73,7 +73,7 @@
 			<div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
 				<div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
 					justify-center">
-					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full">
+					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]">
 				</div>
 				<div class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
 					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
@@ -197,66 +197,58 @@ export default {
 		most_important_faq: [
 			{
 				pic: require("@/assets/images/why-1.webp"),
-				label: "MELD powers",
+				label: "Connecting Music to the Crypto World",
 				url: "#"
 			},
 			{
 				pic: require("@/assets/images/why-2.webp"),
-				label: "MELD powers",
+				label: "Direct Interactions",
 				url: "#"
 			},
 			{
 				pic: require("@/assets/images/why-3.webp"),
-				label: "MELD powers",
+				label: "A Rewards-based ecosystem",
 				url: "#"
 			},
 			{
 				pic: require("@/assets/images/why-4.webp"),
-				label: "MELD powers",
+				label: "An Ecosystem Where Artists Control Their Creations",
 				url: "#"
 			},
 			{
 				pic: require("@/assets/images/why-5.webp"),
-				label: "MELD powers",
+				label: "Powered by an ever Growing Community",
 				url: "#"
 			},
 			{
 				pic: require("@/assets/images/why-6.webp"),
-				label: "MELD powers",
+				label: "Easily Accessible, Now & Always",
 				url: "#"
 			},
 		],
 		faq: [
 			{
-				label: "aaaaa",
+				label: "What is Melodity?",
 				url: "#",
 			},
 			{
-				label: "aaaaa",
+				label: "Which is Melodity's goal?",
 				url: "#",
 			},
 			{
-				label: "aaaaa",
+				label: "How can I buy MELD?",
 				url: "#",
 			},
 			{
-				label: "aaaaa",
+				label: "When will be the Melodity ICO?",
 				url: "#",
 			},
 			{
-				label: "aaaaa",
+				label: "Who is Melodity for?",
 				url: "#",
 			},
 			{
-				label: "aaaaa",
-				url: "#",
-			},
-			{
-				label: "aaaaa",
-				url: "#",
-			},
-			{
-				label: "aaaaa",
+				label: "Why should artists join Melodity?",
 				url: "#",
 			},
 		],
@@ -388,7 +380,7 @@ export default {
 				},
 				{
 					label: "Run a Node",
-					url: "https://docs.melodity.org/node-operators/i-wanna-be...-a-node-operator",
+					url: "https://docs.melodity.org/node-operators/become-a-node-operator",
 				},
 				{
 					label: "Storyboard",

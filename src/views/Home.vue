@@ -258,8 +258,8 @@ export default {
 				url: null,
 			},
 			{
-				pic: null,
-				url: null,
+				pic: require("@/assets/images/logo-dolabs-ecosystem.webp"),
+				url: "#",
 			},
 			{
 				pic: require("@/assets/images/logo-doduet-white.webp"),
@@ -270,8 +270,8 @@ export default {
 				url: "#",
 			},
 			{
-				pic: null,
-				url: null,
+				pic: require("@/assets/images/logo-dolearn-white.webp"),
+				url: "#",
 			},
 			{
 				pic: null,
@@ -397,8 +397,8 @@ export default {
 					url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
 				},
 				{
-					label: "Media",
-					url: "#",
+					label: "Media press",
+					url: "https://docsend.com/view/e9knzicbry3ncaca",
 				},
 			],
 			join_us: [

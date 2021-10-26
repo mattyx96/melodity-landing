@@ -25,7 +25,7 @@ export default {
 				icon: "bxl-discord-alt",
 			},
 			{
-				url: "https://www.reddit.com/u/melodityofficial",
+				url: "https://www.reddit.com/r/Melodity/",
 				icon: "bxl-reddit",
 			},
 			{

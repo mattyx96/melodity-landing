@@ -444,7 +444,7 @@ export default {
 				},
 				{
 					label: "Github",
-					url: "https://github.com/DoLabs-studio",
+					url: "https://github.com/Do-inc",
 				},
 				{
 					label: "Wiki",

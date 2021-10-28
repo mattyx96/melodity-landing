@@ -571,7 +571,7 @@ export default {
 	mounted() {
 		new Glide(".glide", {
 			type: "carousel",
-			perView: 6,
+			perView: 5,
 			focusAt: 0,
 			gap: 60,
 			autoplay: 5000,

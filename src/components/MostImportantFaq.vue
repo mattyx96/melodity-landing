@@ -1,6 +1,6 @@
 <template>
 	<container class="text-white mb-20">
-		<h2 class="text-4xl leading-none tracking-tighter font-bold text-center w-full mt-12 mb-32 font-semibold
+		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-12 mb-32 font-semibold
 			font-poppins text-[#141a25]">
 			Why Melodity Token?
 		</h2>

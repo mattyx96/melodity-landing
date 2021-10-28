@@ -9,7 +9,7 @@
 			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] scale-150 md:hidden">-->
 			<div class="text-white grid xl:grid-cols-2 grid-cols-1 md:w-full">
 				<div class="xl:h-96 xl:mb-0 md:mb-8 mb-2 flex items-center justify-center md:mt-0">
-					<h2 class="md:text-4xl text-3xl text-white font-semibold font-poppins">
+					<h2 class="md:text-[2.2rem] text-[2.2rem] text-white font-semibold font-poppins">
 						Stay updated!
 					</h2>
 				</div>

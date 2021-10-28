@@ -13,16 +13,11 @@
 				</h1>
 				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
 					scale-100">
-				<div class="md:mt-48 mt-24 relative">
+				<div class="md:mt-32 mt-24 relative">
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
-					<div class="flex items-center justify-center text-white font-semibold text-3xl xl:my-20">
-						<div v-if="initial_logos" class="mx-20">BOI</div>
-						<div v-if="initial_logos" class="mx-20">CNN</div>
-						<div v-if="initial_logos" class="mx-20">CMC</div>
-					</div>
 				</div>
 			</container>
-			<container>
+			<container v-if="false">
 				<div
 					class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
 						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:mx-0 mx-6">
@@ -96,7 +91,7 @@
 				</div>
 				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
 					<p>
-						Copyright &copy; DoLabs - {{ (new Date()).getFullYear() }}
+						Copyright &copy; Do inc. - {{ (new Date()).getFullYear() }}
 					</p>
 				</div>
 			</div>
@@ -254,15 +249,7 @@ export default {
 		],
 		upcoming_projects: [
 			{
-				pic: null,
-				url: null,
-			},
-			{
-				pic: require("@/assets/images/logo-dolabs-ecosystem.webp"),
-				url: "#",
-			},
-			{
-				pic: require("@/assets/images/logo-doduet-white.webp"),
+				pic: require("@/assets/images/logo-beats-chain.webp"),
 				url: "#",
 			},
 			{
@@ -270,13 +257,29 @@ export default {
 				url: "#",
 			},
 			{
+				pic: require("@/assets/images/logo-doduet-white.webp"),
+				url: "#",
+			},
+			{
 				pic: require("@/assets/images/logo-dolearn-white.webp"),
 				url: "#",
 			},
 			{
-				pic: null,
-				url: null,
-			}
+				pic: require("@/assets/images/logo-domart-white.webp"),
+				url: "#",
+			},
+			{
+				pic: require("@/assets/images/logo-doplay-white.webp"),
+				url: "#",
+			},
+			{
+				pic: require("@/assets/images/logo-dotime-white.webp"),
+				url: "#",
+			},
+			{
+				pic: require("@/assets/images/logo-mle-white.webp"),
+				url: "#",
+			},
 		],
 		partners: [
 			{

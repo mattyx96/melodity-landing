@@ -2,27 +2,12 @@
 	<div class="col-span-full grid grid-cols-12 relative text-white mt-20 overflow-hidden">
 		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-0 left-0 z-[-1] scale-y-[100]">
-<!--		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
-		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:translate-y-[-225%] left-0 z-[-1]
-		     2xl:hidden block translate-y-[-500%]">
-		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
-		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:translate-y-[-150%] left-0 z-[-1]
-		     lg:hidden block translate-y-[-405%]">
-		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
-		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:-translate-y-2/3 left-0 z-[-1]
-		     lg:hidden block translate-y-[-310%]">
-		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
-		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:-translate-y-2/3 left-0 z-[-1]
-		     md:hidden block translate-y-[-215%]">
-		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
-		     class="absolute top-full xl:-translate-y-1/4 lg:-translate-y-3/4 md:-translate-y-2/3 left-0 z-[-1]
-		     md:hidden block translate-y-[-120%]">-->
 		<container>
 			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-0 z-[-1] scale-[2]">
 			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-1/3 z-[-1] scale-[2]">
 			<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper" class="absolute left-0 top-2/3 z-[-1] scale-[2]">
 			<div class="md:flex hidden items-center justify-center lg:my-24 lg:mt-48 mt-48">
-				<h2 class="text-4xl leading-none tracking-tighter font-semibold font-poppins text-center">
+				<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold font-poppins text-center">
 					Scaling Decentralized Music
 					<br>
 					Across Protocols & Borders
@@ -36,15 +21,15 @@
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
 						Our vision
 					</h3>
-					<p class="text-left text-base leading-5 md:px-0 px-2 mx-auto">
+					<p class="text-left text-[.9rem] leading-[1.4rem] font-normal md:px-0 px-2 mx-auto">
 						We are bringing the old fashioned music industry to the 21st century connecting it to
 						the
 						awesome world of blockchain technology and decentralization.
 					</p>
-					<p class="text-left text-base leading-5 mt-6 md:px-0 px-2 mx-auto">
+					<p class="text-left text-[.9rem] leading-[1.4rem] font-normal mt-6 md:px-0 px-2 mx-auto">
 						Let's create the biggest music blockchain ecosystem!
 					</p>
-					<p class="text-left text-base leading-5 mt-6 md:px-0 px-2 mx-auto">
+					<p class="text-left text-[.9rem] leading-[1.4rem] font-normal mt-6 md:px-0 px-2 mx-auto">
 						Join us and spread this new love!
 					</p>
 				</div>
@@ -89,11 +74,11 @@
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
 						Our goal
 					</h3>
-					<p class="text-left text-base leading-5 md:px-0 px-2 mx-auto">
+					<p class="text-left text-[.9rem] leading-[1.4rem] font-normal md:px-0 px-2 mx-auto">
 						We think that music is a must in everyone's life and that everyone should have the
 						possibility to get a living out of their talent.
 					</p>
-					<p class="text-left text-base leading-5 mt-6 md:px-0 px-2 mx-auto">
+					<p class="text-left text-[.9rem] leading-[1.4rem] font-normal mt-6 md:px-0 px-2 mx-auto">
 						Melodity aims to change how independent musicians earn revenue from their creations
 						giving them the freedom to monetize while increasing their visibility in the musical
 						scene.
@@ -115,7 +100,7 @@
 				<h3 class="text-base leading-10 mb-8 font-semibold font-poppins">
 					MELD are available on
 				</h3>
-				<div class="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8">
+				<div v-if="false" class="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8">
 					<a v-for="(elem, id) of randomListings" :key="id" :href="elem.url" target="_blank"
 					   rel="noopener"
 					   class="md:flex items-center justify-center p-8"
@@ -123,6 +108,9 @@
 						<img :src="elem.logo" :alt="elem.name" class="2xl:max-w-[50%] max-w-[80%]">
 					</a>
 				</div>
+				<p v-else class="text-center text-[.9rem] leading-[1.4rem] font-normal mt-6 md:px-0 px-2 mx-auto">
+					We're currently in a private sale, if you want to participate, send us a message!
+				</p>
 			</div>
 		</container>
 	</div>

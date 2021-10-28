@@ -11,13 +11,13 @@
 			<template v-for="(elem, id) of urls">
 				<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"
 				   :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
-				   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
+				   class="text-white text-center font-medium rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
 							via-[#f56ec6] bg-left flex items-center justify-center p-4 col-start-8
 							lg:flex hidden">
 					{{ elem.label }}
 				</a>
 				<a v-else :key="id" :href="elem.url" :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
-				   class="text-white text-center p-4 font-bold flex items-center justify-center
+				   class="text-white text-center p-4 font-medium flex items-center justify-center
 						lg:flex hidden">
 					{{ elem.label }}
 				</a>
@@ -39,14 +39,14 @@
 					<template v-for="(elem, id) of urls">
 						<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"
 						   :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
-						   class="text-white font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
+						   class="text-white font-medium rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
 									via-[#f56ec6] bg-left flex items-center justify-center md:p-8 px-8 py-4 col-start-8
 									md:w-1/2 mx-auto mt-6 w-2/3"
 						   @click="closeMobileNav">
 							{{ elem.label }}
 						</a>
 						<a v-else :key="id" :href="elem.url" :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
-						   class="text-gray-800 p-8 font-bold flex items-center border-b"
+						   class="text-gray-800 p-8 font-medium flex items-center border-b"
 						   @click="closeMobileNav">
 							{{ elem.label }}
 						</a>

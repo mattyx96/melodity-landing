@@ -14,14 +14,14 @@
 			<img src="@/assets/images/apple.webp" alt="apple" class="lg:mt-12 mt-0 max-w-[80%]">
 		</div>
 		<div class="md:pl-10 xl:pr-20 md:pr-10 px-4 py-0 lg:mt-0 md:mt-4 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
-			<h2 class="md:font-bold font-medium lg:text-[2.5rem] lg:leading-10 md:text-3xl text-2xl leading-7 font-poppins">
+			<h2 class="md:font-semibold font-medium lg:text-[2.2rem] lg:leading-10 md:text-3xl text-2xl leading-7 font-poppins">
 				The Decentralized Protocol for Musicians
 			</h2>
-			<p class="xl:mt-12 lg:mt-8 mt-6 text-[.9rem] leading-6 font-poppins md:tracking-[.01rem] tracking-wider">
+			<p class="xl:mt-12 lg:mt-8 mt-6 text-[.9rem] leading-[1.4rem] font-normal font-poppins md:tracking-[.01rem] tracking-wider">
 				Melodity token (ticker $MELD) is a DeFi token hosted on the Binance Smart Chain (BSC).
 				They are the store of value for the whole Do Labs environment acting as a company share token.
 			</p>
-			<p class="lg:mt-6 mt-4 text-[.9rem] leading-6 font-poppins md:tracking-[.01rem] tracking-wider 2xl:block hidden">
+			<p class="lg:mt-6 mt-4 text-[.9rem] leading-[1.4rem] font-normal font-poppins md:tracking-[.01rem] tracking-wider 2xl:block hidden">
 				Melodity tokens have a fixed and immutable supply of one billion units, no minting or burning is
 				allowed.
 				<br>

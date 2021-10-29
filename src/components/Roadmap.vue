@@ -1,15 +1,7 @@
 <template>
 	<div class="col-span-full relative text-white overflow-hidden bg-cover"
 	     :style="`background-image: url(${require('@/assets/images/back-4.svg')})`">
-<!--		<img src="@/assets/images/back-4.webp" alt="background#4"
-		     class="absolute top-0 left-1/2 -translate-x-1/2 md:z-[-1] z-[-2] 2xs:translate-y-0 xl:scale-125">
-		<img src="@/assets/images/back-4.webp" alt="background#4"
-		     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] scale-y-[-1] md:translate-y-0 xl:hidden
-				xs:-translate-y-8 2xs:-translate-y-1/4 translate-y-[-40%]">
-		<img src="@/assets/images/back-4.webp" alt="background#4"
-		     class="absolute bottom-0 left-1/2 -translate-x-1/2 z-[-1] xs:translate-y-[90%] 2xs:translate-y-[65%]
-		        translate-y-[55%] md:hidden">-->
-		<div class="items-center justify-center my-64">
+		<div class="items-center justify-center my-32">
 			<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mb-20 font-semibold font-poppins text-[#141a25]">
 				Roadmap
 			</h2>

@@ -3,10 +3,6 @@
 		<div class="md:p-12 py-10 p-4 lg:w-full absolute w-full xl:-translate-y-64 -translate-y-16 z-10 lg:scale-100 md:w-[125%]
 			lg:ml-0 md:-ml-16 bg-center bg-cover rounded-[4rem]"
 			:style="`background-image: url(${require('@/assets/images/back-6.webp')})`">
-<!--			<img src="@/assets/images/back-2.webp" alt="background#2"
-			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] md:block hidden">
-			<img src="@/assets/images/back-6.webp" alt="background#6"
-			     class="absolute top-0 left-1/2 -translate-x-1/2 z-[-1] scale-150 md:hidden">-->
 			<div class="text-white grid xl:grid-cols-2 grid-cols-1 md:w-full">
 				<div class="xl:h-96 xl:mb-0 md:mb-8 mb-2 flex items-center justify-center md:mt-0">
 					<h2 class="md:text-[2.2rem] text-[2.2rem] text-white font-semibold font-poppins">

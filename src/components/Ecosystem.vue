@@ -5,7 +5,7 @@
 			<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
 						md:-translate-x-1/3 md:pr-96 lg:scale-80 md:scale-90 -translate-x-1/2 md:mt-0 -mt-16 xl:max-w-[70%]">
 			<img src="@/assets/images/logo-dolabs-ecosystem.webp" alt="Do inc. ecosystem" class="absolute
-						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8 max-w-[60%]">
+						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8 max-w-[80%] lg:max-w-[60%]">
 		</div>
 		<container>
 			<h2 class="text-[2.2rem] text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-poppins lg:block hidden">

@@ -192,59 +192,59 @@ export default {
 		most_important_faq: [
 			{
 				pic: require("@/assets/images/why-1.webp"),
-				label: "Connecting Music to the Crypto World",
-				url: "#"
+				label: "What is DeFi?",
+				url: "https://docs.melodity.org/faq/general-questions#what-is-defi"
 			},
 			{
 				pic: require("@/assets/images/why-2.webp"),
-				label: "Direct Interactions",
-				url: "#"
+				label: "What is a Token?",
+				url: "https://docs.melodity.org/faq/general-questions#what-is-a-token"
 			},
 			{
 				pic: require("@/assets/images/why-3.webp"),
-				label: "A Rewards-based ecosystem",
-				url: "#"
+				label: "What is Melodity?",
+				url: "https://docs.melodity.org/faq/generalities#what-is-melodity"
 			},
 			{
 				pic: require("@/assets/images/why-4.webp"),
-				label: "An Ecosystem Where Artists Control Their Creations",
-				url: "#"
+				label: "Which problems does Melodity solve?",
+				url: "https://docs.melodity.org/faq/generalities#which-problems-does-melodity-solve"
 			},
 			{
 				pic: require("@/assets/images/why-5.webp"),
-				label: "Powered by an ever Growing Community",
-				url: "#"
+				label: "Which is Melodity's mission?",
+				url: "https://docs.melodity.org/faq/generalities#which-is-meloditys-mission"
 			},
 			{
 				pic: require("@/assets/images/why-6.webp"),
-				label: "Easily Accessible, Now & Always",
-				url: "#"
+				label: "Who's Melodity for?",
+				url: "https://docs.melodity.org/faq/generalities#whos-melodity-for"
 			},
 		],
 		faq: [
 			{
-				label: "What is Melodity?",
-				url: "#",
-			},
-			{
-				label: "Which is Melodity's goal?",
-				url: "#",
+				label: "Why should artists join Melodity?",
+				url: "https://docs.melodity.org/faq/generalities#why-should-artists-join-melodity",
 			},
 			{
 				label: "How can I buy MELD?",
-				url: "#",
+				url: "https://docs.melodity.org/faq/generalities#how-can-i-buy-meld",
 			},
 			{
 				label: "When will be the Melodity ICO?",
-				url: "#",
+				url: "https://docs.melodity.org/faq/generalities#how-can-i-buy-meld",
 			},
 			{
-				label: "Who is Melodity for?",
-				url: "#",
+				label: "What are locks?",
+				url: "https://docs.melodity.org/faq/lock-explanation#what-are-locks",
 			},
 			{
-				label: "Why should artists join Melodity?",
-				url: "#",
+				label: "Which are the lock times?",
+				url: "https://docs.melodity.org/faq/lock-explanation#which-are-the-lock-times",
+			},
+			{
+				label: "Where can i find my locks?",
+				url: "https://docs.melodity.org/faq/lock-explanation#where-can-i-find-my-current-locks",
 			},
 		],
 		upcoming_projects: [
@@ -278,7 +278,7 @@ export default {
 			},
 			{
 				pic: require("@/assets/images/logo-mle-white.webp"),
-				url: "#",
+				url: "https://lock.melodity.org",
 			},
 		],
 		partners: [

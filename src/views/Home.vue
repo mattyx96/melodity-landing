@@ -594,14 +594,6 @@ export default {
 				}
 			},
 		}).mount()
-		new Glide(".glide-stats", {
-			type: "carousel",
-			perView: 1,
-			focusAt: 0,
-			gap: 60,
-			autoplay: 5000,
-			hoverpause: true,
-		}).mount()
 	},
 	async created() {
 		// dynamically populates the component data object, this acts as a fake backend

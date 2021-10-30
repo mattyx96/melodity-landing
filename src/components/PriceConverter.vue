@@ -24,7 +24,7 @@
 								<div class="mx-6 bg-[#141414] rounded-[2rem] 2xl:p-6 p-4 2xl:my-8 my-4">
 									<h5 class="text-xl font-semibold font-poppins">Buy</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
-										<input type="text" placeholder="0.00"
+										<input type="number" placeholder="0.00" v-model="usd" @input="recomputeMELD"
 										       class="appearance-none text-xl text-white bg-transparent
 															col-span-3 p-2 outline-none focus:bg-white focus:bg-opacity-5
 															transition-all duration-300 rounded">
@@ -34,7 +34,7 @@
 								<div class="mx-6 bg-[#141414] rounded-[2rem] p-6 my-8">
 									<h5 class="text-xl font-semibold font-poppins">Get</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
-										<input type="text" placeholder="0.00"
+										<input type="number" placeholder="0.00" v-model="meld" @input="recomputeUSD"
 										       class="appearance-none text-xl text-white bg-transparent
 															col-span-3 p-2 outline-none focus:bg-white focus:bg-opacity-5
 															transition-all duration-300 rounded">
@@ -54,7 +54,26 @@
 import Container from "@/components/Container";
 export default {
 	name: "PriceConverter",
-	components: {Container}
+	components: {Container},
+	data: () => ({
+		usd: null,
+		meld: null,
+
+		// 1 MELD = 0.25 USD
+		conversion_rate: 0.25
+	}),
+	methods: {
+		recomputeUSD() {
+			if(this.meld) {
+				this.usd = +this.meld * this.conversion_rate
+			}
+		},
+		recomputeMELD() {
+			if(this.usd) {
+				this.meld = +this.usd / this.conversion_rate
+			}
+		}
+	}
 }
 </script>
 

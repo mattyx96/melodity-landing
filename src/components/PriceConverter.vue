@@ -59,8 +59,8 @@ export default {
 		usd: null,
 		meld: null,
 
-		// 1 MELD = 0.25 USD
-		conversion_rate: 0.25
+		// 1 MELD = 0.025 USD
+		conversion_rate: 0.025
 	}),
 	methods: {
 		recomputeUSD() {

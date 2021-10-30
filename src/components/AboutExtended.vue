@@ -94,9 +94,11 @@
 						<img loading="lazy" :src="elem.logo" :alt="elem.name" class="2xl:max-w-[50%] max-w-[80%]">
 					</a>
 				</div>
-				<p v-else class="text-center text-[1rem] leading-[1.4rem] font-normal mt-6 md:px-0 px-2 mx-auto">
+				<a v-else class="text-center text-[1rem] leading-[1.4rem] font-bold mt-6 md:px-0 px-2 mx-auto
+					text-[#0AE4EA]"
+					href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
 					We're currently in a private sale, if you want to participate, send us a message!
-				</p>
+				</a>
 			</div>
 		</container>
 	</div>

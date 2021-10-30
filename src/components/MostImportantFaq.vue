@@ -1,20 +1,20 @@
 <template>
-	<container class="text-white mb-20">
+	<container class="text-white">
 		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-12 mb-32 font-semibold
 			font-poppins text-[#141a25]">
 			Why Melodity Token?
 		</h2>
-<!--		<div class="flex flex-col justify-center relative">
+		<div class="flex flex-col justify-center relative">
 			<ol>
-				<li class="flex items-center mb-32">
-					<div class="h-40 w-40 flex items-center justify-start mr-8">
+				<li class="flex flex-col md:flex-row items-center mb-32">
+					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
 						<img loading="lazy" src="@/assets/images/1.webp" alt="first" class="object-contain w-full">
 					</div>
-					<div class="w-1/4 max-w-[25%]">
+					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
 							Freedom
 						</h3>
-						<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
+						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
 							Melodity connects Music
 							to the Blockchain so artists
 							can truly interact freely and
@@ -22,15 +22,15 @@
 						</p>
 					</div>
 				</li>
-				<li class="flex items-center mb-32">
-					<div class="h-40 w-40 flex items-center justify-start mr-8">
+				<li class="flex flex-col md:flex-row items-center mb-32">
+					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
 						<img loading="lazy" src="@/assets/images/2.webp" alt="second" class="object-contain w-full">
 					</div>
-					<div class="w-1/4 max-w-[25%]">
+					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
 							Monetization
 						</h3>
-						<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
+						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
 							Melodity puts artists and
 							fans at the centre, and
 							recognises their value by
@@ -38,15 +38,15 @@
 						</p>
 					</div>
 				</li>
-				<li class="flex items-center mb-32">
-					<div class="h-40 w-40 flex items-center justify-start mr-8">
+				<li class="flex flex-col md:flex-row items-center">
+					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
 						<img loading="lazy" src="@/assets/images/3.webp" alt="third" class="object-contain w-full">
 					</div>
-					<div class="w-1/4 max-w-[25%]">
+					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
 							Community
 						</h3>
-						<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
+						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
 							Melodity’s ecosystem is
 							powered by an ever Growing
 							Community and is Easily
@@ -55,15 +55,16 @@
 					</div>
 				</li>
 			</ol>
-			<div class="absolute right-1/2 top-0 translate-x-1/2">
-				<img loading="lazy" src="@/assets/images/logo-rose.webp" alt="Melodity" class="object-contain h-full">
+			<div class="absolute lg:max-w-[50%] right-0 top-1/2 lg:top-0 z-[-1] lg:translate-y-0 -translate-y-1/2">
+				<img loading="lazy" src="@/assets/images/logo-rose.webp" alt="Melodity"
+				     class="object-contain h-full lg:opacity-100 opacity-60">
 			</div>
-			<div class="w-full h-full">
+			<div class="w-full h-full z-[-2] xl:mb-0 mb-32" style="transform: translateY(-10%)">
 				<img loading="lazy" src="@/assets/images/headphones.webp" alt="headphones"
-				     class="object-contain h-full -translate-y-1/3">
+				     class="object-contain h-full hidden xl:block">
 			</div>
-		</div>-->
-		<div class="grid md:grid-cols-3 gap-8">
+		</div>
+<!--		<div class="grid md:grid-cols-3 gap-8">
 			<a v-for="(elem, id) of faq" :key="id" :href="elem.url"
 			   class="md:flex flex-col item-center justify-center w-full my-16"
 				:class="id < 3 ? 'flex' : 'hidden'">
@@ -73,7 +74,7 @@
 					{{ elem.label }}
 				</h4>
 			</a>
-		</div>
+		</div>-->
 	</container>
 </template>
 

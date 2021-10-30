@@ -8,7 +8,7 @@
 			<ol>
 				<li class="flex items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start mr-8">
-						<img src="@/assets/images/1.webp" alt="first" class="object-contain w-full">
+						<img loading="lazy" src="@/assets/images/1.webp" alt="first" class="object-contain w-full">
 					</div>
 					<div class="w-1/4 max-w-[25%]">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -24,7 +24,7 @@
 				</li>
 				<li class="flex items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start mr-8">
-						<img src="@/assets/images/2.webp" alt="second" class="object-contain w-full">
+						<img loading="lazy" src="@/assets/images/2.webp" alt="second" class="object-contain w-full">
 					</div>
 					<div class="w-1/4 max-w-[25%]">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -40,7 +40,7 @@
 				</li>
 				<li class="flex items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start mr-8">
-						<img src="@/assets/images/3.webp" alt="third" class="object-contain w-full">
+						<img loading="lazy" src="@/assets/images/3.webp" alt="third" class="object-contain w-full">
 					</div>
 					<div class="w-1/4 max-w-[25%]">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -56,10 +56,10 @@
 				</li>
 			</ol>
 			<div class="absolute right-1/2 top-0 translate-x-1/2">
-				<img src="@/assets/images/logo-rose.webp" alt="Melodity" class="object-contain h-full">
+				<img loading="lazy" src="@/assets/images/logo-rose.webp" alt="Melodity" class="object-contain h-full">
 			</div>
 			<div class="w-full h-full">
-				<img src="@/assets/images/headphones.webp" alt="headphones"
+				<img loading="lazy" src="@/assets/images/headphones.webp" alt="headphones"
 				     class="object-contain h-full -translate-y-1/3">
 			</div>
 		</div>-->
@@ -67,7 +67,7 @@
 			<a v-for="(elem, id) of faq" :key="id" :href="elem.url"
 			   class="md:flex flex-col item-center justify-center w-full my-16"
 				:class="id < 3 ? 'flex' : 'hidden'">
-				<img :src="elem.pic" :alt="elem.label" class="xl:max-w-[50%] max-w-[80%] mx-auto">
+				<img loading="lazy" :src="elem.pic" :alt="elem.label" class="xl:max-w-[50%] max-w-[80%] mx-auto">
 				<h4 class="mx-auto text-center font-semibold text-xl leading-6 tracking-tighter mt-6 font-semibold
 					font-poppins text-[#141a25]">
 					{{ elem.label }}

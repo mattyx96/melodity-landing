@@ -52,7 +52,8 @@
 			</container>
 			<AboutExtended id="about" :random-listings="getRandomListings()"
 			               :buy-meld-url="buy_meld_url"></AboutExtended>
-			<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
+			<div class="col-span-full relative text-white grid grid-cols-12 bg-cover"
+			     :style="`background-image: url(${require('@/assets/images/back-4.svg')})`">
 				<PriceConverter class="md:flex hidden"></PriceConverter>
 				<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
 			</div>

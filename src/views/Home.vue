@@ -52,8 +52,7 @@
 			</container>
 			<AboutExtended id="about" :random-listings="getRandomListings()"
 			               :buy-meld-url="buy_meld_url"></AboutExtended>
-			<div class="col-span-full relative text-white grid grid-cols-12 bg-cover"
-				:style="`background-image: url(${require('@/assets/images/back-4.svg')})`">
+			<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
 				<PriceConverter class="md:flex hidden"></PriceConverter>
 				<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
 			</div>
@@ -78,9 +77,12 @@
 						</h4>
 						<ul class="mt-8 font-thin font-poppins">
 							<li v-for="(e, i) of elem[1]" :key="i">
-								<a :href="e.url" target="_blank" rel="noopener">
+								<a v-if="e.url" :href="e.url" target="_blank" rel="noopener">
 									{{ e.label }}
 								</a>
+								<div v-else :onclick="e.click" class="cursor-pointer">
+									{{ e.label }}
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -458,6 +460,24 @@ export default {
 					url: "mailto:support@melodity.org",
 				},
 			],
+			compliance: [
+				{
+					label: "Cookie preferences",
+					click: "displayPreferenceModal()"
+				},
+				{
+					label: "Privacy policy",
+					url: "https://app.termly.io/document/privacy-policy/f7de0af7-75f7-44e3-9cf9-3c84b4399d23"
+				},
+				{
+					label: "Cookie policy",
+					url: "https://app.termly.io/document/cookie-policy/37cfebac-062c-4b33-b2db-49f79570fb19"
+				},
+				{
+					label: "Terms & conditions",
+					url: "https://app.termly.io/document/terms-of-use-for-website/6d487c06-e593-4ab5-9ae3-e5d00e6af3f1"
+				}
+			]
 		},
 		scroll: {
 			trigger: 200,

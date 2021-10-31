@@ -284,7 +284,7 @@ export default {
 			},
 		],
 		partners: [
-			{
+			/*{
 				pic: null,
 				name: null
 			},
@@ -307,10 +307,10 @@ export default {
 			{
 				pic: null,
 				name: null
-			},
+			},*/
 		],
 		medias: [
-			{
+			/*{
 				pic: null,
 				url: null
 			},
@@ -341,10 +341,10 @@ export default {
 			{
 				pic: null,
 				url: null
-			},
+			},*/
 		],
 		details: [
-			{
+			/*{
 				pic: null,
 				url: null
 			},
@@ -375,7 +375,7 @@ export default {
 			{
 				pic: null,
 				url: null
-			},
+			},*/
 		],
 		footer: {
 			get_started: [

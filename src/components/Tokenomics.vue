@@ -7,7 +7,7 @@
 				<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full lg:mb-20 mb-28 font-semibold font-poppins">
 					Tokenomics
 				</h2>
-				<div class="h-full w-full p-2">
+				<div class="h-full w-full p-4 md:p-2">
 					<img src="@/assets/images/tokenomics.webp" alt="Tokenomics"
 					     class="lg:scale-100 scale-150 md:block hidden xl:max-w-[80%] mx-auto">
 					<img src="@/assets/images/tokenomics-vertical.webp" alt="Tokenomics"

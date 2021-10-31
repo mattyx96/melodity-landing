@@ -18,7 +18,7 @@
 				<div class="py-6 lg:pr-12 font-poppins font-light">
 					<h3 class="text-4xl font-semibold md:mb-16 mb-12 font-bold font-poppins relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
-						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
+						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A] md:px-0 px-2">
 						Disrupting the music industry
 					</h3>
 					<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
@@ -39,7 +39,7 @@
 				<div class="py-6 lg:pr-12 font-poppins font-light">
 					<h3 class="text-4xl font-semibold mb-16 font-bold font-poppins relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
-						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
+						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A] md:px-0 px-2">
 						We have a vision
 					</h3>
 					<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
@@ -59,7 +59,7 @@
 				<div class="py-6 lg:pr-12 font-poppins font-light">
 					<h3 class="text-4xl font-semibold mb-16 font-bold font-poppins relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
-						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A]">
+						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A] md:px-0 px-2">
 						We are on a mission
 					</h3>
 					<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">

@@ -49,7 +49,7 @@
 				</div>
 				<a v-else class="flex items-center justify-center w-full col-span-full"
 				   href="mailto:rolen.guzman@melodity.org">
-					<img src="@/assets/images/partner.webp" alt="partners" class="w-full h-full object-contain">
+					<img src="@/assets/images/partner.webp" alt="partners" class="h-full object-contain">
 				</a>
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
@@ -68,7 +68,7 @@
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
 					   href="mailto:press@melodity.org">
-						<img src="@/assets/images/press.webp" alt="press" class="w-full h-full object-contain">
+						<img src="@/assets/images/press.webp" alt="press" class="h-full object-contain">
 					</a>
 				</div>
 				<div class="lg:col-span-1 col-span-full flex flex-col items-center justify-center">
@@ -86,7 +86,7 @@
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
 					   href="mailto:info@melodity.org">
-						<img src="@/assets/images/info.webp" alt="info" class="w-full h-full object-contain">
+						<img src="@/assets/images/info.webp" alt="info" class="h-full object-contain">
 					</a>
 				</div>
 			</div>

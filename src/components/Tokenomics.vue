@@ -1,6 +1,6 @@
 <template>
 	<div class="col-span-full grid grid-cols-12 relative text-white overflow-hidden">
-		<img loading="lazy" src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
+		<img src="@/assets/images/wallpaper-dark.webp" alt="dark-wallpaper"
 		     class="absolute top-0 left-0 z-[-1]">
 		<container>
 			<div class="items-center justify-center md:my-64 my-32">
@@ -8,9 +8,9 @@
 					Tokenomics
 				</h2>
 				<div class="h-full w-full p-2">
-					<img loading="lazy" src="@/assets/images/tokenomics.webp" alt="Tokenomics"
+					<img src="@/assets/images/tokenomics.webp" alt="Tokenomics"
 					     class="lg:scale-100 scale-150 md:block hidden xl:max-w-[80%] mx-auto">
-					<img loading="lazy" src="@/assets/images/tokenomics-vertical.webp" alt="Tokenomics"
+					<img src="@/assets/images/tokenomics-vertical.webp" alt="Tokenomics"
 					     class="lg:scale-100 md:hidden block">
 				</div>
 			</div>

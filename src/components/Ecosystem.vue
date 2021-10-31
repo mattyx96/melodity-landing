@@ -1,10 +1,10 @@
 <template>
 	<div class="col-span-full grid grid-cols-12 relative text-white bg-[#10151c]">
 		<div class="col-span-full flex items-center justify-center my-64 relative">
-			<img loading="lazy" src="@/assets/images/waves-1.webp" alt="waves" class="scale-125 rotate-180">
-			<img loading="lazy" src="@/assets/images/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
+			<img src="@/assets/images/waves-1.webp" alt="waves" class="scale-125 rotate-180">
+			<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
 						md:-translate-x-1/3 md:pr-96 lg:scale-80 md:scale-90 -translate-x-1/2 md:mt-0 -mt-16 xl:max-w-[70%]">
-			<img loading="lazy" src="@/assets/images/logo-dolabs-ecosystem.webp" alt="Do inc. ecosystem" class="absolute
+			<img src="@/assets/images/logo-dolabs-ecosystem.webp" alt="Do inc. ecosystem" class="absolute
 						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8 max-w-[80%] lg:max-w-[60%]">
 		</div>
 		<container>
@@ -26,7 +26,7 @@
 							<a v-if="elem.url !== null && elem.pic != null"
 							   class="rounded-[2rem] h-full w-full bg-[#141a25] flex items-center justify-center"
 							   :href="elem.url" target="_blank" rel="noopener">
-								<img loading="lazy" :src="elem.pic" :alt="elem.pic" class="rounded-[2rem] bg-transparent w-full object-contain">
+								<img :src="elem.pic" :alt="elem.pic" class="rounded-[2rem] bg-transparent w-full object-contain">
 							</a>
 						</div>
 					</li>
@@ -40,7 +40,7 @@
 			<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
 				<div v-if="partners.length > 0" v-for="(elem, id) of partners" :key="id" class="flex flex-col items-center justify-center">
 					<div class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4">
-						<img loading="lazy" v-if="elem?.pic && elem.pic !== null" :src="elem.pic" :alt="elem.name"
+						<img v-if="elem?.pic && elem.pic !== null" :src="elem.pic" :alt="elem.name"
 						     class="object-contain">
 					</div>
 					<h5 class="font-semibold text-center text-xl font-normal font-poppins">
@@ -49,7 +49,7 @@
 				</div>
 				<a v-else class="flex items-center justify-center w-full col-span-full"
 				   href="mailto:rolen.guzman@melodity.org">
-					<img loading="lazy" src="@/assets/images/partner.webp" alt="partners" class="w-full h-full object-contain">
+					<img src="@/assets/images/partner.webp" alt="partners" class="w-full h-full object-contain">
 				</a>
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
@@ -62,13 +62,13 @@
 							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener"
 								:class="id < 6 ? 'flex' : 'hidden'">
-								<img loading="lazy" v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain">
+								<img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain">
 							</a>
 						</div>
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
 					   href="mailto:press@melodity.org">
-						<img loading="lazy" src="@/assets/images/press.webp" alt="press" class="w-full h-full object-contain">
+						<img src="@/assets/images/press.webp" alt="press" class="w-full h-full object-contain">
 					</a>
 				</div>
 				<div class="lg:col-span-1 col-span-full flex flex-col items-center justify-center">
@@ -80,19 +80,19 @@
 							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener"
 							   :class="id < 6 ? 'flex' : 'hidden'">
-								<img loading="lazy" v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain">
+								<img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain">
 							</a>
 						</div>
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
 					   href="mailto:info@melodity.org">
-						<img loading="lazy" src="@/assets/images/info.webp" alt="info" class="w-full h-full object-contain">
+						<img src="@/assets/images/info.webp" alt="info" class="w-full h-full object-contain">
 					</a>
 				</div>
 			</div>
 		</container>
 		<div class="col-span-full relative h-96 py-96 overflow-hidden">
-			<img loading="lazy" src="@/assets/images/waves-1.webp" alt="waves" class="absolute scale-125 rotate-180 top-0">
+			<img src="@/assets/images/waves-1.webp" alt="waves" class="absolute scale-125 rotate-180 top-0">
 		</div>
 	</div>
 </template>

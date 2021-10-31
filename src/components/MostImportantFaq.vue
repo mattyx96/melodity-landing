@@ -8,7 +8,7 @@
 			<ol>
 				<li class="flex flex-col md:flex-row items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
-						<img loading="lazy" src="@/assets/images/1.webp" alt="first" class="object-contain w-full">
+						<img src="@/assets/images/1.webp" alt="first" class="object-contain w-full">
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -24,7 +24,7 @@
 				</li>
 				<li class="flex flex-col md:flex-row items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
-						<img loading="lazy" src="@/assets/images/2.webp" alt="second" class="object-contain w-full">
+						<img src="@/assets/images/2.webp" alt="second" class="object-contain w-full">
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -40,7 +40,7 @@
 				</li>
 				<li class="flex flex-col md:flex-row items-center">
 					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
-						<img loading="lazy" src="@/assets/images/3.webp" alt="third" class="object-contain w-full">
+						<img src="@/assets/images/3.webp" alt="third" class="object-contain w-full">
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -56,11 +56,11 @@
 				</li>
 			</ol>
 			<div class="absolute lg:max-w-[50%] right-0 top-1/2 lg:top-0 z-[-1] lg:translate-y-0 -translate-y-1/2">
-				<img loading="lazy" src="@/assets/images/logo-rose.webp" alt="Melodity"
+				<img src="@/assets/images/logo-rose.webp" alt="Melodity"
 				     class="object-contain h-full lg:opacity-100 opacity-60">
 			</div>
 			<div class="w-full h-full z-[-2] xl:mb-0 mb-32" style="transform: translateY(-10%)">
-				<img loading="lazy" src="@/assets/images/headphones.webp" alt="headphones"
+				<img src="@/assets/images/headphones.webp" alt="headphones"
 				     class="object-contain h-full hidden xl:block">
 			</div>
 		</div>
@@ -68,7 +68,7 @@
 			<a v-for="(elem, id) of faq" :key="id" :href="elem.url"
 			   class="md:flex flex-col item-center justify-center w-full my-16"
 				:class="id < 3 ? 'flex' : 'hidden'">
-				<img loading="lazy" :src="elem.pic" :alt="elem.label" class="xl:max-w-[50%] max-w-[80%] mx-auto">
+				<img :src="elem.pic" :alt="elem.label" class="xl:max-w-[50%] max-w-[80%] mx-auto">
 				<h4 class="mx-auto text-center font-semibold text-xl leading-6 tracking-tighter mt-6 font-semibold
 					font-poppins text-[#141a25]">
 					{{ elem.label }}

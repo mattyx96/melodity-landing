@@ -48,7 +48,7 @@
 					</h5>
 				</div>
 				<a v-else class="flex items-center justify-center w-full col-span-full"
-				   href="mailto:rolen.guzman@melodity.org">
+				   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
 					<img src="@/assets/images/partner.webp" alt="partners" class="h-full object-contain">
 				</a>
 			</div>
@@ -67,7 +67,7 @@
 						</div>
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
-					   href="mailto:press@melodity.org">
+					   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
 						<img src="@/assets/images/press.webp" alt="press" class="h-full object-contain">
 					</a>
 				</div>
@@ -85,7 +85,7 @@
 						</div>
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
-					   href="mailto:info@melodity.org">
+					   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
 						<img src="@/assets/images/info.webp" alt="info" class="h-full object-contain">
 					</a>
 				</div>

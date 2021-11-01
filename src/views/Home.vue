@@ -405,6 +405,10 @@ export default {
 					label: "Media press",
 					url: "https://docsend.com/view/e9knzicbry3ncaca",
 				},
+				{
+					label: "Team",
+					url: "https://do-inc.co/#team"
+				}
 			],
 			join_us: [
 				{

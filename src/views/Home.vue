@@ -407,7 +407,7 @@ export default {
 				},
 				{
 					label: "Team",
-					url: "https://do-inc.co/#team"
+					url: "https://do-inc.co/team"
 				}
 			],
 			join_us: [

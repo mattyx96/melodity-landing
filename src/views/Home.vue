@@ -344,37 +344,17 @@ export default {
 			},*/
 		],
 		details: [
+			{
+				pic: "https://widget.cryptototem.com/70/70/1/1/28974",
+				url: "https://cryptototem.com/melodity-meld/",
+				alt: "Melodity (MELD) rating",
+				bullet: true
+			},
 			/*{
 				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
-			},
-			{
-				pic: null,
-				url: null
+				url: null,
+				alt: null,
+				bullet: true
 			},*/
 		],
 		footer: {

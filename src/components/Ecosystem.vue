@@ -22,11 +22,13 @@
 				<ul class="glide__slides">
 					<li v-for="(elem, id) of upcomingProjects" :key="id"
 					    class="glide__slide bg-[#141a25] rounded-[2rem]">
-						<div class="rounded-[2rem] h-56 md:w-64 w-40 p-0 bg-[#141a25] flex items-center justify-center mx-auto">
+						<div
+							class="rounded-[2rem] h-56 md:w-64 w-40 p-0 bg-[#141a25] flex items-center justify-center mx-auto">
 							<a v-if="elem.url !== null && elem.pic != null"
 							   class="rounded-[2rem] h-full w-full bg-[#141a25] flex items-center justify-center"
 							   :href="elem.url" target="_blank" rel="noopener">
-								<img :src="elem.pic" :alt="elem.pic" class="rounded-[2rem] bg-transparent w-full object-contain">
+								<img :src="elem.pic" :alt="elem.pic"
+								     class="rounded-[2rem] bg-transparent w-full object-contain">
 							</a>
 						</div>
 					</li>
@@ -38,7 +40,8 @@
 				Melodity major partners
 			</h3>
 			<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
-				<div v-if="partners.length > 0" v-for="(elem, id) of partners" :key="id" class="flex flex-col items-center justify-center">
+				<div v-if="partners.length > 0" v-for="(elem, id) of partners" :key="id"
+				     class="flex flex-col items-center justify-center">
 					<div class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4">
 						<img v-if="elem?.pic && elem.pic !== null" :src="elem.pic" :alt="elem.name"
 						     class="object-contain">
@@ -58,10 +61,11 @@
 						Melodity in medias
 					</h3>
 					<div v-if="medias.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
-						<div v-for="(elem, id) of medias" :key="id" class="md:flex flex-col items-center justify-center">
+						<div v-for="(elem, id) of medias" :key="id"
+						     class="md:flex flex-col items-center justify-center">
 							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener"
-								:class="id < 6 ? 'flex' : 'hidden'">
+							   :class="id < 6 ? 'flex' : 'hidden'">
 								<img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain">
 							</a>
 						</div>
@@ -77,10 +81,13 @@
 					</h3>
 					<div v-if="details.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
 						<div v-for="(elem, id) of details" :key="id" class="flex flex-col items-center justify-center">
-							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
+							<a class="rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener"
-							   :class="id < 6 ? 'flex' : 'hidden'">
-								<img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain">
+							   :class="[
+								   id < 6 ? 'flex' : 'hidden',
+								   elem?.bullet && elem.bullet ? 'bg-white' : ''
+								]">
+								<img v-if="elem.pic" :src="elem.pic" :alt="elem.alt" class="object-contain rounded-md">
 							</a>
 						</div>
 					</div>

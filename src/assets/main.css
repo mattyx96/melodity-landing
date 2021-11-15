@@ -12,7 +12,7 @@ html, body {
 
 body {
 	overflow-y: hidden !important;
-	background: url("/images/wallpaper.svg") no-repeat center center;
+	background: url("images/wallpaper-min.png") no-repeat center center;
 	background-size: cover;
 }
 

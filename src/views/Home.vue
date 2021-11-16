@@ -11,8 +11,8 @@
 					<br>
 					Begin!
 				</h1>
-				<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
-					scale-100">
+				<img src="@/assets/images-opt/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
+					scale-100"/>
 				<div class="md:mt-32 mt-24 relative">
 					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
 				</div>
@@ -67,7 +67,7 @@
 			<div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
 				<div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
 					justify-center">
-					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]">
+					<img src="@/assets/images-opt/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
 				</div>
 				<div class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
 					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
@@ -167,58 +167,58 @@ export default {
 		listings: [
 			{
 				name: "CoinMarketCap",
-				logo: require("@/assets/images/boubles.webp"),
+				logo: require("@/assets/images-opt/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: require("@/assets/images/boubles.webp"),
+				logo: require("@/assets/images-opt/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: require("@/assets/images/boubles.webp"),
+				logo: require("@/assets/images-opt/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: require("@/assets/images/boubles.webp"),
+				logo: require("@/assets/images-opt/boubles.webp"),
 				url: "#",
 			},
 			{
 				name: "CoinMarketCap",
-				logo: require("@/assets/images/boubles.webp"),
+				logo: require("@/assets/images-opt/boubles.webp"),
 				url: "#",
 			},
 		],
 		most_important_faq: [
 			{
-				pic: require("@/assets/images/why-1.webp"),
+				pic: require("@/assets/images-opt/why-1.webp"),
 				label: "What is DeFi?",
 				url: "https://docs.melodity.org/faq/general-questions#what-is-defi"
 			},
 			{
-				pic: require("@/assets/images/why-2.webp"),
+				pic: require("@/assets/images-opt/why-2.webp"),
 				label: "What is a Token?",
 				url: "https://docs.melodity.org/faq/general-questions#what-is-a-token"
 			},
 			{
-				pic: require("@/assets/images/why-3.webp"),
+				pic: require("@/assets/images-opt/why-3.webp"),
 				label: "What is Melodity?",
 				url: "https://docs.melodity.org/faq/generalities#what-is-melodity"
 			},
 			{
-				pic: require("@/assets/images/why-4.webp"),
+				pic: require("@/assets/images-opt/why-4.webp"),
 				label: "Which problems does Melodity solve?",
 				url: "https://docs.melodity.org/faq/generalities#which-problems-does-melodity-solve"
 			},
 			{
-				pic: require("@/assets/images/why-5.webp"),
+				pic: require("@/assets/images-opt/why-5.webp"),
 				label: "Which is Melodity's mission?",
 				url: "https://docs.melodity.org/faq/generalities#which-is-meloditys-mission"
 			},
 			{
-				pic: require("@/assets/images/why-6.webp"),
+				pic: require("@/assets/images-opt/why-6.webp"),
 				label: "Who's Melodity for?",
 				url: "https://docs.melodity.org/faq/generalities#whos-melodity-for"
 			},
@@ -251,35 +251,35 @@ export default {
 		],
 		upcoming_projects: [
 			{
-				pic: require("@/assets/images/logo-beats-chain.webp"),
+				pic: require("@/assets/images-opt/logo-beats-chain.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-beats-white.webp"),
+				pic: require("@/assets/images-opt/logo-beats-white.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-doduet-white.webp"),
+				pic: require("@/assets/images-opt/logo-doduet-white.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-dolearn-white.webp"),
+				pic: require("@/assets/images-opt/logo-dolearn-white.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-domart-white.webp"),
+				pic: require("@/assets/images-opt/logo-domart-white.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-doplay-white.webp"),
+				pic: require("@/assets/images-opt/logo-doplay-white.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-dotime-white.webp"),
+				pic: require("@/assets/images-opt/logo-dotime-white.webp"),
 				url: "#",
 			},
 			{
-				pic: require("@/assets/images/logo-mle-white.webp"),
+				pic: require("@/assets/images-opt/logo-mle-white.webp"),
 				url: "https://lock.melodity.org",
 			},
 		],

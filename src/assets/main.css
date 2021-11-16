@@ -12,7 +12,8 @@ html, body {
 
 body {
 	overflow-y: hidden !important;
-	background: url("images/wallpaper-min.png") no-repeat center center;
+	background: url("./images-opt/wallpaper-min.png") no-repeat center center;
+	/*background: linear-gradient(180deg, hsla(246, 100%, 77%, 1) 0%, hsla(287, 96%, 78%, 1) 23%);*/
 	background-size: cover;
 }
 

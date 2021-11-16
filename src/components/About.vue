@@ -1,7 +1,7 @@
 <template>
 	<div class="text-white grid 2xl:grid-cols-2 xl:grid-cols-3 grid-cols-1 md:m-0 m-4
 		bg-cover rounded-[4rem] md:py-16 md:px-12 pt-12"
-		:style="`background-image: url(${require('@/assets/images/back-1.svg')})`">
+		:style="`background-image: url(${require('@/assets/images-opt/back-1.webp')})`">
 		<div class="xl:flex lg:hidden md:flex hidden flex-col items-center p-12 lg:mt-0 -my-12">
 			<div class="2xl:ml-12 text-center font-montserrat">
 				<h3 class="text-5xl font-bold leading-10">
@@ -11,7 +11,7 @@
 					Token
 				</h4>
 			</div>
-			<img src="@/assets/images/apple.webp" alt="apple" class="lg:mt-12 mt-0 max-w-[80%]">
+			<img src="@/assets/images-opt/apple.webp" alt="apple" class="lg:mt-12 mt-0 max-w-[80%]"/>
 		</div>
 		<div class="md:pl-10 xl:pr-20 md:pr-10 px-8 py-0 lg:mt-0 md:mt-4 xl:pt-8 pt-0 2xl:col-span-1 lg:col-span-2">
 			<h2 class="md:font-semibold font-medium lg:text-[2.2rem] lg:leading-10 md:text-3xl text-2xl leading-7 font-poppins">

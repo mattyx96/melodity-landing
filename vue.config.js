@@ -1,8 +1,9 @@
 const zlib = require("zlib");
 
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-        ? '/dist/' //edit this if you want to change the default path of static files in production
+    publicPath: process.env.NODE_ENV === 'production' //default path of static files in production
+        // ? '/dist/'
+        ? '/'
         : '/',
     pluginOptions: {
         compression: {

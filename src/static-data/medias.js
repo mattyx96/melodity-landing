@@ -1,7 +1,7 @@
 export default [
-    {
-        pic: null,
-        url: null
-    },
+    // {
+    //     pic: null,
+    //     url: null
+    // },
     // ...
 ]

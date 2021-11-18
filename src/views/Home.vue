@@ -1,104 +1,107 @@
 <template>
-	<div class="grid grid-cols-12">
-		<heading :nav-animation-classes="navAnimationClasses" :urls="urls" :urls-targets="urlsTargets"
-			@mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"></heading>
-		<main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
-		      :class="navAnimationClasses.content">
-			<container>
-				<h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
+  <div class="grid grid-cols-12">
+    <heading :nav-animation-classes="navAnimationClasses" :urls="urls" :urls-targets="urlsTargets"
+             @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"></heading>
+    <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
+          :class="navAnimationClasses.content">
+      <container>
+        <h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
 					tracking-tighter">
-					Let the Music
-					<br>
-					Begin!
-				</h1>
-				<img src="@/assets/images-opt/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
+          Let the Music
+          <br>
+          Begin!
+        </h1>
+        <img src="@/assets/images-opt/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
 					scale-100"/>
-				<div class="md:mt-32 mt-24 relative">
-					<about :urls="urls" :buy-meld-url="buy_meld_url"></about>
-				</div>
-			</container>
-			<container v-if="false">
-				<div
-					class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
+        <div class="md:mt-32 mt-24 relative">
+          <about :urls="urls" :buy-meld-url="buy_meld_url"></about>
+        </div>
+      </container>
+      <container v-if="false">
+        <div
+            class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
 						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:mx-0 mx-6">
-					<h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
-						Live chart
-					</h3>
-					<div v-for="(elem, id) of tokenStatsEntries" :key="id"
-					     class="lg:flex hidden flex-col items-center justify-center font-poppins font-semibold">
-						<div class="text-[#14f195] text-4xl tracking-[-.01rem]">
-							{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-							{{ tokenStatsValueSuffix[id] }}
-						</div>
-						<small class="uppercase font-poppins font-extralight tracking-wider leading-[3rem]">{{ tokenStatsLabel[id] }}</small>
-					</div>
-					<div class="lg:hidden glide-stats mt-4">
-						<div class="glide__track" data-glide-el="track">
-							<ul class="glide__slides">
-								<li v-for="(elem, id) of tokenStatsEntries" :key="id"
-								    class="glide__slide bg-[#141a25] rounded-[2rem]">
-									<div class="flex flex-col items-center justify-center font-poppins font-semibold">
-										<div class="text-[#14f195] text-4xl">
-											{{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-											{{ tokenStatsValueSuffix[id] }}
-										</div>
-										<small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</container>
-			<AboutExtended id="about" :random-listings="random_listings"
-			               :buy-meld-url="buy_meld_url"></AboutExtended>
-			<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
-				<PriceConverter class="md:flex hidden"></PriceConverter>
-				<MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
-			</div>
-			<Tokenomics id="tokenomics"></Tokenomics>
-			<Roadmap id="roadmap"></Roadmap>
-			<ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
-			           :upcoming-projects="upcoming_projects"></ecosystem>
-			<faq :faq="faq"></faq>
-			<subscription></subscription>
-		</main>
-		<footer class="col-span-full bg-[#10151c] text-white xl:pt-96 pt-48">
-			<div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
-				<div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
+          <h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
+            Live chart
+          </h3>
+          <div v-for="(elem, id) of tokenStatsEntries" :key="id"
+               class="lg:flex hidden flex-col items-center justify-center font-poppins font-semibold">
+            <div class="text-[#14f195] text-4xl tracking-[-.01rem]">
+              {{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
+              {{ tokenStatsValueSuffix[id] }}
+            </div>
+            <small class="uppercase font-poppins font-extralight tracking-wider leading-[3rem]">{{
+                tokenStatsLabel[id]
+              }}</small>
+          </div>
+          <div class="lg:hidden glide-stats mt-4">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li v-for="(elem, id) of tokenStatsEntries" :key="id"
+                    class="glide__slide bg-[#141a25] rounded-[2rem]">
+                  <div class="flex flex-col items-center justify-center font-poppins font-semibold">
+                    <div class="text-[#14f195] text-4xl">
+                      {{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
+                      {{ tokenStatsValueSuffix[id] }}
+                    </div>
+                    <small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </container>
+      <AboutExtended id="about" :random-listings="random_listings"
+                     :buy-meld-url="buy_meld_url"></AboutExtended>
+      <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
+        <PriceConverter class="md:flex hidden"></PriceConverter>
+        <MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
+      </div>
+      <Tokenomics id="tokenomics"></Tokenomics>
+      <Roadmap id="roadmap"></Roadmap>
+      <ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
+                 :upcoming-projects="upcoming_projects"></ecosystem>
+      <faq :faq="faq"></faq>
+      <subscription></subscription>
+    </main>
+    <footer class="col-span-full bg-[#10151c] text-white xl:pt-96 pt-48">
+      <div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
+        <div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
 					justify-center">
-					<img src="@/assets/images-opt/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
-				</div>
-				<div class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
-					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
-						:class="id % 2 === 0 ? 'text-right' : 'text-left'">
-						<h4 class="font-semibold text-xl font-semibold font-poppins">
-							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
-						</h4>
-						<ul class="mt-8 font-thin font-poppins">
-							<li v-for="(e, i) of elem[1]" :key="i">
-								<a v-if="e.url" :href="e.url" target="_blank" rel="noopener">
-									{{ e.label }}
-								</a>
-								<div v-else :onclick="e.click" class="cursor-pointer">
-									{{ e.label }}
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-span-full text-center text-xl font-semibold font-poppins">
-					<h4 class="mb-8">Join the conversation</h4>
-					<socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
-				</div>
-				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
-					<p>
-						Copyright &copy; Do inc. - {{ (new Date()).getFullYear() }}
-					</p>
-				</div>
-			</div>
-		</footer>
-	</div>
+          <img src="@/assets/images-opt/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
+        </div>
+        <div
+            class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
+          <div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
+               :class="id % 2 === 0 ? 'text-right' : 'text-left'">
+            <h4 class="font-semibold text-xl font-semibold font-poppins">
+              {{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
+            </h4>
+            <ul class="mt-8 font-thin font-poppins">
+              <li v-for="(e, i) of elem[1]" :key="i">
+                <a v-if="e.url" :href="e.url" target="_blank" rel="noopener">
+                  {{ e.label }}
+                </a>
+                <div v-else :onclick="e.click" class="cursor-pointer">
+                  {{ e.label }}
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-full text-center text-xl font-semibold font-poppins">
+          <h4 class="mb-8">Join the conversation</h4>
+          <socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
+        </div>
+        <div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
+          <p>
+            Copyright &copy; Do inc. - {{ (new Date()).getFullYear() }}
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -115,61 +118,65 @@ import Ecosystem from "@/components/Ecosystem";
 import Faq from "@/components/Faq";
 import Subscription from "@/components/Subscription";
 import Heading from "@/components/Heading";
-import urls_data from "@/static-data/urls";
-import listings_data from "@/static-data/listings";
-import most_important_faq from "@/static-data/most_important_faq";
-import faq from "@/static-data/faq";
-import upcoming_projects from "@/static-data/upcoming_projects";
-import details from "@/static-data/details";
-import footer from "@/static-data/footer";
-import partners from "@/static-data/partners";
-import medias from "@/static-data/medias";
+import {urls} from "@/composition/urls";
+import {listings} from "@/composition/listings";
+import {most_important_faq} from "@/composition/most_important_faq";
+import {faq} from "@/composition/faq";
+import {upcoming_projects} from "@/composition/upcoming_projects";
+import {details} from "@/composition/details";
+import {footer} from "@/composition/footer";
+import {partners} from "@/composition/partners";
+import {medias} from "@/composition/medias";
 
 export default {
-	name: 'Home',
-	components: {
-		Heading,
-		Subscription,
-		Faq,
-		Ecosystem,
-		Roadmap,
-		Tokenomics,
-		MostImportantFaq,
-		PriceConverter,
-		AboutExtended,
-		Container,
-		About,
-		SocialsButtons
-	},
-	data: () => ({
-		urls: urls_data,
-		buy_meld_url: "#buy-meld",
-		initial_logos: false,
-		token_stats: {
-			current_holders: 66,
-			total_liquidity: 0,
-			market_cap: 0,
-		},
-		listings: listings_data,
-		random_listings: [],
-		most_important_faq: most_important_faq,
-		faq: faq,
-		upcoming_projects: upcoming_projects,
-		partners: partners,
-		medias: medias,
-		details: details,
-		footer: footer,
-		scroll: {
-			trigger: 200,
-			animated: false,
-		},
-		mobile: {
-			open: false,
-			animate: false,
-			content: false,
-		}
-	}),
-	methods: {
+  name: 'Home',
+  components: {
+    Heading,
+    Subscription,
+    Faq,
+    Ecosystem,
+    Roadmap,
+    Tokenomics,
+    MostImportantFaq,
+    PriceConverter,
+    AboutExtended,
+    Container,
+    About,
+    SocialsButtons
+  },
+  setup() {
+    return {
+      ...details(),
+      ...faq(),
+      ...footer(),
+      ...listings(),
+      ...medias(),
+      ...most_important_faq(),
+      ...partners(),
+      ...upcoming_projects(),
+      ...urls(),
+    }
+  },
+  data: () => ({
+    buy_meld_url: "#buy-meld",
+    initial_logos: false,
+    token_stats: {
+      current_holders: 66,
+      total_liquidity: 0,
+      market_cap: 0,
+    },
+    random_listings: [],
+    scroll: {
+      trigger: 200,
+      animated: false,
+    },
+    mobile: {
+      open: false,
+      animate: false,
+      content: false,
+    }
+  }),
+  methods: {
     getRandomListings(length = 5) {
       let still_available = this.shuffleArray(this.listings),
           extracted = []
@@ -180,138 +187,131 @@ export default {
 
       return extracted
     },
-		shuffleArray(array) {
-			for (let i = array.length - 1; i > 0; i--) {
+    shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
 
-				// Generate random number
-				let j = Math.floor(Math.random() * (i + 1));
+        // Generate random number
+        let j = Math.floor(Math.random() * (i + 1));
 
-				let temp = array[i];
-				array[i] = array[j];
-				array[j] = temp;
-			}
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
 
-			return array;
-		},
+      return array;
+    },
 
-		openMobileNav() {
-			this.mobile.animate = true
-			setTimeout(() => {
-				this.mobile.open = true
-				this.mobile.content = true
-			}, 1200)
-		},
-		closeMobileNav() {
-			this.mobile.content = false
-			this.mobile.animate = false
-			setTimeout(() => {
-				this.mobile.open = false
-			}, 1200)
-		},
-	},
-	computed: {
-		urlsTargets() {
-			return this.urls.map(v => ({target: v.external ? "_blank" : "", rel: v.external ? "noopener" : ""}))
-		},
-		tokenStatsEntries() {
-			return Object.entries(this.token_stats)
-		},
-		tokenStatsLabel() {
-			return this.tokenStatsEntries.map(v => v[0].split("_").join(" "))
-		},
-		tokenStatsValueSuffix() {
-			return this.tokenStatsEntries.map(v => v[0] === "market_cap" || v[0] === "total_liquidity" ? "$" : "")
-		},
-		navAnimationClasses() {
-			return {
-				wrapper: {
-					"fixed z-50 bg-gray-800 bg-opacity-75": this.scroll.animated,
-				},
-				nav: {
-					"my-4": this.scroll.animated,
-					"my-6": !this.scroll.animated,
-				},
-				content: {
-					"mt-64": this.scroll.animated,
-					"mt-24": !this.scroll.animated,
-				},
-				logo: {
-					"md:w-1/3 w-full": this.scroll.animated,
-					"md:w-2/3 w-full": !this.scroll.animated,
-				},
-				mobile: {
-					wrapper: {
-						"z-[-1] translate-x-full": !this.mobile.open && !this.mobile.animate,
-						"z-20": this.mobile.animate || this.mobile.open,
-						"bg-gray-100": this.mobile.open && this.mobile.animate
-					},
-					lines: {
-						common: {
-							"translate-x-full": !this.mobile.animate
-						},
-						items: [
-							"delay-[150ms]",
-							"delay-[300ms]",
-							"delay-[450ms]",
-							"delay-[600ms]",
-							"delay-[750ms]",
-							"delay-[900ms]",
-						]
-					},
-					content: {
-						"opacity-0": !this.mobile.content,
-						"opacity-100": this.mobile.content
-					}
-				}
-			}
-		},
-	},
-	mounted() {
-		new Glide(".glide", {
-			type: "carousel",
-			perView: 5,
-			focusAt: 0,
-			gap: 60,
-			autoplay: 5000,
-			hoverpause: true,
-			animationTimingFunc: "linear",
-			animationDuration: 4000,
-			peek: 100,
-			breakpoints: {
-				1440: {
-					perView: 4,
-				},
-				1024: {
-					perView: 3,
-				},
-				768: {
-					perView: 2,
-				},
-				425: {
-					perView: 1,
-				}
-			},
-		}).mount()
-	},
-	async created() {
+    openMobileNav() {
+      this.mobile.animate = true
+      setTimeout(() => {
+        this.mobile.open = true
+        this.mobile.content = true
+      }, 1200)
+    },
+    closeMobileNav() {
+      this.mobile.content = false
+      this.mobile.animate = false
+      setTimeout(() => {
+        this.mobile.open = false
+      }, 1200)
+    },
+  },
+  computed: {
+    urlsTargets() {
+      return this.urls.map(v => ({target: v.external ? "_blank" : "", rel: v.external ? "noopener" : ""}))
+    },
+    tokenStatsEntries() {
+      return Object.entries(this.token_stats)
+    },
+    tokenStatsLabel() {
+      return this.tokenStatsEntries.map(v => v[0].split("_").join(" "))
+    },
+    tokenStatsValueSuffix() {
+      return this.tokenStatsEntries.map(v => v[0] === "market_cap" || v[0] === "total_liquidity" ? "$" : "")
+    },
+    navAnimationClasses() {
+      return {
+        wrapper: {
+          "fixed z-50 bg-gray-800 bg-opacity-75": this.scroll.animated,
+        },
+        nav: {
+          "my-4": this.scroll.animated,
+          "my-6": !this.scroll.animated,
+        },
+        content: {
+          "mt-64": this.scroll.animated,
+          "mt-24": !this.scroll.animated,
+        },
+        logo: {
+          "md:w-1/3 w-full": this.scroll.animated,
+          "md:w-2/3 w-full": !this.scroll.animated,
+        },
+        mobile: {
+          wrapper: {
+            "z-[-1] translate-x-full": !this.mobile.open && !this.mobile.animate,
+            "z-20": this.mobile.animate || this.mobile.open,
+            "bg-gray-100": this.mobile.open && this.mobile.animate
+          },
+          lines: {
+            common: {
+              "translate-x-full": !this.mobile.animate
+            },
+            items: [
+              "delay-[150ms]",
+              "delay-[300ms]",
+              "delay-[450ms]",
+              "delay-[600ms]",
+              "delay-[750ms]",
+              "delay-[900ms]",
+            ]
+          },
+          content: {
+            "opacity-0": !this.mobile.content,
+            "opacity-100": this.mobile.content
+          }
+        }
+      }
+    },
+  },
+  mounted() {
+    new Glide(".glide", {
+      type: "carousel",
+      perView: 5,
+      focusAt: 0,
+      gap: 60,
+      autoplay: 5000,
+      hoverpause: true,
+      animationTimingFunc: "linear",
+      animationDuration: 4000,
+      peek: 100,
+      breakpoints: {
+        1440: {
+          perView: 4,
+        },
+        1024: {
+          perView: 3,
+        },
+        768: {
+          perView: 2,
+        },
+        425: {
+          perView: 1,
+        }
+      },
+    }).mount()
+  },
+  async created() {
     //init random_listings
     this.random_listings = this.getRandomListings();
 
-		// dynamically populates the component data object, this acts as a fake backend
-		let res = await axios.get("https://raw.githubusercontent.com/DoLabs-studio/melodity-landing/dataset/data.json")
-		// this dynamically populates the data of the component
-		for (let [key, value] of Object.entries(res.data)) {
-			this.$data[key] = value
-		}
-
-		let _this = this
-		document.addEventListener('scroll', function () {
-			if (window.scrollY >= _this.scroll.trigger && !_this.scroll.animated) {
-				_this.scroll.animated = true
-			} else if (window.scrollY < _this.scroll.trigger && _this.scroll.animated) {
-				_this.scroll.animated = false
-			}
-		});
-	}
+    let _this = this
+    document.addEventListener('scroll', function () {
+      if (window.scrollY >= _this.scroll.trigger && !_this.scroll.animated) {
+        _this.scroll.animated = true
+      } else if (window.scrollY < _this.scroll.trigger && _this.scroll.animated) {
+        _this.scroll.animated = false
+      }
+    });
+  }
 }
 </script>

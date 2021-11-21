@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-full grid grid-cols-12 relative text-white mt-20 overflow-hidden bg-[#0F151C] z-[-1]">
+  <div class="col-span-full grid grid-cols-12 relative text-white overflow-hidden bg-[#0F151C] z-[-1]">
     <container>
 
       <img src="@/assets/images-opt/waves-1.webp" alt="waves-wallpaper"

@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-12">
-    <AnimatedGradient>
+    <AnimatedGradient name="fold">
       <Heading :nav-animation-classes="navAnimationClasses"
                :urls="urls" :urls-targets="urlsTargets"
                @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"/>
@@ -58,12 +58,17 @@
       <div class="mt-20"/>
     </AnimatedGradient>
     <AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
-    <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
-          :class="navAnimationClasses.content">
-      <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
-        <PriceConverter class="md:flex hidden"/>
-        <MostImportantFaq :faq="most_important_faq"/>
-      </div>
+    <AnimatedGradient name="background">
+      <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
+            :class="navAnimationClasses.content">
+        <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
+          <PriceConverter class="md:flex hidden"/>
+          <MostImportantFaq :faq="most_important_faq"/>
+        </div>
+      </main>
+      <div :class="navAnimationClasses.content"/>
+    </AnimatedGradient>
+    <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
       <Tokenomics id="tokenomics"/>
       <Roadmap id="roadmap"/>
       <Ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
@@ -134,10 +139,12 @@ import {footer} from "@/composition/footer";
 import {partners} from "@/composition/partners";
 import {medias} from "@/composition/medias";
 import AnimatedGradient from "@/components/AnimatedGradient";
+import Skew from "@/components/Skew";
 
 export default {
   name: 'Home',
   components: {
+    Skew,
     AnimatedGradient,
     Heading,
     Subscription,

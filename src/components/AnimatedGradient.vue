@@ -1,22 +1,17 @@
 <template>
   <div class="relative col-span-full">
-    <canvas id="gradient-canvas"></canvas>
+    <canvas :id="name" :style="styles" class="gradient-canvas"></canvas>
     <slot></slot>
   </div>
 </template>
 
 <style scoped>
-#gradient-canvas {
+.gradient-canvas {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  --gradient-color-1: #958AFF;
-  --gradient-color-2: #A78CFF;
-  --gradient-color-3: #B9ADFE;
-  --gradient-color-4: #E592FD;
-  z-index: -10;
 }
 </style>
 
@@ -24,6 +19,17 @@
 
 export default {
   name: "AnimatedGradient",
+  props: {
+    zIndex: {
+      type: Number,
+      required: false,
+      default: -1
+    },
+    name: {
+      type: String,
+      required: true,
+    },
+  },
   data: () => ({
     isGradientPlaying: false,
   }),
@@ -45,6 +51,17 @@ export default {
         }, 66);
 
       }, false);
+    }
+  },
+  computed: {
+    styles() {
+      return {
+        "--gradient-color-1": "#958AFF",
+        "--gradient-color-2": "#B9ADFE",
+        "--gradient-color-3": "#E592FD",
+        "--gradient-color-4": "#F995A8",
+        "z-index": this.zIndex,
+      }
     }
   },
   mounted() {
@@ -69,7 +86,7 @@ export default {
     class MiniGl {
       constructor(canvas, width, height, debug = false) {
         const _miniGl = this,
-        debug_output = -1 !== document.location.search.toLowerCase().indexOf("debug=webgl");
+            debug_output = -1 !== document.location.search.toLowerCase().indexOf("debug=webgl");
         _miniGl.canvas = canvas;
         _miniGl.gl = _miniGl.canvas.getContext("webgl", {antialias: true});
         _miniGl.meshes = [];
@@ -79,7 +96,8 @@ export default {
           t - _miniGl.lastDebugMsg > 1e3 && console.log("---");
           console.log(t.toLocaleTimeString() + Array(Math.max(0, 32 - e.length)).join(" ") + e + ": ", ...Array.from(arguments).slice(1));
           _miniGl.lastDebugMsg = t
-        } : () => {};
+        } : () => {
+        };
         Object.defineProperties(_miniGl, {
           Material: {
             enumerable: false,
@@ -631,7 +649,7 @@ export default {
      */
 
     const gradient = new Gradient();
-    gradient.initGradient("#gradient-canvas");
+    gradient.initGradient(`#${this.name}`);
 
     //if page scroll pause the animation (performance)
     this.scrollHelper(

@@ -58,7 +58,7 @@
       <div class="mt-20"/>
     </AnimatedGradient>
     <AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
-    <AnimatedGradient name="background">
+    <AnimatedGradient z-index="-2" name="background">
       <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
             :class="navAnimationClasses.content">
         <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">

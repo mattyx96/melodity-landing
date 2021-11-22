@@ -2,7 +2,7 @@
 	<container class="text-white">
 		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-12 mb-32 font-semibold
 			font-poppins text-[#141a25]">
-			Why Melodity Token?
+			Why Melodity?
 		</h2>
 		<div class="flex flex-col justify-center relative">
 			<ol>

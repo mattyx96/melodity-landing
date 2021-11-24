@@ -1,10 +1,10 @@
 <template>
   <div class="grid grid-cols-12">
-    <AnimatedGradient name="fold">
+    <AnimatedGradient name="above-the-fold">
       <Heading :nav-animation-classes="navAnimationClasses"
                :urls="urls" :urls-targets="urlsTargets"
                @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"/>
-      <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
+      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
             :class="navAnimationClasses.content">
         <Container>
           <h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
@@ -19,63 +19,29 @@
             <About :urls="urls" :buy-meld-url="buy_meld_url"></About>
           </div>
         </Container>
-        <Container v-if="false">
-          <div
-              class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
-            text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:mx-0 mx-6">
-            <h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
-              Live chart
-            </h3>
-            <div v-for="(elem, id) of tokenStatsEntries" :key="id"
-                 class="lg:flex hidden flex-col items-center justify-center font-poppins font-semibold">
-              <div class="text-[#14f195] text-4xl tracking-[-.01rem]">
-                {{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-                {{ tokenStatsValueSuffix[id] }}
-              </div>
-              <small class="uppercase font-poppins font-extralight tracking-wider leading-[3rem]">
-                {{ tokenStatsLabel[id] }}
-              </small>
-            </div>
-            <div class="lg:hidden glide-stats mt-4">
-              <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                  <li v-for="(elem, id) of tokenStatsEntries" :key="id"
-                      class="glide__slide bg-[#141a25] rounded-[2rem]">
-                    <div class="flex flex-col items-center justify-center font-poppins font-semibold">
-                      <div class="text-[#14f195] text-4xl">
-                        {{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-                        {{ tokenStatsValueSuffix[id] }}
-                      </div>
-                      <small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </main>
+        <LiveChart :tokenStatsEntries="tokenStatsEntries"/>
+      </div>
       <div class="mt-20"/>
     </AnimatedGradient>
     <AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
     <AnimatedGradient z-index="-2" name="background">
-      <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
+      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
             :class="navAnimationClasses.content">
         <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
           <PriceConverter class="md:flex hidden"/>
           <MostImportantFaq :faq="most_important_faq"/>
         </div>
-      </main>
+      </div>
       <div :class="navAnimationClasses.content"/>
     </AnimatedGradient>
-    <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
+    <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
       <Tokenomics id="tokenomics"/>
       <Roadmap id="roadmap"/>
       <Ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
                  :upcoming-projects="upcoming_projects"/>
       <Faq :faq="faq"/>
       <Subscription/>
-    </main>
+    </div>
     <footer class="col-span-full bg-[#10151c] text-white xl:pt-96 pt-48">
       <div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
         <div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
@@ -139,12 +105,11 @@ import {footer} from "@/composition/footer";
 import {partners} from "@/composition/partners";
 import {medias} from "@/composition/medias";
 import AnimatedGradient from "@/components/AnimatedGradient";
-import Skew from "@/components/Skew";
+import LiveChart from "@/components/LiveChart";
 
 export default {
   name: 'Home',
   components: {
-    Skew,
     AnimatedGradient,
     Heading,
     Subscription,
@@ -157,7 +122,8 @@ export default {
     AboutExtended,
     Container,
     About,
-    SocialsButtons
+    SocialsButtons,
+    LiveChart
   },
   setup() {
     return {

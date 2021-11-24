@@ -16,9 +16,9 @@
               <p class="xl:mt-6 mt-3 text-[1rem] leading-[1.4rem] font-normal">
                 Token price is based on
               </p>
-              <p class="xl:mt-6 mt-3 text-[1rem] leading-[1.4rem] font-normal">
+<!--              <p class="xl:mt-6 mt-3 text-[1rem] leading-[1.4rem] font-normal">
                 Our inclusive community unites people from all over the world with a passion for music.
-              </p>
+              </p>-->
             </div>
             <div class="flex items-center justify-center xl:block hidden">
               <div class="rounded-[3rem] bg-[#141a25] 2xl:p-4 p-2 w-full font-poppins font-thin">

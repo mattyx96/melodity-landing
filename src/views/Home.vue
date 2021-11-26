@@ -4,8 +4,7 @@
       <Heading :nav-animation-classes="navAnimationClasses"
                :urls="urls" :urls-targets="urlsTargets"
                @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"/>
-      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
-            :class="navAnimationClasses.content">
+      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300 mt-24">
         <Container>
           <h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
           tracking-tighter">
@@ -19,20 +18,18 @@
             <About :urls="urls" :buy-meld-url="buy_meld_url"></About>
           </div>
         </Container>
-        <LiveChart :tokenStatsEntries="tokenStatsEntries"/>
+        <LiveChart :token-stats-entries="tokenStatsEntries" :token-stats-label="tokenStatsLabel"
+                   :token-stats-value-suffix="tokenStatsValueSuffix"/>
       </div>
-      <div class="mt-20"/>
     </AnimatedGradient>
     <AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
-    <AnimatedGradient z-index="-2" name="background">
-      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
-            :class="navAnimationClasses.content">
+    <AnimatedGradient :z-index="-2" name="background">
+      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
         <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
           <PriceConverter class="md:flex hidden"/>
           <MostImportantFaq :faq="most_important_faq"/>
         </div>
       </div>
-      <div :class="navAnimationClasses.content"/>
     </AnimatedGradient>
     <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
       <Tokenomics id="tokenomics"/>
@@ -221,7 +218,7 @@ export default {
         },
         content: {
           "mt-64": this.scroll.animated,
-          "mt-24": !this.scroll.animated,
+          "mt-16": !this.scroll.animated,
         },
         logo: {
           "md:w-1/3 w-full": this.scroll.animated,

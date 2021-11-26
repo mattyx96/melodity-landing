@@ -15,20 +15,7 @@ export default {
 			{
 				url: "https://instagram.com/melodityofficial",
 				icon: "bxl-instagram",
-			},
-			{
-				url: "https://www.twitch.tv/melodityofficial",
-				icon: "bxl-twitch",
-			},
-			{
-				url: "https://discord.com/invite/Fzs9Dqx8NW",
-				icon: "bxl-discord-alt",
-			},
-			{
-				url: "https://www.reddit.com/r/Melodity/",
-				icon: "bxl-reddit",
-			},
-			{
+			},{
 				url: "https://t.me/Melodity_Official_Community",
 				icon: "bxl-telegram",
 			},

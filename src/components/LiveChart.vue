@@ -1,7 +1,7 @@
 <template>
   <Container v-if="false">
     <div
-        class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
+        class="-translate-y-1/2 z-10 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
             text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:mx-0 mx-6">
       <h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
         Live chart
@@ -42,6 +42,14 @@ export default {
   name: "AboveTheFold",
   props: {
     tokenStatsEntries:{
+      required: true,
+      type: Array
+    },
+    tokenStatsLabel:{
+      required: true,
+      type: Array
+    },
+    tokenStatsValueSuffix:{
       required: true,
       type: Array
     }

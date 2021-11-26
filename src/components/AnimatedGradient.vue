@@ -60,7 +60,8 @@ export default {
         "--gradient-color-2": "#B9ADFE",
         "--gradient-color-3": "#E592FD",
         "--gradient-color-4": "#F995A8",
-        "z-index": this.zIndex,
+        "zIndex": this.zIndex,
+        transform: 'scaleY(1.7)',
       }
     }
   },

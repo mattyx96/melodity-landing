@@ -1,9 +1,7 @@
 <template>
-  <div class="col-span-full">
-    <div :class="classesFromFather">
-      <div class="content">
-        <slot></slot>
-      </div>
+  <div :class="classesFromFather" :style="diagonalBox">
+    <div class="content">
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -16,14 +14,32 @@ export default {
       type: String,
       default: "",
     },
+    transform: {
+      type: String,
+      default: "",
+    },
   },
-  computed:{
-    classesFromFather(){
-      const classes = ['diagonal-box'];
-      this.componentClass.split(" ").forEach((item)=>classes.push(item));
+  computed: {
+    classesFromFather() {
+      //init classes
+      const classes = ['col-span-full'];
+
+      //from parent
+      this.componentClass.split(" ").forEach((item) => classes.push(item));
       return classes;
+    },
+    diagonalBox() {
+      return {
+        overflow: 'hidden',
+        transform: 'skewy(-7deg)' + ' ' + this.transform,
+        paddingTop: 'calc(100vw * 0.0702)',
+        paddingBottom: 'calc(100vw * 0.0702)',
+      }
+    },
+    padding() {
+      return window.innerWidth > 470 ? 0 : 0
     }
-  }
+  },
 }
 </script>
 
@@ -51,18 +67,13 @@ export default {
 }
 
 .diagonal-box {
-  overflow: hidden;
-  transform: skewy(-11deg);
-  padding-top: calc(100vw * 0.09719);
-  padding-bottom: calc(100vw * 0.09719);
-
   @media screen and (max-width: 470px) {
-      padding: 0;
+    padding: 0;
   }
 }
 
 .content {
-  transform: skewy(11deg);
+  transform: skewy(7deg);
   max-width: 100vw;
   margin: 0 auto;
 

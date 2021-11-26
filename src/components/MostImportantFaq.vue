@@ -1,6 +1,6 @@
 <template>
 	<container class="text-white">
-		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-12 mb-32 font-semibold
+		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-60 md:mt-12 mb-32 font-semibold
 			font-poppins text-[#141a25]">
 			Why Melodity?
 		</h2>
@@ -59,7 +59,7 @@
 				<img src="@/assets/images-opt/logo-rose.webp" alt="Melodity"
 				     class="object-contain h-full lg:opacity-100 opacity-60"/>
 			</div>
-			<div class="w-full h-full z-[-2] xl:mb-0 mb-32" style="transform: translateY(-10%)">
+			<div class="w-full h-full z-[-2] xl:mb-0 mb-14">
 				<img src="@/assets/images-opt/headphones.webp" alt="headphones"
 				     class="object-contain h-full hidden xl:block"/>
 			</div>

@@ -1,6 +1,6 @@
 <template>
   <container>
-    <div class="-translate-y-48 w-full rounded-[3rem] relative bg-cover"
+    <div class="-translate-y-40 w-full rounded-[3rem] relative bg-cover"
          :style="`background-image: url(${require('@/assets/images-opt/back-3.webp')})`">
       <div class="relative text-white">
         <div class="relative xl:py-16 xl:px-12 md:pt-6 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none

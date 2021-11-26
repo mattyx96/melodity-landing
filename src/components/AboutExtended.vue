@@ -1,5 +1,5 @@
 <template>
-  <DiagonalLayout component-class="col-span-full bg-[#0F151C]">
+  <DiagonalLayout component-class="col-span-full bg-[#0F151C]" transform="translate(0, 10rem)">
     <div class="grid grid-cols-12 relative text-white">
       <Container>
         <img src="@/assets/images-opt/waves-1.webp" alt="waves-wallpaper"
@@ -24,9 +24,10 @@
               Disrupting the music industry
             </h3>
             <p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
-              Not only is there income disparity, but there are also underpaid musicians and selfish middlemen
-              in the music industry, demonstrating an outdated business model that hasn't yet caught up to the
-              blockchain revolution.
+              The music industry is an example of an out-of-date business model that has failed to capture up with the blockchain revolution.
+
+              These old dynamics end up provoking income inequalities, low-paid musicians and self-serving intermediaries.
+
             </p>
           </div>
           <div class="flex items-center justify-end pl-4 lg:order-last order-first">
@@ -85,7 +86,7 @@
           Buy MELD
         </a>
 
-        <div class="text-center mt-16 mb-32 lg:mb-96">
+        <div class="text-center mt-16 mb-24 lg:mb-96">
           <h3 class="text-base leading-10 mb-8 font-semibold font-poppins">
             MELD are available on
           </h3>
@@ -99,8 +100,8 @@
           </div>
           <a v-else class="text-center text-[1rem] leading-[1.4rem] font-bold mt-6 md:px-0 px-2 mx-auto
 					text-[#0AE4EA]"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
-            We're currently in a private sale, if you want to participate, send us a message!
+             href="https://bit.ly/3pWoXjq">
+            We're currently in a private sale, if you want to participate, fill the FORM
           </a>
         </div>
       </Container>

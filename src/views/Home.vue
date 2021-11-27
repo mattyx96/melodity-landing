@@ -12,7 +12,7 @@
             <br>
             Begin!
           </h1>
-          <img src="@/assets/images-opt/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
+          <img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
           scale-100"/>
           <div class="md:mt-32 mt-24 relative">
             <About :urls="urls" :buy-meld-url="buy_meld_url"></About>
@@ -43,7 +43,7 @@
       <div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
         <div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
           justify-center">
-          <img src="@/assets/images-opt/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
+          <img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
         </div>
         <div
             class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">

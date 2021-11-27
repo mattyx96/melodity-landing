@@ -2,11 +2,11 @@
   <DiagonalLayout component-class="col-span-full bg-[#0F151C]" transform="translate(0, 10rem)">
     <div class="grid grid-cols-12 relative text-white">
       <Container>
-        <img src="@/assets/images-opt/waves-1.webp" alt="waves-wallpaper"
+        <img src="@/assets/images/waves-1.webp" alt="waves-wallpaper"
              class="absolute left-0 top-0 z-[-1] scale-[2]"/>
-        <img src="@/assets/images-opt/waves-1.webp" alt="waves-wallpaper"
+        <img src="@/assets/images/waves-1.webp" alt="waves-wallpaper"
              class="absolute left-0 top-1/3 z-[-1] scale-[2]"/>
-        <img src="@/assets/images-opt/waves-1.webp" alt="waves-wallpaper"
+        <img src="@/assets/images/waves-1.webp" alt="waves-wallpaper"
              class="absolute left-0 top-2/3 z-[-1] scale-[2]"/>
         <div class="md:flex hidden items-center justify-center lg:my-24 lg:mt-48 mt-48">
           <h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold font-poppins text-center">
@@ -31,13 +31,13 @@
             </p>
           </div>
           <div class="flex items-center justify-end pl-4 lg:order-last order-first">
-            <img src="@/assets/images-opt/boubles.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
+            <img src="@/assets/images/boubles.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
           </div>
         </div>
 
         <div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-48 lg:mt-32 mb-32 lg:gap-12">
           <div class="flex items-center justify-start pr-12">
-            <img src="@/assets/images-opt/boubles-2.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
+            <img src="@/assets/images/boubles-2.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
           </div>
           <div class="py-6 lg:pr-12 font-poppins font-light">
             <h3 class="text-4xl font-semibold mb-16 font-bold font-poppins relative lg:text-left text-center
@@ -75,7 +75,7 @@
             </p>
           </div>
           <div class="flex items-center justify-end pl-8 lg:order-last order-first">
-            <img src="@/assets/images-opt/boubles-3.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
+            <img src="@/assets/images/boubles-3.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
           </div>
         </div>
 

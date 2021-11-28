@@ -5,27 +5,27 @@ export function listings() {
         listings: ref([
             reactive({
                 name: "CoinMarketCap",
-                logo: require("@/assets/images-opt/boubles.webp"),
+                logo: require("@/assets/images/boubles.webp"),
                 url: "#",
             }),
             reactive({
                 name: "CoinMarketCap",
-                logo: require("@/assets/images-opt/boubles.webp"),
+                logo: require("@/assets/images/boubles.webp"),
                 url: "#",
             }),
             reactive({
                 name: "CoinMarketCap",
-                logo: require("@/assets/images-opt/boubles.webp"),
+                logo: require("@/assets/images/boubles.webp"),
                 url: "#",
             }),
             reactive({
                 name: "CoinMarketCap",
-                logo: require("@/assets/images-opt/boubles.webp"),
+                logo: require("@/assets/images/boubles.webp"),
                 url: "#",
             }),
             reactive({
                 name: "CoinMarketCap",
-                logo: require("@/assets/images-opt/boubles.webp"),
+                logo: require("@/assets/images/boubles.webp"),
                 url: "#",
             }),
         ])

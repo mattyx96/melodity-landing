@@ -5,8 +5,8 @@
 			class="xl:col-start-2 xl:px-0 px-6 col-span-10 grid lg:grid-cols-8 grid-cols-4 place-items-center transition-all duration-300"
 			:class="navAnimationClasses.nav">
 			<a class="col-span-2 flex items-center justify-start" href="/#">
-				<img src="@/assets/images-opt/logo.webp" alt="logo" class="object-contain"
-				     :class="navAnimationClasses.logo"/>
+				<img src="@/assets/images/logo.webp" alt="logo" class="object-contain"
+             :class="navAnimationClasses.logo"/>
 			</a>
 			<template v-for="(elem, id) of urls">
 				<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"

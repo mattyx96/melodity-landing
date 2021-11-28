@@ -1,11 +1,11 @@
 <template>
 	<div class="col-span-full grid grid-cols-12 relative text-white bg-[#10151c]">
-		<div class="col-span-full flex items-center justify-center my-64 relative">
-			<img src="@/assets/images-opt/waves-1.webp" alt="waves" class="scale-125 rotate-180"/>
-			<img src="@/assets/images-opt/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
+		<div class="col-span-full flex items-center justify-center my-24 relative">
+			<img src="@/assets/images/waves-1.webp" alt="waves" class="scale-125 rotate-180"/>
+			<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
 						md:-translate-x-1/3 md:pr-96 lg:scale-80 md:scale-90 -translate-x-1/2 md:mt-0 -mt-16 xl:max-w-[70%]"/>
-			<img src="@/assets/images-opt/logo-dolabs-ecosystem.webp" alt="Do inc. ecosystem" class="absolute
-						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8 max-w-[80%] lg:max-w-[60%]"/>
+			<img src="@/assets/images/logo-dolabs-ecosystem.webp" alt="Do inc. ecosystem" class="absolute
+						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8 max-w-[60%] lg:max-w-[40%]"/>
 		</div>
 		<container>
 			<h2 class="text-[2.2rem] text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-poppins lg:block hidden">
@@ -52,39 +52,20 @@
 				</div>
 				<a v-else class="flex items-center justify-center w-full col-span-full"
 				   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
-					<img src="@/assets/images-opt/partner.webp" alt="partners" class="h-full object-contain"/>
+					<img src="@/assets/images/partner.webp" alt="partners" class="h-full object-contain"/>
 				</a>
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
-				<div class="lg:col-span-1 col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
-						Melodity in medias
-					</h3>
-					<div v-if="medias.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
-						<div v-for="(elem, id) of medias" :key="id"
-						     class="md:flex flex-col items-center justify-center">
-							<a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
-							   :href="elem.url" target="_blank" rel="noopener"
-							   :class="id < 6 ? 'flex' : 'hidden'">
-								<img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain"/>
-							</a>
-						</div>
-					</div>
-					<a v-else class="flex items-center justify-center w-full col-span-full"
-					   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
-						<img src="@/assets/images-opt/press.webp" alt="press" class="h-full object-contain"/>
-					</a>
-				</div>
-				<div class="lg:col-span-1 col-span-full flex flex-col items-center justify-center">
+				<div class="col-span-full flex flex-col items-center justify-center">
 					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
 						Melodity details
 					</h3>
 					<div v-if="details.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
 						<div v-for="(elem, id) of details" :key="id" class="flex flex-col items-center justify-center">
-							<a class="rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
+							<a class="rounded-full h-44 w-44 md:h-64 md:w-64 flex items-center justify-center p-3 mb-4"
 							   :href="elem.url" target="_blank" rel="noopener"
 							   :class="[
-								   id < 6 ? 'flex' : 'hidden',
+								   'flex',
 								   elem?.bullet && elem.bullet ? 'bg-white' : ''
 								]">
 								<img v-if="elem.pic" :src="elem.pic" :alt="elem.alt" class="object-contain rounded-md"/>
@@ -93,13 +74,32 @@
 					</div>
 					<a v-else class="flex items-center justify-center w-full col-span-full"
 					   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
-						<img src="@/assets/images-opt/info.webp" alt="info" class="h-full object-contain"/>
+						<img src="@/assets/images/info.webp" alt="info" class="h-full object-contain"/>
 					</a>
 				</div>
+        <div class="col-span-full flex flex-col items-center justify-center">
+          <h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
+            Melodity in medias
+          </h3>
+          <div v-if="medias.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
+            <div v-for="(elem, id) of medias" :key="id"
+                 class="md:flex flex-col items-center justify-center">
+              <a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
+                 :href="elem.url" target="_blank" rel="noopener"
+                 :class="id < 6 ? 'flex' : 'hidden'">
+                <img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain"/>
+              </a>
+            </div>
+          </div>
+          <a v-else class="flex items-center justify-center w-full col-span-full"
+             href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
+            <img src="@/assets/images/press.webp" alt="press" class="h-full object-contain"/>
+          </a>
+        </div>
 			</div>
 		</container>
 		<div class="col-span-full relative h-96 py-96 overflow-hidden">
-			<img src="@/assets/images-opt/waves-1.webp" alt="waves" class="absolute scale-125 rotate-180 top-0"/>
+			<img src="@/assets/images/waves-1.webp" alt="waves" class="absolute scale-125 rotate-180 top-0"/>
 		</div>
 	</div>
 </template>

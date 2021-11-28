@@ -1,75 +1,49 @@
 <template>
   <div class="grid grid-cols-12">
-    <heading :nav-animation-classes="navAnimationClasses" :urls="urls" :urls-targets="urlsTargets"
-             @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"></heading>
-    <main class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300"
-          :class="navAnimationClasses.content">
-      <container>
-        <h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
-					tracking-tighter">
-          Let the Music
-          <br>
-          Begin!
-        </h1>
-        <img src="@/assets/images-opt/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
-					scale-100"/>
-        <div class="md:mt-32 mt-24 relative">
-          <about :urls="urls" :buy-meld-url="buy_meld_url"></about>
-        </div>
-      </container>
-      <container v-if="false">
-        <div
-            class="-translate-y-1/2 rounded-[3rem] bg-[#141a25] xl:px-32 px-8 py-16 grid lg:grid-cols-4
-						text-white absolute top-0 left-0 translate-y-2 grid-cols-1 md:w-full md:mx-0 mx-6">
-          <h3 class="font-semibold text-2xl font-poppins lg:text-left text-center">
-            Live chart
-          </h3>
-          <div v-for="(elem, id) of tokenStatsEntries" :key="id"
-               class="lg:flex hidden flex-col items-center justify-center font-poppins font-semibold">
-            <div class="text-[#14f195] text-4xl tracking-[-.01rem]">
-              {{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-              {{ tokenStatsValueSuffix[id] }}
-            </div>
-            <small class="uppercase font-poppins font-extralight tracking-wider leading-[3rem]">{{
-                tokenStatsLabel[id]
-              }}</small>
+    <AnimatedGradient name="above-the-fold">
+      <Heading :nav-animation-classes="navAnimationClasses"
+               :urls="urls" :urls-targets="urlsTargets"
+               @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"/>
+      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300 mt-24">
+        <Container>
+          <h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
+          tracking-tighter">
+            Let the Music
+            <br>
+            Begin!
+          </h1>
+          <img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
+          scale-100"/>
+          <div class="md:mt-32 mt-24 relative">
+            <About :urls="urls" :buy-meld-url="buy_meld_url"></About>
           </div>
-          <div class="lg:hidden glide-stats mt-4">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li v-for="(elem, id) of tokenStatsEntries" :key="id"
-                    class="glide__slide bg-[#141a25] rounded-[2rem]">
-                  <div class="flex flex-col items-center justify-center font-poppins font-semibold">
-                    <div class="text-[#14f195] text-4xl">
-                      {{ tokenStatsValueSuffix[id] !== "" ? elem[1].toFixed(2) : elem[1] }}
-                      {{ tokenStatsValueSuffix[id] }}
-                    </div>
-                    <small class="uppercase font-poppins font-medium">{{ tokenStatsLabel[id] }}</small>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </container>
-      <AboutExtended id="about" :random-listings="random_listings"
-                     :buy-meld-url="buy_meld_url"></AboutExtended>
-      <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
-        <PriceConverter class="md:flex hidden"></PriceConverter>
-        <MostImportantFaq :faq="most_important_faq"></MostImportantFaq>
+        </Container>
+        <LiveChart :token-stats-entries="tokenStatsEntries" :token-stats-label="tokenStatsLabel"
+                   :token-stats-value-suffix="tokenStatsValueSuffix"/>
       </div>
-      <Tokenomics id="tokenomics"></Tokenomics>
-      <Roadmap id="roadmap"></Roadmap>
-      <ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
-                 :upcoming-projects="upcoming_projects"></ecosystem>
-      <faq :faq="faq"></faq>
-      <subscription></subscription>
-    </main>
+    </AnimatedGradient>
+    <AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
+    <AnimatedGradient :z-index="-2" name="background">
+      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
+        <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
+          <PriceConverter class="md:flex hidden"/>
+          <MostImportantFaq :faq="most_important_faq"/>
+        </div>
+      </div>
+    </AnimatedGradient>
+    <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
+      <Tokenomics id="tokenomics"/>
+      <Roadmap id="roadmap"/>
+      <Ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
+                 :upcoming-projects="upcoming_projects"/>
+      <Faq :faq="faq"/>
+      <Subscription/>
+    </div>
     <footer class="col-span-full bg-[#10151c] text-white xl:pt-96 pt-48">
       <div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
         <div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
-					justify-center">
-          <img src="@/assets/images-opt/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
+          justify-center">
+          <img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
         </div>
         <div
             class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
@@ -127,10 +101,13 @@ import {details} from "@/composition/details";
 import {footer} from "@/composition/footer";
 import {partners} from "@/composition/partners";
 import {medias} from "@/composition/medias";
+import AnimatedGradient from "@/components/AnimatedGradient";
+import LiveChart from "@/components/LiveChart";
 
 export default {
   name: 'Home',
   components: {
+    AnimatedGradient,
     Heading,
     Subscription,
     Faq,
@@ -142,7 +119,8 @@ export default {
     AboutExtended,
     Container,
     About,
-    SocialsButtons
+    SocialsButtons,
+    LiveChart
   },
   setup() {
     return {
@@ -240,7 +218,7 @@ export default {
         },
         content: {
           "mt-64": this.scroll.animated,
-          "mt-24": !this.scroll.animated,
+          "mt-16": !this.scroll.animated,
         },
         logo: {
           "md:w-1/3 w-full": this.scroll.animated,

@@ -14,15 +14,15 @@ body {
 	overflow-y: hidden !important;
 	/*background: url("./images-opt/wallpaper-min.png") no-repeat center center;*/
 
-	background: linear-gradient(-45deg, #958AFF, #A78CFF, #B9ADFE, #D79FF3, #E592FD);
+	background: linear-gradient(-45deg, #D79FF3, #E592FD, #F995A8);
 
-	background: -moz-linear-gradient(-45deg, #958AFF, #A78CFF, #B9ADFE, #D79FF3, #E592FD);
+	background: -moz-linear-gradient(-45deg, #D79FF3, #E592FD, #F995A8);
 
-	background: -webkit-linear-gradient(-45deg, #958AFF, #A78CFF, #B9ADFE, #D79FF3, #E592FD);
+	background: -webkit-linear-gradient(-45deg, #D79FF3, #E592FD, #F995A8);
 
-	animation: gradient 10s ease infinite;
+	/*animation: gradient 10s ease infinite;
 	-webkit-animation: gradient 10s ease infinite;
-	-moz-animation: gradient 10s ease infinite;
+	-moz-animation: gradient 10s ease infinite;*/
 	background-size: 400% 400%;
 	/*background-size: cover;*/
 }

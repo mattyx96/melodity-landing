@@ -1,14 +1,14 @@
 <template>
 	<container class="text-white">
-		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-12 mb-32 font-semibold
+		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-60 md:mt-12 mb-32 font-semibold
 			font-poppins text-[#141a25]">
-			Why Melodity Token?
+			Why Melodity?
 		</h2>
 		<div class="flex flex-col justify-center relative">
 			<ol>
 				<li class="flex flex-col md:flex-row items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
-						<img src="@/assets/images-opt/1.webp" alt="first" class="object-contain w-full"/>
+						<img src="@/assets/images/1.webp" alt="first" class="object-contain w-full"/>
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -24,7 +24,7 @@
 				</li>
 				<li class="flex flex-col md:flex-row items-center mb-32">
 					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
-						<img src="@/assets/images-opt/2.webp" alt="second" class="object-contain w-full"/>
+						<img src="@/assets/images/2.webp" alt="second" class="object-contain w-full"/>
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -40,7 +40,7 @@
 				</li>
 				<li class="flex flex-col md:flex-row items-center">
 					<div class="h-40 w-40 flex items-center justify-start md:mr-8 md:mb-0 mb-4">
-						<img src="@/assets/images-opt/3.webp" alt="third" class="object-contain w-full"/>
+						<img src="@/assets/images/3.webp" alt="third" class="object-contain w-full"/>
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
 						<h3 class="text-4xl font-semibold mb-6 font-poppins">
@@ -56,12 +56,12 @@
 				</li>
 			</ol>
 			<div class="absolute lg:max-w-[50%] right-0 top-1/2 lg:top-0 z-[-1] lg:translate-y-0 -translate-y-1/2">
-				<img src="@/assets/images-opt/logo-rose.webp" alt="Melodity"
-				     class="object-contain h-full lg:opacity-100 opacity-60"/>
+				<img src="@/assets/images/logo-rose.webp" alt="Melodity"
+             class="object-contain h-full lg:opacity-100 opacity-60"/>
 			</div>
-			<div class="w-full h-full z-[-2] xl:mb-0 mb-32" style="transform: translateY(-10%)">
-				<img src="@/assets/images-opt/headphones.webp" alt="headphones"
-				     class="object-contain h-full hidden xl:block"/>
+			<div class="w-full h-full z-[-2] xl:mb-0 mb-14">
+				<img src="@/assets/images/headphones.webp" alt="headphones"
+             class="object-contain h-full hidden xl:block"/>
 			</div>
 		</div>
 <!--		<div class="grid md:grid-cols-3 gap-8">

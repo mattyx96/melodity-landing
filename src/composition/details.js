@@ -11,13 +11,13 @@ export function details() {
             }),
             reactive({
                 pic: require('@/assets/images/2_bscscan.png'),
-                url: "https://bscscan.com/",
+                url: "https://bscscan.com/address/0x13E971De9181eeF7A4aEAEAA67552A6a4cc54f43#code",
                 alt: "Melodity (MELD) rating bscscan",
                 bullet: false
             }),
             reactive({
                 pic: require('@/assets/images/3_cmc.png'),
-                url: "https://coinmarketcap.com/",
+                url: "https://coinmarketcap.com/currencies/melodity/",
                 alt: "Melodity (MELD) rating cmc",
                 bullet: false
             }),
@@ -35,26 +35,20 @@ export function details() {
             }),
             reactive({
                 pic: require('@/assets/images/6_cryptototem.png'),
-                url: "https://cryptototem.com/",
+                url: "https://cryptototem.com/melodity-meld/",
                 alt: "Melodity (MELD) rating cryptototem",
                 bullet: false
             }),
             reactive({
                 pic: require('@/assets/images/7_icoholder.png'),
-                url: "https://icoholder.com/",
+                url: "https://icoholder.com/it/melodity-1006848",
                 alt: "Melodity (MELD) rating icoholder",
                 bullet: false
             }),
             reactive({
                 pic: require('@/assets/images/8_icolink.png'),
-                url: "https://icolink.com/",
+                url: "https://icolink.com/ico-melodity.html",
                 alt: "Melodity (MELD) rating icolink",
-                bullet: false
-            }),
-            reactive({
-                pic: require('@/assets/images/9_icodrops.png'),
-                url: "https://icodrops.com/",
-                alt: "Melodity (MELD) rating icodrops",
                 bullet: false
             }),
         ])

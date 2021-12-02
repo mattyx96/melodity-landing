@@ -100,7 +100,7 @@
           </div>
           <a v-else class="text-center text-[1rem] leading-[1.4rem] font-bold mt-6 md:px-0 px-2 mx-auto
 					text-[#0AE4EA]"
-             href="https://bit.ly/3pWoXjq">
+             :href="buyMeldUrl">
             We're currently in a private sale, if you want to participate, fill the FORM
           </a>
         </div>

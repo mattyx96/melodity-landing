@@ -136,7 +136,7 @@ export default {
     }
   },
   data: () => ({
-    buy_meld_url: "#buy-meld",
+    buy_meld_url: "https://bit.ly/3pWoXjq",
     initial_logos: false,
     token_stats: {
       current_holders: 66,

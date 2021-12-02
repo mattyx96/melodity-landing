@@ -20,8 +20,13 @@ export function urls() {
                 label: "Ecosystem",
             }),
             reactive({
-                url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
-                label: "Whitepaper",
+                url: "https://do-inc.co/team",
+                label: "Team",
+                external: true,
+            }),
+            reactive({
+                url: "https://bit.ly/3pWoXjq",
+                label: "Buy MELD",
                 type: "button",
                 external: true,
             }),

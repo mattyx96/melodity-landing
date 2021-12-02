@@ -42,7 +42,7 @@ export function medias() {
                  pic: require('@/assets/medias/ask.png'),
                  url: "https://markets.financialcontent.com/ask/news/read/42014588",
                  alt: "ask",
-                 bullet: false
+                 bullet: true
              }),
             reactive({
                  pic: require('@/assets/medias/wallstreetselect.png'),
@@ -66,7 +66,7 @@ export function medias() {
                  pic: require('@/assets/medias/breakingnews.png'),
                  url: "https://breakingsnews.co/melodity-the-blockchain-protocol-for-music/",
                  alt: "breakingnews",
-                 bullet: false
+                 bullet: true
              }),
             reactive({
                  pic: require('@/assets/medias/thelondontribune.png'),

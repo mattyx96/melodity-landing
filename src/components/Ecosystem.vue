@@ -81,12 +81,15 @@
           <h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
             Melodity in medias
           </h3>
-          <div v-if="medias.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
+          <div v-if="medias.length > 0" class="grid xl:grid-cols-6 grid-cols-3 gap-6">
             <div v-for="(elem, id) of medias" :key="id"
                  class="md:flex flex-col items-center justify-center">
-              <a class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
+              <a class="rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
                  :href="elem.url" target="_blank" rel="noopener"
-                 :class="id < 6 ? 'flex' : 'hidden'">
+                 :class="[
+								   'flex',
+								   elem?.bullet && elem.bullet ? 'bg-white' : ''
+								]">
                 <img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain"/>
               </a>
             </div>

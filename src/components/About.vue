@@ -34,7 +34,7 @@
 				</a>
 				<a class="mx-auto rounded-full p-4 px-8 border border-2 bg-[#10151c] border-[#f56ec6] text-center
 								font-medium text-lg md:my-0 mt-20 mb-20 flex items-center justify-center"
-				   :href="urls[urls.length -1].url" target="_blank" rel="noopener">
+				   href="https://docsend.com/view/fpxvfwmhtnq38gi6" target="_blank" rel="noopener">
 					Whitepaper
 				</a>
 			</div>

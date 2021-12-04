@@ -25,7 +25,7 @@ export function urls() {
                 external: true,
             }),
             reactive({
-                url: "https://bit.ly/3pWoXjq",
+                url: "https://private-sale.melodity.org/",
                 label: "Buy MELD",
                 type: "button",
                 external: true,

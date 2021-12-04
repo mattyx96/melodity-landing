@@ -136,7 +136,7 @@ export default {
     }
   },
   data: () => ({
-    buy_meld_url: "https://bit.ly/3pWoXjq",
+    buy_meld_url: "https://private-sale.melodity.org/",
     initial_logos: false,
     token_stats: {
       current_holders: 66,

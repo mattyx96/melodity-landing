@@ -28,12 +28,12 @@
 			</p>
 			<div class="flex flex-wrap md:mt-20 md:mb-8 font-poppins font-medium">
 				<a class="mx-auto rounded-full p-4 px-8 border border-2 bg-[#f56ec6] border-[#f56ec6] text-center
-								font-bold text-lg lg:block hidden flex items-center justify-center"
+								font-bold text-lg flex items-center justify-center"
 				   :href="buyMeldUrl">
 					Buy MELD
 				</a>
 				<a class="mx-auto rounded-full p-4 px-8 border border-2 bg-[#10151c] border-[#f56ec6] text-center
-								font-medium text-lg md:my-0 mt-20 mb-20 flex items-center justify-center"
+								font-medium text-lg md:my-0 mt-20 mb-20 lg:flex hidden items-center justify-center"
 				   href="https://docsend.com/view/fpxvfwmhtnq38gi6" target="_blank" rel="noopener">
 					Whitepaper
 				</a>

@@ -15,7 +15,16 @@ export default {
 			{
 				url: "https://instagram.com/melodityofficial",
 				icon: "bxl-instagram",
-			},{
+			},
+      {
+        url: "https://twitter.com/meloditytoken",
+        icon: "bxl-twitter",
+      },
+      {
+        url: "https://www.reddit.com/r/Melodity/",
+        icon: "bxl-reddit",
+      },
+      {
 				url: "https://t.me/Melodity_Official_Community",
 				icon: "bxl-telegram",
 			},

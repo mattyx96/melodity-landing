@@ -1,81 +1,78 @@
 <template>
-  <div class="grid grid-cols-12">
-    <AnimatedGradient name="above-the-fold">
-      <Heading :nav-animation-classes="navAnimationClasses"
-               :urls="urls" :urls-targets="urlsTargets"
-               @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"/>
-      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300 mt-24">
-        <Container>
-          <h1 class="text-white text-center mx-auto md:text-[9.5em] text-7xl font-bold leading-none font-montserrat
-          tracking-tighter">
-            Let the Music
-            <br>
-            Begin!
-          </h1>
-          <img src="@/assets/images/waves.webp" alt="waves" class="absolute top-64 right-[-5%] z-[-1] xl:scale-90
-          scale-100"/>
-          <div class="md:mt-32 mt-24 relative">
-            <About :urls="urls" :buy-meld-url="buy_meld_url"></About>
-          </div>
-        </Container>
-        <LiveChart :token-stats-entries="tokenStatsEntries" :token-stats-label="tokenStatsLabel"
-                   :token-stats-value-suffix="tokenStatsValueSuffix"/>
-      </div>
-    </AnimatedGradient>
-    <AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
-    <AnimatedGradient :z-index="-2" name="background">
-      <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
-        <div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
-          <PriceConverter class="md:flex hidden"/>
-          <MostImportantFaq :faq="most_important_faq"/>
-        </div>
-      </div>
-    </AnimatedGradient>
-    <div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
-      <Tokenomics id="tokenomics"/>
-      <Roadmap id="roadmap"/>
-      <Ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
-                 :upcoming-projects="upcoming_projects"/>
-      <Faq :faq="faq"/>
-      <Subscription/>
-    </div>
-    <footer class="col-span-full bg-[#10151c] text-white xl:pt-96 pt-48">
-      <div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
-        <div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start items-center
-          justify-center">
-          <img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
-        </div>
-        <div
-            class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
-          <div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
-               :class="id % 2 === 0 ? 'text-right' : 'text-left'">
-            <h4 class="font-semibold text-xl font-semibold font-poppins">
-              {{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
-            </h4>
-            <ul class="mt-8 font-thin font-poppins">
-              <li v-for="(e, i) of elem[1]" :key="i">
-                <a v-if="e.url" :href="e.url" target="_blank" rel="noopener">
-                  {{ e.label }}
-                </a>
-                <div v-else :onclick="e.click" class="cursor-pointer">
-                  {{ e.label }}
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-full text-center text-xl font-semibold font-poppins">
-          <h4 class="mb-8">Join the conversation</h4>
-          <socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
-        </div>
-        <div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
-          <p>
-            Copyright &copy; Do inc. - {{ (new Date()).getFullYear() }}
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
+	<div class="grid grid-cols-12">
+		<AnimatedGradient name="above-the-fold">
+			<Heading :nav-animation-classes="navAnimationClasses"
+			         :urls="urls" :urls-targets="urlsTargets"
+			         @mobile-nav-open="openMobileNav" @mobile-nav-close="closeMobileNav"/>
+			<div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300 mt-24">
+				<Title/>
+				<div class="col-span-full grid grid-cols-12 md:mt-32 mt-24 relative">
+					<About :urls="urls" :buy-meld-url="buy_meld_url"/>
+					<FeaturedIcons
+						class="hidden lg:block"
+						:featured-icons="[...[details[0], details[2], details[3]],...featured]"
+					/>
+				</div>
+				<LiveChart :token-stats-entries="tokenStatsEntries" :token-stats-label="tokenStatsLabel"
+				           :token-stats-value-suffix="tokenStatsValueSuffix"/>
+				<News :news="news"/>
+
+			</div>
+		</AnimatedGradient>
+		<AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
+		<AnimatedGradient :z-index="-2" name="background">
+			<div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
+				<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
+					<PriceConverter class="md:flex hidden"/>
+					<MostImportantFaq :faq="most_important_faq"/>
+				</div>
+			</div>
+		</AnimatedGradient>
+		<div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
+			<Tokenomics id="tokenomics"/>
+			<Roadmap id="roadmap"/>
+			<Ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
+			           :upcoming-projects="upcoming_projects"/>
+			<Faq :faq="faq"/>
+			<Subscription/>
+		</div>
+		<footer class="col-span-full bg-[#10151c] text-white xl:pt-96 pt-48">
+			<div class="md:px-48 px-4 pb-24 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12">
+				<div class="xl:col-span-1 col-span-full w-full flex xl:justify-start xl:items-start
+					items-center justify-center">
+					<img src="@/assets/images/logo.webp" alt="logo" class="object-contain lg:w-2/3 w-full max-w-[60%]"/>
+				</div>
+				<div
+					class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
+					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
+					     :class="id % 2 === 0 ? 'text-right' : 'text-left'">
+						<h4 class="font-semibold text-xl font-semibold font-poppins">
+							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
+						</h4>
+						<ul class="mt-8 font-thin font-poppins">
+							<li v-for="(e, i) of elem[1]" :key="i">
+								<a v-if="e.url" :href="e.url" target="_blank" rel="noopener">
+									{{ e.label }}
+								</a>
+								<div v-else :onclick="e.click" class="cursor-pointer">
+									{{ e.label }}
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-span-full text-center text-xl font-semibold font-poppins">
+					<h4 class="mb-8">Join the conversation</h4>
+					<socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
+				</div>
+				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
+					<p>
+						Copyright &copy; Do inc. - {{ (new Date()).getFullYear() }}
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 </template>
 
 <script>
@@ -103,193 +100,178 @@ import {partners} from "@/composition/partners";
 import {medias} from "@/composition/medias";
 import AnimatedGradient from "@/components/AnimatedGradient";
 import LiveChart from "@/components/LiveChart";
+import Countdown from "@/components/Countdown";
+import {featured} from "@/composition/featured";
+import FeaturedIcons from "@/components/FeaturedIcons";
+import Title from "@/components/Title";
+import News from "@/components/News";
+import {news} from "@/composition/news";
 
 export default {
-  name: 'Home',
-  components: {
-    AnimatedGradient,
-    Heading,
-    Subscription,
-    Faq,
-    Ecosystem,
-    Roadmap,
-    Tokenomics,
-    MostImportantFaq,
-    PriceConverter,
-    AboutExtended,
-    Container,
-    About,
-    SocialsButtons,
-    LiveChart
-  },
-  setup() {
-    return {
-      ...details(),
-      ...faq(),
-      ...footer(),
-      ...listings(),
-      ...medias(),
-      ...most_important_faq(),
-      ...partners(),
-      ...upcoming_projects(),
-      ...urls(),
-    }
-  },
-  data: () => ({
-    buy_meld_url: "https://private-sale.melodity.org/",
-    initial_logos: false,
-    token_stats: {
-      current_holders: 66,
-      total_liquidity: 0,
-      market_cap: 0,
-    },
-    random_listings: [],
-    scroll: {
-      trigger: 200,
-      animated: false,
-    },
-    mobile: {
-      open: false,
-      animate: false,
-      content: false,
-    }
-  }),
-  methods: {
-    getRandomListings(length = 5) {
-      let still_available = this.shuffleArray(this.listings),
-          extracted = []
+	name: 'Home',
+	components: {
+		News,
+		Title,
+		FeaturedIcons,
+		Countdown,
+		AnimatedGradient,
+		Heading,
+		Subscription,
+		Faq,
+		Ecosystem,
+		Roadmap,
+		Tokenomics,
+		MostImportantFaq,
+		PriceConverter,
+		AboutExtended,
+		Container,
+		About,
+		SocialsButtons,
+		LiveChart
+	},
+	setup() {
+		return {
+			...details(),
+			...faq(),
+			...footer(),
+			...listings(),
+			...medias(),
+			...most_important_faq(),
+			...partners(),
+			...upcoming_projects(),
+			...urls(),
+			...featured(),
+			...news(),
+		}
+	},
+	data: () => ({
+		buy_meld_url: "https://private-sale.melodity.org/",
+		initial_logos: false,
+		token_stats: {
+			current_holders: 66,
+			total_liquidity: 0,
+			market_cap: 0,
+		},
+		random_listings: [],
+		scroll: {
+			trigger: 200,
+			animated: false,
+		},
+		mobile: {
+			open: false,
+			animate: false,
+			content: false,
+		}
+	}),
+	methods: {
+		getRandomListings(length = 5) {
+			let still_available = this.shuffleArray(this.listings),
+				extracted = []
 
-      for (let i = 0; i < length && i < still_available.length; i++) {
-        extracted.push(still_available[i])
-      }
+			for (let i = 0; i < length && i < still_available.length; i++) {
+				extracted.push(still_available[i])
+			}
 
-      return extracted
-    },
-    shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
+			return extracted
+		},
+		shuffleArray(array) {
+			for (let i = array.length - 1; i > 0; i--) {
 
-        // Generate random number
-        let j = Math.floor(Math.random() * (i + 1));
+				// Generate random number
+				let j = Math.floor(Math.random() * (i + 1));
 
-        let temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-      }
+				let temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
+			}
 
-      return array;
-    },
+			return array;
+		},
 
-    openMobileNav() {
-      this.mobile.animate = true
-      setTimeout(() => {
-        this.mobile.open = true
-        this.mobile.content = true
-      }, 1200)
-    },
-    closeMobileNav() {
-      this.mobile.content = false
-      this.mobile.animate = false
-      setTimeout(() => {
-        this.mobile.open = false
-      }, 1200)
-    },
-  },
-  computed: {
-    urlsTargets() {
-      return this.urls.map(v => ({target: v.external ? "_blank" : "", rel: v.external ? "noopener" : ""}))
-    },
-    tokenStatsEntries() {
-      return Object.entries(this.token_stats)
-    },
-    tokenStatsLabel() {
-      return this.tokenStatsEntries.map(v => v[0].split("_").join(" "))
-    },
-    tokenStatsValueSuffix() {
-      return this.tokenStatsEntries.map(v => v[0] === "market_cap" || v[0] === "total_liquidity" ? "$" : "")
-    },
-    navAnimationClasses() {
-      return {
-        wrapper: {
-          "fixed z-50 bg-gray-800 bg-opacity-75": this.scroll.animated,
-        },
-        nav: {
-          "my-4": this.scroll.animated,
-          "my-6": !this.scroll.animated,
-        },
-        content: {
-          "mt-64": this.scroll.animated,
-          "mt-16": !this.scroll.animated,
-        },
-        logo: {
-          "md:w-1/3 w-full": this.scroll.animated,
-          "md:w-2/3 w-full": !this.scroll.animated,
-        },
-        mobile: {
-          wrapper: {
-            "z-[-1] translate-x-full": !this.mobile.open && !this.mobile.animate,
-            "z-20": this.mobile.animate || this.mobile.open,
-            "bg-gray-100": this.mobile.open && this.mobile.animate
-          },
-          lines: {
-            common: {
-              "translate-x-full": !this.mobile.animate
-            },
-            items: [
-              "delay-[150ms]",
-              "delay-[300ms]",
-              "delay-[450ms]",
-              "delay-[600ms]",
-              "delay-[750ms]",
-              "delay-[900ms]",
-            ]
-          },
-          content: {
-            "opacity-0": !this.mobile.content,
-            "opacity-100": this.mobile.content
-          }
-        }
-      }
-    },
-  },
-  mounted() {
-    new Glide(".glide", {
-      type: "carousel",
-      perView: 5,
-      focusAt: 0,
-      gap: 60,
-      autoplay: 5000,
-      hoverpause: true,
-      animationTimingFunc: "linear",
-      animationDuration: 4000,
-      peek: 100,
-      breakpoints: {
-        1440: {
-          perView: 4,
-        },
-        1024: {
-          perView: 3,
-        },
-        768: {
-          perView: 2,
-        },
-        425: {
-          perView: 1,
-        }
-      },
-    }).mount()
-  },
-  async created() {
-    //init random_listings
-    this.random_listings = this.getRandomListings();
+		openMobileNav() {
+			this.mobile.animate = true
+			setTimeout(() => {
+				this.mobile.open = true
+				this.mobile.content = true
+			}, 1200)
+		},
+		closeMobileNav() {
+			this.mobile.content = false
+			this.mobile.animate = false
+			setTimeout(() => {
+				this.mobile.open = false
+			}, 1200)
+		},
+	},
+	computed: {
+		urlsTargets() {
+			return this.urls.map(v => ({target: v.external ? "_blank" : "", rel: v.external ? "noopener" : ""}))
+		},
+		tokenStatsEntries() {
+			return Object.entries(this.token_stats)
+		},
+		tokenStatsLabel() {
+			return this.tokenStatsEntries.map(v => v[0].split("_").join(" "))
+		},
+		tokenStatsValueSuffix() {
+			return this.tokenStatsEntries.map(v => v[0] === "market_cap" || v[0] === "total_liquidity" ? "$" : "")
+		},
+		navAnimationClasses() {
+			return {
+				wrapper: {
+					"fixed z-50 bg-gray-800 bg-opacity-75": this.scroll.animated,
+				},
+				nav: {
+					"my-4": this.scroll.animated,
+					"my-6": !this.scroll.animated,
+				},
+				content: {
+					"mt-64": this.scroll.animated,
+					"mt-16": !this.scroll.animated,
+				},
+				logo: {
+					"md:w-1/3 w-full": this.scroll.animated,
+					"md:w-2/3 w-full": !this.scroll.animated,
+				},
+				mobile: {
+					wrapper: {
+						"z-[-1] translate-x-full": !this.mobile.open && !this.mobile.animate,
+						"z-20": this.mobile.animate || this.mobile.open,
+						"bg-gray-100": this.mobile.open && this.mobile.animate
+					},
+					lines: {
+						common: {
+							"translate-x-full": !this.mobile.animate
+						},
+						items: [
+							"delay-[150ms]",
+							"delay-[300ms]",
+							"delay-[450ms]",
+							"delay-[600ms]",
+							"delay-[750ms]",
+							"delay-[900ms]",
+						]
+					},
+					content: {
+						"opacity-0": !this.mobile.content,
+						"opacity-100": this.mobile.content
+					}
+				}
+			}
+		},
+	},
+	async created() {
+		//init random_listings
+		this.random_listings = this.getRandomListings();
 
-    let _this = this
-    document.addEventListener('scroll', function () {
-      if (window.scrollY >= _this.scroll.trigger && !_this.scroll.animated) {
-        _this.scroll.animated = true
-      } else if (window.scrollY < _this.scroll.trigger && _this.scroll.animated) {
-        _this.scroll.animated = false
-      }
-    });
-  }
+		let _this = this
+		document.addEventListener('scroll', function () {
+			if (window.scrollY >= _this.scroll.trigger && !_this.scroll.animated) {
+				_this.scroll.animated = true
+			} else if (window.scrollY < _this.scroll.trigger && _this.scroll.animated) {
+				_this.scroll.animated = false
+			}
+		});
+	}
 }
 </script>

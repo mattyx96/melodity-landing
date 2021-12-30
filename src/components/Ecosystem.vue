@@ -17,7 +17,7 @@
 				Upcoming Projects
 			</h3>
 		</container>
-		<div class="col-span-full glide">
+		<div id="slideshow" class="col-span-full glide">
 			<div class="glide__track" data-glide-el="track">
 				<ul class="glide__slides">
 					<li v-for="(elem, id) of upcomingProjects" :key="id"
@@ -109,6 +109,7 @@
 
 <script>
 import Container from "@/components/Container";
+import Glide from "@glidejs/glide";
 
 export default {
 	name: "Ecosystem",
@@ -130,7 +131,34 @@ export default {
 			type: Array,
 			require: true,
 		},
-	}
+	},
+	mounted() {
+		new Glide("#slideshow", {
+			type: "carousel",
+			perView: 5,
+			focusAt: 0,
+			gap: 60,
+			autoplay: 5000,
+			hoverpause: true,
+			animationTimingFunc: "linear",
+			animationDuration: 4000,
+			peek: 100,
+			breakpoints: {
+				1440: {
+					perView: 4,
+				},
+				1024: {
+					perView: 3,
+				},
+				768: {
+					perView: 2,
+				},
+				425: {
+					perView: 1,
+				}
+			},
+		}).mount()
+	},
 }
 </script>
 

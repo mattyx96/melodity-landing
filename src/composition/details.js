@@ -51,6 +51,12 @@ export function details() {
                 alt: "Melodity (MELD) rating icolink",
                 bullet: false
             }),
+            reactive({
+                pic: require('@/assets/images/coincodex.png'),
+                url: "https://coincodex.com/crypto/melodity/",
+                alt: "Melodity (MELD) rating coincodex",
+                bullet: false
+            }),
         ])
     }
 }

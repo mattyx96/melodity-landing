@@ -9,6 +9,10 @@ module.exports = {
 	presets: [],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		extend: {
+			backgroundImage: {
+			}
+		},
 		screens: {
 			"2xs": '375px',
 			"xs": '425px',
@@ -274,6 +278,23 @@ module.exports = {
 			],
 			poppins: [
 				"Poppins",
+				'ui-sans-serif',
+				'system-ui',
+				'-apple-system',
+				'BlinkMacSystemFont',
+				'"Segoe UI"',
+				'Roboto',
+				'"Helvetica Neue"',
+				'Arial',
+				'"Noto Sans"',
+				'sans-serif',
+				'"Apple Color Emoji"',
+				'"Segoe UI Emoji"',
+				'"Segoe UI Symbol"',
+				'"Noto Color Emoji"',
+			],
+			bebas: [
+				"Bebas Neue",
 				'ui-sans-serif',
 				'system-ui',
 				'-apple-system',

@@ -12,7 +12,7 @@ export function featured() {
             }),
             reactive({
                 pic: require('@/assets/featured/interfi.png'),
-                url: "#",
+                url: "https://github.com/interfinetwork/kyc-verification-certificates/blob/main/Melodity_KYCCertificate_InterFi.pdf",
                 desc: "KYC",
                 alt: "interfi",
                 bullet: false,

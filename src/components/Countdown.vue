@@ -4,7 +4,7 @@
 				rounded-[3rem] relative custom-background">
 			<a :href="url ? url : ''">
 				<h1 class="text-4xl text-white montserrat text-center font-bold">
-					Pre ICO is Live!
+					Private sale is Live!
 				</h1>
 				<div class="mt-10"/>
 				<span class="w-3/5 mx-auto text-center text-white hidden md:block">
@@ -20,7 +20,7 @@
 				</div>
 				<div class="mt-2">
 					<p class="flex justify-center text-xs md:text-lg text-[#22F3F3]">
-						Pre-ICO: Dec 01st 2021 - Jan 13th 2022
+						Private sale: Dec 01st 2021 - Jan 13th 2022
 					</p>
 				</div>
 				<div class="flex justify-around items-center px-4 md:w-2/3 xl:w-full mx-auto mt-10">

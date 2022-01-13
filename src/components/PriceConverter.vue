@@ -6,14 +6,14 @@
         <div class="relative xl:py-16 xl:px-12 md:pt-6 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none
 					rounded-[4rem]">
           <h3 class="w-full text-center font-semibold font-poppins text-4xl leading-none tracking-tighter">
-            MELODITY ICO
+            MELODITY Private Sale
           </h3>
           <div class="grid xl:grid-cols-2 gap-4 2xl:mt-24 mt-8">
             <div class="text-lg flex flex-col justify-center xl:pr-20 px-4 font-poppins font-thin">
               <p class="text-[1.40rem] leading-[1.4rem] font-normal">
                 <strong>
-                  14 January 2022
-                  08:00 am UTC
+                  until 13 January 2022
+                  23:59.59 UTC
                 </strong>
               </p>
               <p class="xl:mt-6 mt-3 text-[1rem] leading-[1.4rem] font-normal">
@@ -23,7 +23,7 @@
                 Our ecosystem is powered by you!
               </p>
               <p class="xl:mt-6 mt-3 text-[1rem] leading-[1.4rem] font-normal">
-                Participate to the Melodity ICO. More info coming soon!
+                Participate to Melodity. More info coming soon!
               </p>
             </div>
             <div class="flex items-center justify-center xl:block hidden">

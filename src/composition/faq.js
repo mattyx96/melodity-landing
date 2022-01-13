@@ -12,10 +12,10 @@ export function faq() {
                     label: "How can I buy MELD?",
                     url: "https://docs.melodity.org/faq/generalities#how-can-i-buy-meld",
                 }),
-                reactive({
+                /*reactive({
                     label: "When will be the Melodity ICO?",
                     url: "https://docs.melodity.org/faq/generalities#how-can-i-buy-meld",
-                }),
+                }),*/
                 reactive({
                     label: "What are locks?",
                     url: "https://docs.melodity.org/faq/lock-explanation#what-are-locks",

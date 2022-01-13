@@ -12,8 +12,8 @@
 						</h4>
 					</div>
 					<Countdown
-						start-time="December 01 2021 00:00:00 GMT+0200"
-						end-time="January 13 2022 23:59:59 GMT+0200"
+						start-time="December 01 2021 00:00:00 UTC"
+						end-time="January 13 2022 23:59:59 UTC"
 						:url="buyMeldUrl"
 					/>
 				</div>

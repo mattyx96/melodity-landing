@@ -10,15 +10,15 @@
 				<a class="font-normal text-lg text-[#22F3F3]" :href="url ? url : ''"> Join Now!</a>
 			</span>
 				<div class="my-2 md:mt-4"/>
-				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gray-800 mt-4">
-					<div class="bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] rounded-full h-10 md:h-14"
+				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] mt-4">
+					<div class=" bg-gray-800 rounded-full h-10 md:h-14"
 					     :style="percentageWidth">
 						<!--{{percentageWidth}}-->
 					</div>
 				</div>
 				<div class="mt-2">
 					<p class="flex justify-center text-xs md:text-lg text-[#22F3F3]">
-						ICO: January 14th 2022 - March 31th 2022
+						ICO: January 14th - March 31th
 					</p>
 				</div>
 				<div class="flex justify-around items-center px-4 md:w-2/3 xl:w-full mx-auto mt-10">

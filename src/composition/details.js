@@ -28,12 +28,6 @@ export function details() {
                 bullet: false
             }),
             /*reactive({
-                pic: require('@/assets/details/nomics.png'),
-                url: "https://nomics.com/assets/meld-melodity",
-                alt: "Melodity (MELD) rating nomics",
-                bullet: false
-            }),
-            reactive({
                 pic: require('@/assets/details/watcher_guru.png'),
                 url: "https://watcher.guru/coin/melodity",
                 alt: "Melodity (MELD) rating watcher.guru",

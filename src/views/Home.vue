@@ -25,7 +25,7 @@
 				<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
 					<container>
 						<a class="lg:-translate-y-40 mx-8 md:mx-0" :href="buy_meld_url">
-							<img class="w-full h-auto rounded-[3rem]" src="@/assets/images/Melodity.png">
+							<img class="w-full h-auto rounded-[3rem]" src="@/assets/images/Melodity.webp">
 						</a>
 					</container>
 					<MostImportantFaq :faq="most_important_faq"/>

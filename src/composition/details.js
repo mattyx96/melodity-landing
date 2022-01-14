@@ -27,12 +27,18 @@ export function details() {
                 alt: "Melodity (MELD) rating coingecko",
                 bullet: false
             }),
-            reactive({
-                pic: require('@/assets/images/5_gate-io.png'),
-                url: "https://www.gate.io/",
-                alt: "Melodity (MELD) rating gate-io",
+            /*reactive({
+                pic: require('@/assets/details/nomics.png'),
+                url: "https://nomics.com/assets/meld-melodity",
+                alt: "Melodity (MELD) rating nomics",
                 bullet: false
             }),
+            reactive({
+                pic: require('@/assets/details/watcher_guru.png'),
+                url: "https://watcher.guru/coin/melodity",
+                alt: "Melodity (MELD) rating watcher.guru",
+                bullet: false
+            }),*/
             reactive({
                 pic: require('@/assets/images/6_cryptototem.png'),
                 url: "https://cryptototem.com/melodity-meld/",

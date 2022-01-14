@@ -9,9 +9,7 @@
 		</div>
 		<container>
 			<h2 class="text-[2.2rem] text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-poppins lg:block hidden">
-				Artists, fans and labels in one single great,
-				<br>
-				efficient and transparent channel.
+				Towards a Web 3.0 monetization infrastructure to support the music industry in completely new ways.
 			</h2>
 			<h3 class="text-2xl text-center font-semibold mb-8 font-semibold font-poppins">
 				Upcoming Projects

@@ -93,9 +93,6 @@
 				</a>
 
 				<div class="text-center mt-16 mb-24 lg:mb-96">
-					<h3 class="text-base leading-10 mb-8 font-semibold font-poppins">
-						MELD are available on
-					</h3>
 					<div v-if="false" class="grid xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8">
 						<a v-for="(elem, id) of randomListings" :key="id" :href="elem.url" target="_blank"
 						   rel="noopener"
@@ -104,11 +101,6 @@
 							<img :src="elem.logo" :alt="elem.name" class="2xl:max-w-[50%] max-w-[80%]"/>
 						</a>
 					</div>
-					<a v-else class="text-center text-[1rem] leading-[1.4rem] font-bold mt-6 md:px-0 px-2 mx-auto
-					text-[#0AE4EA]"
-					   :href="buyMeldUrl">
-						We're currently in a private sale, if you want to participate, click here
-					</a>
 				</div>
 			</Container>
 		</div>

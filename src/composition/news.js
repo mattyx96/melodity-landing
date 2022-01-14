@@ -3,13 +3,13 @@ import {reactive, ref} from "vue";
 export function news() {
     return {
         news: ref([
-            reactive({
+           /* reactive({
                 pic: require('@/assets/news/slide-fidelity-airdrop.png'),
                 alt: "FIDELITY AIRDROP",
                 url: "https://t.me/Melodity_Official_Community",
                 title: "FIDELITY AIRDROP",
                 body: "Don’t miss this huge opportunity! Time until January 3th. Participate Now!",
-            }),
+            }),*/
             /*reactive({
                 pic: require('@/assets/news/slide-ico.png'),
                 alt: "MELODITY ICO IS COMING",
@@ -22,7 +22,7 @@ export function news() {
                 alt: "BECOME OUR PARTNER",
                 url: "https://bit.ly/3pWoXjq",
                 title: "BECOME OUR PARTNER",
-                body: "Melodity is looking for ambassadors, partners and influencers. Let’s build the future of the music industry, together! Join Now!",
+                body: "Melodity is looking for ambassadors, partners and influencers. Let’s build the future of the music industry together! Join Now!",
             }),
         ])
     }

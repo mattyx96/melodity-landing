@@ -24,7 +24,7 @@
 							The Web3 Ecosystem for Music Industry
 						</h2>
 						<p class="xl:mt-8 lg:mt-8 mt-8 text-[1rem] leading-[1.4rem] font-normal font-poppins md:tracking-[.01rem] tracking-normal">
-							Melodity token ($MELD) is a DeFi token hosted on the Binance Smart Chain (BSC). Melodity is the store of value for the whole DoEcosystem and it is the only currency publicly tradable of the enviroment.
+							Melodity token ($MELD) is a DeFi token hosted on the Binance Smart Chain (BSC). Melodity is the store of value for the whole DoEcosystem and the only publicly tradable currency of the environment.
 						</p>
 					</div>
 					<div class="flex flex-wrap xl:mt-20 md:mt-8 lg:mb-8 font-poppins font-medium">

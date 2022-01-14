@@ -15,10 +15,8 @@
 							Freedom
 						</h3>
 						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
-							Melodity connects Music
-							to the Blockchain so artists
-							can truly interact freely and
-							directly with listeners
+							Melodity connects Music to the Blockchain so artists can truly interact freely and directly
+							with their audience.
 						</p>
 					</div>
 				</li>
@@ -31,10 +29,7 @@
 							Monetization
 						</h3>
 						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
-							Melodity puts artists and
-							fans at the centre, and
-							recognises their value by
-							creating new forms of income
+							Melodity focuses on artists and fans and recognizes their value by creating new ways of profit.
 						</p>
 					</div>
 				</li>
@@ -47,10 +42,7 @@
 							Community
 						</h3>
 						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
-							Melodity’s ecosystem is
-							powered by an ever Growing
-							Community and is Easily
-							Accessible, Now & Always
+							Melodity’s ecosystem is powered by an ever-growing music and investor community.
 						</p>
 					</div>
 				</li>

@@ -23,7 +23,11 @@
 		<AnimatedGradient :z-index="-2" name="background">
 			<div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
 				<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
-					<PriceConverter class="md:flex hidden"/>
+					<container>
+						<a class="lg:-translate-y-40 mx-8 md:mx-0" :href="buy_meld_url">
+							<img class="w-full h-auto rounded-[3rem]" src="@/assets/images/Melodity.webp">
+						</a>
+					</container>
 					<MostImportantFaq :faq="most_important_faq"/>
 				</div>
 			</div>
@@ -67,7 +71,7 @@
 				</div>
 				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
 					<p>
-						Copyright &copy; Do inc. - {{ (new Date()).getFullYear() }}
+						Copyright &copy; Do Group LLC - {{ (new Date()).getFullYear() }}
 					</p>
 				</div>
 			</div>
@@ -84,7 +88,6 @@ import PriceConverter from "@/components/PriceConverter";
 import MostImportantFaq from "@/components/MostImportantFaq";
 import Tokenomics from "@/components/Tokenomics";
 import Roadmap from "@/components/Roadmap";
-import Glide from '@glidejs/glide'
 import Ecosystem from "@/components/Ecosystem";
 import Faq from "@/components/Faq";
 import Subscription from "@/components/Subscription";
@@ -145,7 +148,7 @@ export default {
 		}
 	},
 	data: () => ({
-		buy_meld_url: "https://private-sale.melodity.org/",
+		buy_meld_url: "https://ico.melodity.org/",
 		initial_logos: false,
 		token_stats: {
 			current_holders: 66,

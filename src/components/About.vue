@@ -11,28 +11,23 @@
 							Token
 						</h4>
 					</div>
-					<Countdown
-						start-time="December 01 2021 00:00:00 UTC"
-						end-time="January 13 2022 23:59:59 UTC"
+					<ReverseCountdown
+						start-time="January 13 2022 23:59:59 UTC"
+						end-time="March 31 2022 23:59:59 UTC"
 						:url="buyMeldUrl"
 					/>
 				</div>
 				<div class="w-3/4 mx-auto my-auto flex-nowrap items-end lg:justify-center lg:ml-10 col-span-2">
 					<div class="hidden lg:block">
-						<h2 class="lg:font-semibold font-medium lg:text-[2.2rem] lg:leading-10 md:text-3xl text-2xl leading-7 font-poppins">
-							The Decentralized Protocol for Musicians
+						<img class="h-16 w-auto mb-4 xl:mb-8" src="@/assets/images/logo.webp">
+						<h2 class="lg:font-bold font-medium lg:text-[2rem] lg:leading-10 md:text-2xl text-2xl leading-7 font-poppins">
+							The Web3 Ecosystem for Music Industry
 						</h2>
-						<p class="xl:mt-12 lg:mt-8 mt-6 text-[1rem] leading-[1.4rem] font-normal font-poppins md:tracking-[.01rem] tracking-normal">
-							Melodity token (ticker $MELD) is a DeFi token hosted on the Binance Smart Chain (BSC).
-							Melodity is the store of value for the whole DoEcosystem.
-						</p>
-						<p class="lg:mt-6 mt-4 text-[1rem] leading-[1.4rem] font-normal font-poppins md:tracking-[.01rem] tracking-wider 2xl:block hidden">
-							Melodity tokens have a fixed and immutable supply of one billion units and act as share token.
-							<br>
-							MELD is the only currency publicly tradable of the whole DoEcosystem.
+						<p class="xl:mt-8 lg:mt-8 mt-8 text-[1rem] leading-[1.4rem] font-normal font-poppins md:tracking-[.01rem] tracking-normal">
+							Melodity token ($MELD) is a DeFi token hosted on the Binance Smart Chain (BSC). Melodity is the store of value for the whole DoEcosystem and it is the only currency publicly tradable of the enviroment.
 						</p>
 					</div>
-					<div class="flex flex-wrap lg:mt-20 lg:mb-8 font-poppins font-medium">
+					<div class="flex flex-wrap xl:mt-20 md:mt-8 lg:mb-8 font-poppins font-medium">
 						<a class="mx-auto rounded-full p-4 px-8 border border-2 bg-[#10151C] lg:bg-[#f56ec6] border-[#f56ec6] text-center
 								font-bold text-lg lg:my-0 mt-4 mb-4 flex items-center justify-center"
 						   :href="buyMeldUrl">
@@ -55,13 +50,14 @@
 import SocialsButtons from "@/components/SocialsButtons";
 import Countdown from "@/components/Countdown";
 import Container from "@/components/Container";
+import ReverseCountdown from "@/components/ReverseCountdown";
 
 export default {
 	name: "About",
 	components: {
+		ReverseCountdown,
 		Container,
 		SocialsButtons,
-		Countdown,
 	},
 	props: {
 		urls: {

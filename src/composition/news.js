@@ -13,7 +13,7 @@ export function news() {
             /*reactive({
                 pic: require('@/assets/news/slide-ico.png'),
                 alt: "MELODITY ICO IS COMING",
-                url: "https://private-sale.melodity.org",
+                url: "https://ico.melodity.org",
                 title: "MELODITY ICO IS COMING",
                 body: "Melodity ICO will start on January 14th 2022 at 8:00 am UTC. Join our Private Sale.",
             }),*/

@@ -45,7 +45,7 @@ export function medias() {
                  bullet: true
              }),
             reactive({
-                 pic: require('@/assets/medias/europa_press.jpg'),
+                 pic: require('@/assets/medias/europa_press.png'),
                  url: "http://email.prnewswire.com/ls/click?upn=3slWLw94I3jq-2B-2FedjFNgZEAzNnrejCYojHBeSsM1-2FKhXykuP5y-2BjmNU9c4wpKbKpUFdktBLuinO0TTu2kNZj6aK-2FjfsNKziPQY4WoVkZAaYgqMM6A4d87AKck-2BIKYbAaWtSMiV6r-2FZPrh3xQ-2BYADJHUb-2Fw5-2FOGQEPTvJ5G5W-2FlIeqD-2F52oKBBJfap8FyOIUBjwNq-2BAhavbFQZ3Z8L9pC3aqX-2FdR2X7tiPmBOOgLj2L6a2rkJpyDVkvyJW7JHnWLk8qes_Hu67FWvUJ5dqIfB8qcN9AiA7JNTH7EBCkk1neQcM8ScQ3Q37AxpZP0YBvF-2BZ2ZhkoyL3T6bD6Rp3L-2F48GXHcpuFB9MgNAdA-2Fm8bBoKkTWf-2FR0DFoWZleTiIetJ7Frx6iV1Z5RWmqj-2BSQMpLPTsLOVdm3rlJ4sKQyLYNnu8aFbAdJwta3gCvQVUjbHOoLG5ZkUJOXlbm6O8dBhqWz8xYVME-2B30nnLhymDt7J-2BXTV3oXtTFM8Bi6la0j1p7fVPB780sXDc79NeTi7zon59dhhDjDgbq06PCb1Q73gfzWGsyLJ7RWCS86kYP-2BD-2Fi212IF0kgHxTRST62GjNKMP8Mfrj-2BQ8Xyy-2BpqkGPG7GTjDz6sXQhjsQfrfDChmZKfxKuONM3",
                  alt: "europress",
                  bullet: true
@@ -69,7 +69,7 @@ export function medias() {
                  bullet: true
              }),
             reactive({
-                 pic: require('@/assets/medias/apple_news.svg'),
+                 pic: require('@/assets/medias/apple_news.png'),
                  url: "https://apple.news/A7jzHOdfvSbuzymnEh3xYrQ",
                  alt: "Apple news",
                  bullet: true

@@ -25,7 +25,9 @@
 							Disrupting the music industry
 						</h3>
 						<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
-							The music industry is an example of an out-of-date business model that has failed to catch up with the blockchain revolution. These old dynamics end up causing income inequalities, low-paid musicians and self-interested intermediaries.
+							The music industry is an example of an out-of-date business model that has failed to catch
+							up with the blockchain revolution. These old dynamics end up causing income inequalities,
+							low-paid musicians and self-interested intermediaries.
 						</p>
 					</div>
 					<div class="flex items-center justify-end pl-4 lg:order-last order-first">
@@ -44,7 +46,8 @@
 							We have a vision
 						</h3>
 						<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
-							To bring the old fashioned music industry to the 21st century connecting it to the awesome world of blockchain technology and decentralization.
+							To bring the old fashioned music industry to the 21st century connecting it to the awesome
+							world of blockchain technology and decentralization.
 						</p>
 						<p class="text-left text-[1rem] leading-[1.4rem] font-normal mt-6 md:px-0 px-8 mx-auto">
 							Let's create the biggest music blockchain ecosystem!

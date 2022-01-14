@@ -6,7 +6,7 @@
 			:class="navAnimationClasses.nav">
 			<a class="col-span-2 flex items-center justify-start" href="/#">
 				<img src="@/assets/images/logo.webp" alt="logo" class="object-contain"
-             :class="navAnimationClasses.logo"/>
+				     :class="navAnimationClasses.logo"/>
 			</a>
 			<template v-for="(elem, id) of urls">
 				<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"
@@ -22,8 +22,9 @@
 					{{ elem.label }}
 				</a>
 			</template>
-			<div class="text-white lg:hidden flex justify-end items-center w-full h-full col-span-2 text-4xl cursor-pointer"
-			     @click="openMobileNav">
+			<div
+				class="text-white lg:hidden flex justify-end items-center w-full h-full col-span-2 text-4xl cursor-pointer"
+				@click="openMobileNav">
 				<i class='bx bx-menu-alt-right'></i>
 			</div>
 			<div class="fixed top-0 left-0 right-0 h-screen transition-all duration-75 grid grid-rows-6 gap-0"
@@ -34,7 +35,7 @@
 				<div class="fixed z-20 top-0 left-0 right-0 h-screen flex flex-col transition-all duration-300 text-xl"
 				     :class="navAnimationClasses.mobile.content">
 					<div class="ml-auto p-4 cursor-pointer text-4xl" @click="closeMobileNav">
-						<i class='bx bx-x' ></i>
+						<i class='bx bx-x'></i>
 					</div>
 					<template v-for="(elem, id) of urls">
 						<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"

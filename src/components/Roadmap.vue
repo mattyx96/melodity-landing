@@ -6,9 +6,9 @@
 				Roadmap
 			</h2>
 			<img src="@/assets/images/roadmap_resized.webp" alt="Roadmap"
-           class="md:block hidden lg:max-w-[80%] mx-auto scale-110"/>
+			     class="md:block hidden lg:max-w-[80%] mx-auto scale-110"/>
 			<img src="@/assets/images/roadmap-vertical.webp" alt="Roadmap"
-           class="md:hidden block"/>
+			     class="md:hidden block"/>
 		</div>
 	</div>
 </template>

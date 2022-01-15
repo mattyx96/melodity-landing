@@ -9,7 +9,7 @@
 		</div>
 		<container>
 			<h2 class="text-[2.2rem] text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-poppins lg:block hidden">
-				Towards a Web 3.0 monetization infrastructure to support the music industry in completely new ways.
+				Towards a Web 3.0 monetization infrastructure to support the music industry in a completely new way.
 			</h2>
 			<h3 class="text-2xl text-center font-semibold mb-8 font-semibold font-poppins">
 				Upcoming Projects
@@ -75,28 +75,28 @@
 						<img src="@/assets/images/info.webp" alt="info" class="h-full object-contain"/>
 					</a>
 				</div>
-        <div class="col-span-full flex flex-col items-center justify-center">
-          <h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
-            Melodity in medias
-          </h3>
-          <div v-if="medias.length > 0" class="grid xl:grid-cols-6 grid-cols-3 gap-6">
-            <div v-for="(elem, id) of medias" :key="id"
-                 class="md:flex flex-col items-center justify-center">
-              <a class="rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
-                 :href="elem.url" target="_blank" rel="noopener"
-                 :class="[
+				<div class="col-span-full flex flex-col items-center justify-center">
+					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
+						Melodity in medias
+					</h3>
+					<div v-if="medias.length > 0" class="grid xl:grid-cols-6 grid-cols-3 gap-6">
+						<div v-for="(elem, id) of medias" :key="id"
+						     class="md:flex flex-col items-center justify-center">
+							<a class="rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4"
+							   :href="elem.url" target="_blank" rel="noopener"
+							   :class="[
 								   'flex',
 								   elem?.bullet && elem.bullet ? 'bg-white' : ''
 								]">
-                <img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain"/>
-              </a>
-            </div>
-          </div>
-          <a v-else class="flex items-center justify-center w-full col-span-full"
-             href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
-            <img src="@/assets/images/press.webp" alt="press" class="h-full object-contain"/>
-          </a>
-        </div>
+								<img v-if="elem.pic" :src="elem.pic" :alt="elem.url" class="object-contain"/>
+							</a>
+						</div>
+					</div>
+					<a v-else class="flex items-center justify-center w-full col-span-full"
+					   href="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform">
+						<img src="@/assets/images/press.webp" alt="press" class="h-full object-contain"/>
+					</a>
+				</div>
 			</div>
 		</container>
 		<div class="col-span-full relative h-96 py-96 overflow-hidden">

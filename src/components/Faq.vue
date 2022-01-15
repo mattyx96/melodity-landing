@@ -7,7 +7,7 @@
 			</h2>
 			<div class="grid xl:grid-cols-2 grid-cols-1 gap-8 mt-24">
 				<a v-for="(elem, id) of faq" :key="id" :href="elem.url" target="_blank" rel="noopener"
-				     class="rounded-[3rem] w-full bg-[#141414] transition-all duration-300">
+				   class="rounded-[3rem] w-full bg-[#141414] transition-all duration-300">
 					<div class="p-6 rounded-t-[3rem] w-full cursor-pointer text-lg font-semibold font-poppins">
 						{{ elem.label }}
 					</div>
@@ -19,6 +19,7 @@
 
 <script>
 import Container from "@/components/Container";
+
 export default {
 	name: "Faq",
 	components: {Container},

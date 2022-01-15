@@ -18,14 +18,15 @@
 							>
 								<div class="grid grid-cols-12 grid-span-full items-center px-2">
 									<a @click="glide.go('<')" class="h-42 w-42 flex justify-center items-center">
-										<i class="col-span-1 bx bxs-chevron-left text-2xl" />
+										<i class="col-span-1 bx bxs-chevron-left text-2xl"/>
 									</a>
 									<a class="mt-16 pb-8 col-span-10" :href="elem.url">
-										<h1 class="uppercase font-poppins text-xl mt-2.5 font-bold text-center">{{ elem.title }}</h1>
+										<h1 class="uppercase font-poppins text-xl mt-2.5 font-bold text-center">
+											{{ elem.title }}</h1>
 										<p class="font-light mt-2.5 px-8 text-md md:text-lg">{{ elem.body }}</p>
 									</a>
 									<a @click="glide.go('>')" class="h-42 w-42 flex justify-center items-center">
-										<i class="col-span-1 bx bxs-chevron-right text-2xl" />
+										<i class="col-span-1 bx bxs-chevron-right text-2xl"/>
 									</a>
 								</div>
 							</div>
@@ -49,7 +50,7 @@
 								@click="glideLg.go('<')"
 								class="h-42 w-42 flex justify-center items-center absolute left-5 z-20"
 							>
-								<i class="bx bxs-chevron-left text-2xl" />
+								<i class="bx bxs-chevron-left text-2xl"/>
 							</a>
 							<a class="w-1/2 self-stretch" :href="elem.url">
 								<img
@@ -66,7 +67,7 @@
 								@click="glideLg.go('>')"
 								class="h-42 w-42 flex justify-center items-center absolute right-5"
 							>
-								<i class="bx bxs-chevron-right text-2xl" />
+								<i class="bx bxs-chevron-right text-2xl"/>
 							</a>
 						</li>
 					</ul>
@@ -93,7 +94,7 @@ export default {
 			default: [],
 		},
 	},
-	components: { Container },
+	components: {Container},
 	mounted() {
 		this.glide = new Glide('#news', {
 			type: 'carousel',

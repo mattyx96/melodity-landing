@@ -157,7 +157,7 @@ export default {
 		},
 		random_listings: [],
 		scroll: {
-			trigger: 200,
+			trigger: 100,
 			animated: false,
 		},
 		mobile: {

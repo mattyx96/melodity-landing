@@ -10,7 +10,8 @@
 				<a class="font-normal text-lg text-[#22F3F3]" :href="url ? url : ''"> Join Now!</a>
 			</span>
 				<div class="my-2 md:mt-4"/>
-				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] mt-4">
+				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] mt-4
+						overflow-hidden">
 					<div class=" bg-gray-800 rounded-full h-10 md:h-14"
 					     :style="percentageWidth">
 						<!--{{percentageWidth}}-->

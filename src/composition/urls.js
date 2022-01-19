@@ -30,6 +30,12 @@ export function urls() {
                 type: "button",
                 external: true,
             }),
+            reactive({
+                url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
+                label: "Whitepaper",
+                type: "button",
+                external: true,
+            }),
         ])
     }
 }

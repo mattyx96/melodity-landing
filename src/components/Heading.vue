@@ -4,14 +4,11 @@
 		<div class="col-span-full h-10 md:h-9 bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] text-center text-white text-xs md:text-sm flex
 			justify-center items-center p-1 md:p-4 font-poppins leading-[1.4rem] font-medium tracking-[.01rem] tracking-normal">
 			<p>
-				Buy $MELD tokens
+				To buy $MELD tokens use
 				<span class="font-bold">ONLY</span>
-				in this website.
-				<span class="font-bold">DO NOT</span>
-				buy elsewhere.
-				<span class="font-bold">BEWARE</span>
-				of scams.
-				<a class="underline ml-2" href="https://t.me/Melodity_Official_Community">Support</a>
+				this website.
+				<span class="font-bold">AVOID</span>
+				scams.
 			</p>
 		</div>
 		<nav

@@ -1,8 +1,8 @@
 <template>
 	<header class="w-full col-span-full grid xl:grid-cols-12 grid-cols-10 font-poppins transition-all duration-300"
 	        :class="navAnimationClasses.wrapper">
-		<div class="col-span-full h-9 bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] text-center text-white text-sm flex
-			justify-center items-center p-4 font-poppins leading-[1.4rem] font-medium tracking-[.01rem] tracking-normal">
+		<div class="col-span-full h-10 md:h-9 bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] text-center text-white text-xs md:text-sm flex
+			justify-center items-center p-1 md:p-4 font-poppins leading-[1.4rem] font-medium tracking-[.01rem] tracking-normal">
 			<p>
 				Buy $MELD tokens
 				<span class="font-bold">ONLY</span>
@@ -11,8 +11,8 @@
 				buy elsewhere.
 				<span class="font-bold">BEWARE</span>
 				of scams.
+				<a class="underline ml-2" href="https://t.me/Melodity_Official_Community">Support</a>
 			</p>
-			<a class="underline ml-2" href="https://t.me/Melodity_Official_Community">Support</a>
 		</div>
 		<nav
 			class="xl:col-start-2 xl:px-0 px-6 col-span-10 grid lg:grid-cols-8 grid-cols-4 place-items-center transition-all duration-300"

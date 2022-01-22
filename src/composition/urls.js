@@ -25,14 +25,13 @@ export function urls() {
                 external: true,
             }),
             reactive({
-                url: "https://ico.melodity.org/",
-                label: "Buy MELD",
-                type: "button",
+                url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
+                label: "Whitepaper",
                 external: true,
             }),
             reactive({
-                url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
-                label: "Whitepaper",
+                url: "https://ico.melodity.org/",
+                label: "Buy MELD",
                 type: "button",
                 external: true,
             }),

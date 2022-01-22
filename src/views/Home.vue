@@ -233,8 +233,8 @@ export default {
 					"mt-16": !this.scroll.animated,
 				},
 				logo: {
-					"md:w-2/3 w-full": this.scroll.animated,
-					"w-full": !this.scroll.animated,
+					"md:w-1/3 w-full": this.scroll.animated,
+					"md:w-2/3 w-full": !this.scroll.animated,
 				},
 				mobile: {
 					wrapper: {

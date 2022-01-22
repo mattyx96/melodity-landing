@@ -12,9 +12,9 @@
 			</p>
 		</div>
 		<nav
-			class="xl:col-start-2 xl:px-0 px-6 col-span-10 grid lg:grid-cols-8 grid-cols-4 place-items-center transition-all duration-300"
+			class="xl:col-start-2 xl:px-0 px-6 col-span-10 grid lg:grid-cols-10 grid-cols-4 place-items-center transition-all duration-300"
 			:class="navAnimationClasses.nav">
-			<a class="col-span-2 lg:col-span-1 flex items-center justify-start" href="/#">
+			<a class="col-span-2 lg:col-span-3 flex items-center justify-start" href="/#">
 				<img src="@/assets/images/logo.webp" alt="logo" class="object-contain"
 				     :class="navAnimationClasses.logo"/>
 			</a>
@@ -22,18 +22,18 @@
 				<a v-if="elem?.type && elem.type === 'button'" :key="-id" :href="elem.url"
 				   :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
 				   class="text-white text-center font-medium rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
-							via-[#f56ec6] bg-left flex items-center justify-center p-4 col-start-8
+							via-[#f56ec6] bg-left flex items-center justify-center p-4 col-start-10
 							lg:flex hidden">
 					{{ elem.label }}
 				</a>
 				<a v-else :key="id" :href="elem.url" :target="urlsTargets[id].target" :rel="urlsTargets[id].rel"
-				   class="text-white text-center p-4 font-medium flex items-center justify-center
+				   class="text-white text-center p-2 font-medium flex items-center justify-center
 						lg:flex hidden">
 					{{ elem.label }}
 				</a>
 			</template>
 			<div
-				class="text-white lg:hidden flex justify-end items-center w-full h-full col-span-2 text-4xl cursor-pointer"
+				class="text-white lg:hidden flex justify-end items-center w-full h-full col-start-4 text-4xl cursor-pointer"
 				@click="openMobileNav">
 				<i class='bx bx-menu-alt-right'></i>
 			</div>

@@ -14,7 +14,7 @@
 		<nav
 			class="xl:col-start-2 xl:px-0 px-6 col-span-10 grid lg:grid-cols-8 grid-cols-4 place-items-center transition-all duration-300"
 			:class="navAnimationClasses.nav">
-			<a class="col-span-2 flex items-center justify-start" href="/#">
+			<a class="col-span-2 lg:col-span-1 flex items-center justify-start" href="/#">
 				<img src="@/assets/images/logo.webp" alt="logo" class="object-contain"
 				     :class="navAnimationClasses.logo"/>
 			</a>

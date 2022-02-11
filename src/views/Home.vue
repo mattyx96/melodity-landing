@@ -71,7 +71,7 @@
 				</div>
 				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
 					<p>
-						Copyright &copy; Do Group LLC - {{ (new Date()).getFullYear() }}
+						Copyright &copy; Do Inc. - {{ (new Date()).getFullYear() }}
 					</p>
 				</div>
 			</div>

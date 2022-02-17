@@ -3,7 +3,7 @@
 		<div class="md:backdrop-filter md:backdrop-blur px-6 pt-8 md:p-10 w-11/12 md:w-10/12 md:rounded-[4rem]
 				rounded-[3rem] relative custom-background">
 			<a :href="url ? url : ''">
-				<img class="w-auto h-28 mx-auto" src="@/assets/images/presale-islive.png" alt="melodity presale is live">
+				<img class="object-contain w-full h-28" src="@/assets/images/presale-islive.png" alt="melodity presale is live">
 				<div class="mt-10"/>
 				<span class="w-3/5 mx-auto text-center text-white hidden md:block">
 				Don't miss this huge opportunity before time is over,

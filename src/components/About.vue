@@ -30,15 +30,15 @@
 						</p>
 					</div>
 					<div class="flex flex-wrap xl:mt-20 md:mt-8 lg:mb-8 font-poppins font-medium">
-						<a class="mx-auto rounded-full p-4 px-8 border border-2 bg-[#10151C] lg:bg-[#f56ec6] border-[#f56ec6] text-center
-								font-bold text-lg lg:my-0 mt-4 mb-4 flex items-center justify-center"
+						<a class="mx-auto rounded-full my-1 py-4 px-6 border border-2 bg-[#f56ec6] border-[#f56ec6] text-center
+								font-bold text-lg flex items-center justify-center"
 						   :href="buyMeldUrl">
 							Buy MELD
 						</a>
-						<a class="mx-auto rounded-full p-4 px-8 border border-2 bg-[#10151c] border-[#f56ec6] text-center
-								font-medium text-lg lg:my-0 mt-20 mb-20 lg:flex hidden items-center justify-center"
-						   href="https://docsend.com/view/fpxvfwmhtnq38gi6" target="_blank" rel="noopener">
-							Whitepaper
+						<a class="mx-auto rounded-full py-4 px-6 border border-2 bg-gray-900/30 border-[#f56ec6] text-center
+								font-bold text-lg my-1 flex items-center justify-center"
+						   href="https://ico.melodity.org/referral" target="_blank" rel="noopener">
+							Referral Program
 						</a>
 					</div>
 				</div>

@@ -24,6 +24,17 @@ export function news() {
                 title: "BECOME OUR PARTNER",
                 body: "Melodity is looking for ambassadors, partners and influencers. Let’s build the future of the music industry together! Join Now!",
             }),
+            reactive({
+                pic: require('@/assets/news/new3.png'),
+                alt: "Referral program Melodity",
+                url: "https://ico.melodity.org/referral",
+                title: "EARN BY FOLLOWING 3 SIMPLE STEPS",
+                body: [
+                    "1. Set the referral fee you want to share with your friends.",
+                    "2. Share your link with your friends and social media.",
+                    "3. Earn money when your friends join Melodity"
+                ]
+            }),
         ])
     }
 }

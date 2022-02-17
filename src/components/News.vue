@@ -5,25 +5,34 @@
 			<div id="news" class="glide">
 				<div data-glide-el="track" class="glide__track">
 					<ul class="glide__slides">
-						<li v-for="(elem, id) of news" :key="id" class="glide__slide">
-							<a :href="elem.url">
+						<li v-for="(news_elem, id) of news" :key="id" class="glide__slide">
+							<a :href="news_elem.url">
 								<img
 									class="relative w-9/12 z-10 h-auto rounded-[3rem] bg-[#141a25] mx-auto"
-									:src="elem.pic"
-									:alt="elem.alt"
+									:src="news_elem.pic"
+									:alt="news_elem.alt"
 								/>
 							</a>
 							<div
-								class="relative w-10/12 -translate-y-14 min-h-40 rounded-[3rem] bg-gradient-to-t from-[#FE84C1] to-[#DF38C6] mx-auto text-white flex items-end"
+								class="relative w-10/12 -translate-y-14 min-h-40 rounded-[3rem] bg-gradient-to-t
+								from-[#FE84C1] to-[#DF38C6] mx-auto text-white flex items-end"
 							>
 								<div class="grid grid-cols-12 grid-span-full items-center px-2">
 									<a @click="glide.go('<')" class="h-42 w-42 flex justify-center items-center">
 										<i class="col-span-1 bx bxs-chevron-left text-2xl"/>
 									</a>
-									<a class="mt-16 pb-8 col-span-10" :href="elem.url">
+									<a class="mt-16 pb-8 col-span-10" :href="news_elem.url">
 										<h1 class="uppercase font-poppins text-xl mt-2.5 font-bold text-center">
-											{{ elem.title }}</h1>
-										<p class="font-light mt-2.5 px-8 text-md md:text-lg">{{ elem.body }}</p>
+											{{ news_elem.title }}</h1>
+										<p v-if="typeof news_elem.body === 'string'"
+										   class="font-light mt-2.5 px-8 text-md md:text-lg">
+											{{ news_elem.body }}
+										</p>
+										<p v-if="Array.isArray(news_elem.body)" v-for="(body_row, id) of news_elem.body"
+										   :key="id"
+										   class="font-light mt-1 px-8 text-md md:text-lg">
+											{{ body_row }}
+										</p>
 									</a>
 									<a @click="glide.go('>')" class="h-42 w-42 flex justify-center items-center">
 										<i class="col-span-1 bx bxs-chevron-right text-2xl"/>
@@ -42,9 +51,10 @@
 				<div data-glide-el="track" class="glide__track">
 					<ul class="glide__slides">
 						<li
-							v-for="(elem, id) of news"
+							v-for="(news_elem, id) of news"
 							:key="id"
-							class="glide__slide relative flex justify-center items-center rounded-[3rem] bg-gradient-to-t from-[#FE84C1] to-[#DF38C6] text-white"
+							class="glide__slide relative flex justify-center items-center rounded-[3rem] bg-gradient-to-t
+							 from-[#FE84C1] to-[#DF38C6] text-white"
 						>
 							<a
 								@click="glideLg.go('<')"
@@ -52,16 +62,25 @@
 							>
 								<i class="bx bxs-chevron-left text-2xl"/>
 							</a>
-							<a class="w-1/2 self-stretch" :href="elem.url">
+							<a class="w-1/2 self-stretch" :href="news_elem.url">
 								<img
 									class="rounded-tl-[3rem] rounded-bl-[3rem] object-cover h-full"
-									:src="elem.pic"
-									:alt="elem.alt"
+									:src="news_elem.pic"
+									:alt="news_elem.alt"
 								/>
 							</a>
-							<a class="w-1/2 p-8 pr-2" :href="elem.url">
-								<h1 class="uppercase font-poppins text-xl font-bold text-center">{{ elem.title }}</h1>
-								<p class="font-light mt-2.5 px-8 text-md md:text-lg">{{ elem.body }}</p>
+							<a class="w-1/2 p-8 pr-2" :href="news_elem.url">
+								<h1 class="uppercase font-poppins text-xl font-bold text-center">
+									{{ news_elem.title }}
+								</h1>
+								<p v-if="typeof news_elem.body === 'string'"
+								   class="font-light mt-2.5 px-8 text-md md:text-lg">
+									{{ news_elem.body }}
+								</p>
+								<p v-if="Array.isArray(news_elem.body)" v-for="(body_row, id) of news_elem.body" :key="id"
+								   class="font-light mt-2.5 px-8 text-md md:text-lg">
+									{{ body_row }}
+								</p>
 							</a>
 							<a
 								@click="glideLg.go('>')"

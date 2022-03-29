@@ -22,7 +22,7 @@
 										<i class="col-span-1 bx bxs-chevron-left text-2xl"/>
 									</a>
 									<a class="mt-16 pb-8 col-span-10" :href="news_elem.url">
-										<h1 class="uppercase font-poppins text-xl mt-2.5 font-bold text-center">
+										<h1 class="uppercase  text-xl mt-2.5 font-bold text-center">
 											{{ news_elem.title }}</h1>
 										<p v-if="typeof news_elem.body === 'string'"
 										   class="font-light mt-2.5 px-8 text-md md:text-lg">
@@ -70,7 +70,7 @@
 								/>
 							</a>
 							<a class="w-1/2 p-8 pr-2" :href="news_elem.url">
-								<h1 class="uppercase font-poppins text-xl font-bold text-center">
+								<h1 class="uppercase  text-xl font-bold text-center">
 									{{ news_elem.title }}
 								</h1>
 								<p v-if="typeof news_elem.body === 'string'"

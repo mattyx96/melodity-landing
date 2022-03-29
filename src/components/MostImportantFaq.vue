@@ -1,7 +1,7 @@
 <template>
 	<container class="text-white">
 		<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full mt-60 md:mt-12 mb-32 font-semibold
-			font-poppins text-[#141a25]">
+			 text-[#141a25]">
 			Why Melodity?
 		</h2>
 		<div class="flex flex-col justify-center relative">
@@ -11,7 +11,7 @@
 						<img src="@/assets/images/1.webp" alt="first" class="object-contain w-full"/>
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
-						<h3 class="text-4xl font-semibold mb-6 font-poppins">
+						<h3 class="text-4xl font-semibold mb-6 ">
 							Freedom
 						</h3>
 						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
@@ -25,7 +25,7 @@
 						<img src="@/assets/images/2.webp" alt="second" class="object-contain w-full"/>
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
-						<h3 class="text-4xl font-semibold mb-6 font-poppins">
+						<h3 class="text-4xl font-semibold mb-6 ">
 							Monetization
 						</h3>
 						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
@@ -39,7 +39,7 @@
 						<img src="@/assets/images/3.webp" alt="third" class="object-contain w-full"/>
 					</div>
 					<div class="lg:w-1/3 xl:w-1/4 lg:max-w-[25%] md:px-0 px-6 md:text-left text-center">
-						<h3 class="text-4xl font-semibold mb-6 font-poppins">
+						<h3 class="text-4xl font-semibold mb-6 ">
 							Community
 						</h3>
 						<p class="md:text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 md:mx-auto">
@@ -63,7 +63,7 @@
 						:class="id < 3 ? 'flex' : 'hidden'">
 						<img :src="elem.pic" :alt="elem.label" class="xl:max-w-[50%] max-w-[80%] mx-auto">
 						<h4 class="mx-auto text-center font-semibold text-xl leading-6 tracking-tighter mt-6 font-semibold
-							font-poppins text-[#141a25]">
+							 text-[#141a25]">
 							{{ elem.label }}
 						</h4>
 					</a>

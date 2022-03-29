@@ -5,14 +5,14 @@
 		     :style="`background-image: url(${require('@/assets/images/back-6.webp')})`">
 			<div class="text-white grid xl:grid-cols-2 grid-cols-1 md:w-full">
 				<div class="xl:h-96 xl:mb-0 md:mb-8 mb-2 flex items-center justify-center md:mt-0">
-					<h2 class="md:text-[2.2rem] text-[2.2rem] text-white font-semibold font-poppins">
+					<h2 class="md:text-[2.2rem] text-[2.2rem] text-white font-semibold ">
 						Stay updated!
 					</h2>
 				</div>
 				<!-- Begin Mailchimp Signup Form -->
-				<div id="mc_embed_signup" class="flex items-center justify-center font-poppins font-thin">
+				<div id="mc_embed_signup" class="flex items-center justify-center  font-thin">
 					<form ref="mailchimp"
-					      action="https://studio.us6.list-manage.com/subscribe/post?u=db37477a78610a7fd68c1eb65&amp;id=39e8d41aaf"
+					      action="https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform"
 					      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
 					      class="validate flex items-center justify-center" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll" class="md:flex items-center justify-center">
@@ -24,7 +24,7 @@
 							<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
 							        class="text-white text-center font-bold rounded-full md:w-full bg-gradient-to-tr
 									            from-[#f56ec6] to-[#e94ac8] via-[#f56ec6] bg-left flex items-center
-									            justify-center md:p-4 p-2 px-3 md:px-6 font-poppins font-medium
+									            justify-center md:p-4 p-2 px-3 md:px-6  font-medium
 												md:mt-0 mt-2 w-3/4 mx-auto">
 								Subscribe
 							</button>

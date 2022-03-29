@@ -2,15 +2,8 @@
 	<DiagonalLayout component-class="col-span-full bg-[#0F151C]" transform="translate(0, 10rem)">
 		<div class="grid grid-cols-12 mt-40 lg:mt-14 relative text-white">
 			<Container>
-				<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper"
-				     class="absolute left-0 top-0 z-[-1] scale-[2]"/>
-				<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper"
-				     class="absolute left-0 top-1/3 z-[-1] scale-[2]"/>
-				<img src="@/assets/images/waves-1.webp" alt="waves-wallpaper"
-				     class="absolute left-0 top-2/3 z-[-1] scale-[2]"/>
-
 				<div class="md:flex hidden items-center justify-center lg:my-24 lg:mt-48 mt-48">
-					<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold font-poppins text-center">
+					<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center">
 						Scaling Decentralized Music
 						<br>
 						Across Protocols & Borders
@@ -18,16 +11,20 @@
 				</div>
 
 				<div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-12 lg:mt-32 mt-40 mb-32 lg:gap-12">
-					<div class="py-6 lg:pr-12 font-poppins font-light">
-						<h3 class="text-4xl font-semibold md:mb-16 mb-12 font-bold font-poppins relative lg:text-left text-center
+					<div class="py-6 lg:pr-12  font-light">
+						<h3 class="text-4xl font-semibold md:mb-16 mb-12 font-bold relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A] md:px-0 px-2">
-							Disrupting the music industry
+							We are on a Mission
 						</h3>
 						<p class="text-left text-[1rem] leading-[1.4rem] font-normal md:px-0 px-8 mx-auto">
-							The music industry is an example of an out-of-date business model that has failed to catch
-							up with the blockchain revolution. These old dynamics end up causing income inequalities,
-							low-paid musicians and self-interested intermediaries.
+							Melodity aims to change how independent musicians earn revenue from their creations giving
+							them the freedom to monetize while increasing their visibility in the musical scene.
+
+							We think that music is a must in everyone's life and that everyone should have the
+							opportunity to get rewarded for their talent.
+
+							Join us and spread this new love!
 						</p>
 					</div>
 					<div class="flex items-center justify-end pl-4 lg:order-last order-first">
@@ -35,12 +32,12 @@
 					</div>
 				</div>
 
-				<div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-48 lg:mt-32 mb-32 lg:gap-12">
+<!--				<div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-48 lg:mt-32 mb-32 lg:gap-12">
 					<div class="flex items-center justify-start pr-12">
 						<img src="@/assets/images/boubles-2.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
 					</div>
-					<div class="py-6 lg:pr-12 font-poppins font-light">
-						<h3 class="text-4xl font-semibold mb-16 font-bold font-poppins relative lg:text-left text-center
+					<div class="py-6 lg:pr-12  font-light">
+						<h3 class="text-4xl font-semibold mb-16 font-bold relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A] md:px-0 px-2">
 							We have a vision
@@ -59,8 +56,8 @@
 				</div>
 
 				<div class="grid lg:grid-cols-2 grid-cols-1 xl:mt-48 lg:mt-32 mb-16 lg:gap-12">
-					<div class="py-6 lg:pr-12 font-poppins font-light">
-						<h3 class="text-4xl font-semibold mb-16 font-bold font-poppins relative lg:text-left text-center
+					<div class="py-6 lg:pr-12  font-light">
+						<h3 class="text-4xl font-semibold mb-16 font-bold relative lg:text-left text-center
 						lg:after:hidden after:content-[''] after:absolute after:-translate-x-1/2 after:left-1/2
 						after:-bottom-4 after:h-1 after:w-16 after:rounded-full after:bg-[#783A8A] md:px-0 px-2">
 							We are on a mission
@@ -77,12 +74,12 @@
 					<div class="flex items-center justify-end pl-8 lg:order-last order-first">
 						<img src="@/assets/images/boubles-3.webp" alt="boubles" class="max-w-[60%] mx-auto"/>
 					</div>
-				</div>
+				</div>-->
 
 				<a :href="buyMeldUrl" id="buy-meld"
 				   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
 							via-[#f56ec6] bg-left flex items-center justify-center p-4 lg:w-[20%] md:w-1/3 w-2/3 mx-auto lg:my-4 my-12
-						font-poppins font-medium w-full tracking-wider">
+						 font-medium w-full tracking-wider">
 					Buy MELD
 				</a>
 

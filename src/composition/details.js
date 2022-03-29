@@ -4,6 +4,34 @@ export function details() {
     return {
         details: ref([
             reactive({
+                pic: require('@/assets/details/chainlik-labs.png'),
+                desc: "",
+                url: "https://chainlinklabs.com/",
+                alt: "Melodity (MELD) rating Chainlink Labs",
+                bullet: false,
+            }),
+            reactive({
+                pic: require('@/assets/details/quillhash.png'),
+                desc: "",
+                url: "",
+                alt: "Melodity (MELD) rating Quillbot",
+                bullet: false,
+            }),
+            reactive({
+                pic: require('@/assets/details/gulf-excellence.png'),
+                desc: "",
+                url: "",
+                alt: "Melodity (MELD) rating GulfExcellence",
+                bullet: false,
+            }),
+            reactive({
+                pic: require('@/assets/details/cointelegraph.png'),
+                desc: "",
+                url: "https://cointelegraph.com/press-releases/music-industry-web3-frontier-company-melodity-valued-at-30m",
+                alt: "Melodity (MELD) rating cointelegraph",
+                bullet: false,
+            }),
+            reactive({
                 pic: require('@/assets/images/1_bsc.png'),
                 url: "https://www.binance.org/en/smartChain",
                 alt: "Melodity (MELD) rating bsc",

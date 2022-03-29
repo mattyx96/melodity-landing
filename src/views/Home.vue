@@ -10,13 +10,15 @@
 					<About :urls="urls" :buy-meld-url="buy_meld_url"/>
 					<FeaturedIcons
 						class="hidden lg:block"
-						:featured-icons="[...[details[0], details[2], details[3]],...featured]"
+						:featured-icons="[
+							...[details[3], details[4], details[6], details[7]],
+							...featured
+						]"
 					/>
 				</div>
 				<LiveChart :token-stats-entries="tokenStatsEntries" :token-stats-label="tokenStatsLabel"
 				           :token-stats-value-suffix="tokenStatsValueSuffix"/>
 				<News :news="news"/>
-
 			</div>
 		</AnimatedGradient>
 		<AboutExtended id="about" :random-listings="random_listings" :buy-meld-url="buy_meld_url"/>
@@ -24,17 +26,22 @@
 			<div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
 				<div class="col-span-full relative text-white grid grid-cols-12 bg-cover">
 					<container>
-						<a class="lg:-translate-y-40 mx-8 md:mx-0" :href="buy_meld_url">
-							<img class="w-full h-auto rounded-[3rem]" src="@/assets/images/Melodity.webp">
-						</a>
+						<div class="lg:-translate-y-40 mx-8 md:mx-0">
+							<iframe class="w-full h-[20rem] md:h-[30rem] rounded-[3rem]"
+							        src="https://www.youtube.com/embed/IL7DMvLR38I" title="YouTube video player"
+							        frameborder="0"
+							        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+							        picture-in-picture"
+							        allowfullscreen>
+							</iframe>
+							<!--							<img class="w-full h-auto rounded-[3rem]" src="@/assets/images/Melodity.webp">-->
+						</div>
 					</container>
 					<MostImportantFaq :faq="most_important_faq"/>
 				</div>
 			</div>
 		</AnimatedGradient>
 		<div class="col-span-full grid grid-cols-12 py-2 relative transition-all duration-300">
-			<Tokenomics id="tokenomics"/>
-			<Roadmap id="roadmap"/>
 			<Ecosystem id="ecosystem" :details="details" :medias="medias" :partners="partners"
 			           :upcoming-projects="upcoming_projects"/>
 			<Faq :faq="faq"/>
@@ -50,10 +57,10 @@
 					class="xl:col-span-2 col-span-full w-full md:p-8 px-3 py-6 grid lg:grid-cols-3 grid-cols-2 xl:gap-20 gap-8">
 					<div v-for="(elem, id) of Object.entries(footer)" :key="id" class="xl:ml-0 lg:ml-12 lg:text-left"
 					     :class="id % 2 === 0 ? 'text-right' : 'text-left'">
-						<h4 class="font-semibold text-xl font-semibold font-poppins">
+						<h4 class="font-semibold text-xl font-semibold ">
 							{{ elem[0].split("_").map(v => `${v[0].toUpperCase()}${v.substr(1)}`).join(" ") }}
 						</h4>
-						<ul class="mt-8 font-thin font-poppins">
+						<ul class="mt-8 font-thin ">
 							<li v-for="(e, i) of elem[1]" :key="i">
 								<a v-if="e.url" :href="e.url" target="_blank" rel="noopener">
 									{{ e.label }}
@@ -65,11 +72,11 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-span-full text-center text-xl font-semibold font-poppins">
+				<div class="col-span-full text-center text-xl font-semibold ">
 					<h4 class="mb-8">Join the conversation</h4>
 					<socials-buttons class="2xl:-ml-8 lg:ml-8"></socials-buttons>
 				</div>
-				<div class="col-span-full border-t pt-4 text-lg font-thin font-poppins text-center">
+				<div class="col-span-full border-t pt-4 text-lg font-thin  text-center">
 					<p>
 						Copyright &copy; Do Inc. - {{ (new Date()).getFullYear() }}
 					</p>

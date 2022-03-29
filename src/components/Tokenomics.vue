@@ -5,7 +5,7 @@
 			     class="absolute top-0 left-0 z-[-1]"/>
 			<container>
 				<div class="items-center justify-center md:my-64 my-32">
-					<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full lg:mb-20 mb-28 font-semibold font-poppins">
+					<h2 class="text-[2.2rem] leading-none tracking-tighter font-semibold text-center w-full lg:mb-20 mb-28 font-semibold ">
 						Tokenomics
 					</h2>
 					<div class="h-full w-full p-4 md:p-2">

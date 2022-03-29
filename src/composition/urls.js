@@ -4,20 +4,17 @@ export function urls() {
     return {
         urls: ref([
             reactive({
-                url: "#about",
-                label: "About",
-            }),
-            reactive({
-                url: "#tokenomics",
-                label: "Tokenomics",
-            }),
-            reactive({
-                url: "#roadmap",
-                label: "Roadmap",
-            }),
-            reactive({
-                url: "#ecosystem",
+                url: "/#ecosystem",
                 label: "Ecosystem",
+            }),
+            reactive({
+                url: "/token",
+                label: "Token",
+            }),
+            reactive({
+                url: "https://community.melodity.org/",
+                label: "Community",
+                external: true,
             }),
             reactive({
                 url: "https://do-inc.co/team",
@@ -25,8 +22,13 @@ export function urls() {
                 external: true,
             }),
             reactive({
-                url: "https://docsend.com/view/fpxvfwmhtnq38gi6",
-                label: "Whitepaper",
+                url: "https://linktr.ee/doinc",
+                label: "Paper",
+                external: true,
+            }),
+            reactive({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSejoXkR_P0FWW2MlVbFOxCUZduKv5fTt7eFD157UykGVfuOTA/viewform",
+                label: "Whitelist",
                 external: true,
             }),
             reactive({

@@ -35,6 +35,10 @@ export function upcoming_projects() {
                 pic: require("@/assets/images/logo-mle-white.webp"),
                 url: "https://lock.melodity.org",
             }),
+            reactive({
+                pic: require("@/assets/images/Logo-Armony_white.png"),
+                url: "https://armony.finance",
+            }),
         ])
     }
 }

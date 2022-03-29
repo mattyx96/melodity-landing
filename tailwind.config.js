@@ -9,10 +9,6 @@ module.exports = {
 	presets: [],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
-		extend: {
-			backgroundImage: {
-			}
-		},
 		screens: {
 			"2xs": '375px',
 			"xs": '425px',
@@ -293,8 +289,8 @@ module.exports = {
 				'"Segoe UI Symbol"',
 				'"Noto Color Emoji"',
 			],
-			bebas: [
-				"Bebas Neue",
+			syne: [
+				"Syne",
 				'ui-sans-serif',
 				'system-ui',
 				'-apple-system',
@@ -310,8 +306,8 @@ module.exports = {
 				'"Segoe UI Symbol"',
 				'"Noto Color Emoji"',
 			],
-			montserrat: [
-				"Montserrat",
+			bebas: [
+				"Bebas Neue",
 				'ui-sans-serif',
 				'system-ui',
 				'-apple-system',

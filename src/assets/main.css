@@ -10,6 +10,14 @@ html, body {
 	max-width: 100vw;
 }
 
+h2,h3,h4{
+	@apply font-syne;
+}
+
+* {
+	@apply font-poppins;
+}
+
 body {
 	overflow-y: hidden !important;
 	/*background: url("./images-opt/wallpaper-min.png") no-repeat center center;*/

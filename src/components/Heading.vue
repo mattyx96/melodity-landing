@@ -1,8 +1,8 @@
 <template>
-	<header class="w-full col-span-full grid xl:grid-cols-12 grid-cols-10 font-poppins transition-all duration-300"
+	<header class="w-full col-span-full grid xl:grid-cols-12 grid-cols-10 transition-all duration-300 z-50"
 	        :class="navAnimationClasses.wrapper">
 		<div class="col-span-full h-10 md:h-9 bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] text-center text-white text-xs md:text-sm flex
-			justify-center items-center p-1 md:p-4 font-poppins leading-[1.4rem] font-medium tracking-[.01rem] tracking-normal">
+			justify-center items-center p-1 md:p-4  leading-[1.4rem] font-medium tracking-[.01rem] tracking-normal">
 			<p>
 				To buy $MELD tokens use
 				<span class="font-bold">ONLY</span>

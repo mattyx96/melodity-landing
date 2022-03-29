@@ -1,17 +1,15 @@
 <template>
 	<div class="col-span-full grid grid-cols-12 relative text-white bg-[#10151c]">
-		<div class="col-span-full flex items-center justify-center my-24 relative">
-			<img src="@/assets/images/waves-1.webp" alt="waves" class="scale-125 rotate-180"/>
-			<img src="@/assets/images/waves.webp" alt="waves" class="absolute top-0 left-1/2 lg:-translate-x-1/2
-						md:-translate-x-1/3 md:pr-96 lg:scale-80 md:scale-90 -translate-x-1/2 md:mt-0 -mt-16 xl:max-w-[70%]"/>
+		<div class="col-span-full flex items-center justify-center my-20 relative">
+			<img src="@/assets/images/waves-1.webp" alt="waves" class="scale-125 rotate-180 opacity-40"/>
 			<img src="@/assets/images/logo-dolabs-ecosystem.webp" alt="Do inc. ecosystem" class="absolute
 						top-1/2 -translate-y-1/2 lg:pt-36 md:pr-24 px-8 max-w-[60%] lg:max-w-[40%]"/>
 		</div>
 		<container>
-			<h2 class="text-[2.2rem] text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold font-poppins lg:block hidden">
+			<h2 class="text-[2.2rem] text-center mb-48 font-semibold xl:mt-36 -mt-12 font-semibold lg:block hidden">
 				Towards a Web 3.0 monetization infrastructure to support the music industry in a completely new way.
 			</h2>
-			<h3 class="text-2xl text-center font-semibold mb-8 font-semibold font-poppins">
+			<h3 class="text-2xl text-center font-semibold mb-8 font-semibold">
 				Upcoming Projects
 			</h3>
 		</container>
@@ -21,7 +19,7 @@
 					<li v-for="(elem, id) of upcomingProjects" :key="id"
 					    class="glide__slide bg-[#141a25] rounded-[2rem]">
 						<div
-							class="rounded-[2rem] h-56 md:w-64 w-40 p-0 bg-[#141a25] flex items-center justify-center mx-auto">
+							class="rounded-[2rem] h-56 md:w-64 w-40 px-2 bg-[#141a25] flex items-center justify-center mx-auto">
 							<a v-if="elem.url !== null && elem.pic != null"
 							   class="rounded-[2rem] h-full w-full bg-[#141a25] flex items-center justify-center"
 							   :href="elem.url" target="_blank" rel="noopener">
@@ -34,7 +32,7 @@
 			</div>
 		</div>
 		<container>
-			<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
+			<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal">
 				Melodity major partners
 			</h3>
 			<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
@@ -44,7 +42,7 @@
 						<img v-if="elem?.pic && elem.pic !== null" :src="elem.pic" :alt="elem.name"
 						     class="object-contain"/>
 					</div>
-					<h5 class="font-semibold text-center text-xl font-normal font-poppins">
+					<h5 class="font-semibold text-center text-xl font-normal ">
 						{{ elem.name !== null ? elem.name : "" }}
 					</h5>
 				</div>
@@ -55,7 +53,7 @@
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
 				<div class="col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
+					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal ">
 						Melodity details
 					</h3>
 					<div v-if="details.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">
@@ -76,7 +74,7 @@
 					</a>
 				</div>
 				<div class="col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal font-poppins">
+					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal ">
 						Melodity in medias
 					</h3>
 					<div v-if="medias.length > 0" class="grid xl:grid-cols-6 grid-cols-3 gap-6">
@@ -100,7 +98,7 @@
 			</div>
 		</container>
 		<div class="col-span-full relative h-96 py-96 overflow-hidden">
-			<img src="@/assets/images/waves-1.webp" alt="waves" class="absolute scale-125 rotate-180 top-0"/>
+			<img src="@/assets/images/waves-1.webp" alt="waves" class="absolute scale-125 rotate-180 top-0 opacity-40"/>
 		</div>
 	</div>
 </template>

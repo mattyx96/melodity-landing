@@ -5,11 +5,11 @@
 			<div class="relative text-white">
 				<div class="relative xl:py-16 xl:px-12 md:pt-6 p-12 xl:bg-transparent bg-gray-900 bg-opacity-60 xl:rounded-none
 					rounded-[4rem]">
-					<h3 class="w-full text-center font-semibold font-poppins text-4xl leading-none tracking-tighter">
+					<h3 class="w-full text-center font-semibold text-4xl leading-none tracking-tighter">
 						MELODITY Private Sale
 					</h3>
 					<div class="grid xl:grid-cols-2 gap-4 2xl:mt-24 mt-8">
-						<div class="text-lg flex flex-col justify-center xl:pr-20 px-4 font-poppins font-thin">
+						<div class="text-lg flex flex-col justify-center xl:pr-20 px-4  font-thin">
 							<p class="text-[1.40rem] leading-[1.4rem] font-normal">
 								<strong>
 									until 13 January 2022
@@ -27,11 +27,11 @@
 							</p>
 						</div>
 						<div class="flex items-center justify-center xl:block hidden">
-							<div class="rounded-[3rem] bg-[#141a25] 2xl:p-4 p-2 w-full font-poppins font-thin">
-								<h4 class="w-full text-center text-xl font-semibold font-poppins">Current MELD
+							<div class="rounded-[3rem] bg-[#141a25] 2xl:p-4 p-2 w-full  font-thin">
+								<h4 class="w-full text-center text-xl font-semibold ">Current MELD
 									pricing</h4>
 								<div class="mx-6 bg-[#141414] rounded-[2rem] 2xl:p-6 p-4 2xl:my-8 my-4">
-									<h5 class="text-xl font-semibold font-poppins">Buy</h5>
+									<h5 class="text-xl font-semibold ">Buy</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
 										<input type="number" placeholder="0.00" v-model="usd" @input="recomputeMELD"
 										       class="appearance-none text-xl text-white bg-transparent
@@ -41,7 +41,7 @@
 									</div>
 								</div>
 								<div class="mx-6 bg-[#141414] rounded-[2rem] p-6 my-8">
-									<h5 class="text-xl font-semibold font-poppins">Get</h5>
+									<h5 class="text-xl font-semibold ">Get</h5>
 									<div class="grid grid-cols-4 gap-8 mt-4">
 										<input type="number" placeholder="0.00" v-model="meld" @input="recomputeUSD"
 										       class="appearance-none text-xl text-white bg-transparent

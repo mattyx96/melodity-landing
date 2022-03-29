@@ -19,7 +19,7 @@
 				</div>
 				<div class="mt-2">
 					<p class="flex justify-center text-xs md:text-lg text-[#22F3F3]">
-						ICO: January 14th - March 31th
+						TGE: January 14th - March 31th
 					</p>
 				</div>
 				<div class="flex justify-around items-center px-4 md:w-2/3 xl:w-full mx-auto mt-10">

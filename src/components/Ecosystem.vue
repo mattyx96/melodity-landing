@@ -32,10 +32,11 @@
 			</div>
 		</div>
 		<container>
-			<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal">
+<!--			disabled major partners-->
+			<h3 v-if="false" class="text-base leading-10 text-center mb-16 mt-36 font-normal">
 				Melodity major partners
 			</h3>
-			<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
+			<div v-if="false" class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
 				<div v-if="partners.length > 0" v-for="(elem, id) of partners" :key="id"
 				     class="flex flex-col items-center justify-center">
 					<div class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4">

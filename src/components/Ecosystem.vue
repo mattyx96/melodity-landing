@@ -54,7 +54,8 @@
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
 				<div class="col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal ">
+<!--					melodity details title disabled-->
+					<h3 v-if="false" class="text-base leading-10 text-center mb-16 mt-36 font-normal ">
 						Melodity details
 					</h3>
 					<div v-if="details.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">

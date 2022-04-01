@@ -13,7 +13,7 @@
 					</div>
 					<ReverseCountdown
 						start-time="April 04 2022 00:00:00 UTC"
-						end-time="April 20 2022 00:00:00 UTC"
+						end-time="April 18 2022 00:00:00 UTC"
 						:url="buyMeldUrl"
 					/>
 				</div>

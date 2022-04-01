@@ -9,7 +9,7 @@
 				<div class="mt-10"/>
 				<span class="w-3/5 mx-auto text-center text-white hidden md:block">
 				Don't miss this huge opportunity before time is over,
-				<a class="font-normal text-lg text-[#22F3F3]" :href="url ? url : ''"> Join Now!</a>
+				<a class="font-normal text-lg text-[#22F3F3]" href="https://www.pinksale.finance/#/launchpad/0xfFAc14749eb6b86163C580F384757bb786490ED8?chain=BSC"> Join Now!</a>
 			</span>
 				<div class="my-2 md:mt-4"/>
 				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gray-800 mt-4">

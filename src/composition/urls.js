@@ -32,7 +32,7 @@ export function urls() {
                 external: true,
             }),
             reactive({
-                url: "https://ico.melodity.org/",
+                url: "https://www.pinksale.finance/#/launchpad/0xfFAc14749eb6b86163C580F384757bb786490ED8?chain=BSC",
                 label: "Buy MELD",
                 type: "button",
                 external: true,

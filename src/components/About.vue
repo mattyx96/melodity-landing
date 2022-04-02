@@ -12,8 +12,8 @@
 						</h4>
 					</div>
 					<ReverseCountdown
-						start-time="January 13 2022 23:59:59 UTC"
-						end-time="March 31 2022 23:59:59 UTC"
+						start-time="April 04 2022 00:00:00 UTC"
+						end-time="April 18 2022 00:00:00 UTC"
 						:url="buyMeldUrl"
 					/>
 				</div>
@@ -37,11 +37,6 @@
 								font-bold text-lg flex items-center justify-center"
 						   :href="buyMeldUrl">
 							Buy MELD
-						</a>
-						<a class="mx-auto rounded-full py-4 px-6 border border-2 bg-gray-900/30 border-[#f56ec6] text-center
-								font-bold text-lg my-1 flex items-center justify-center"
-						   href="https://ico.melodity.org/referral" target="_blank" rel="noopener">
-							Referral Program
 						</a>
 					</div>
 				</div>

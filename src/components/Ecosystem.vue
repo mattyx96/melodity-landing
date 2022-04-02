@@ -32,10 +32,11 @@
 			</div>
 		</div>
 		<container>
-			<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal">
+<!--			disabled major partners-->
+			<h3 v-if="false" class="text-base leading-10 text-center mb-16 mt-36 font-normal">
 				Melodity major partners
 			</h3>
-			<div class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
+			<div v-if="false" class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-12">
 				<div v-if="partners.length > 0" v-for="(elem, id) of partners" :key="id"
 				     class="flex flex-col items-center justify-center">
 					<div class="bg-white rounded-full h-24 w-24 flex items-center justify-center p-3 mb-4">
@@ -53,7 +54,8 @@
 			</div>
 			<div class="grid grid-cols-2 my-32 2xl:gap-0 gap-32">
 				<div class="col-span-full flex flex-col items-center justify-center">
-					<h3 class="text-base leading-10 text-center mb-16 mt-36 font-normal ">
+<!--					melodity details title disabled-->
+					<h3 v-if="false" class="text-base leading-10 text-center mb-16 mt-36 font-normal ">
 						Melodity details
 					</h3>
 					<div v-if="details.length > 0" class="grid xl:grid-cols-3 grid-cols-2 gap-6">

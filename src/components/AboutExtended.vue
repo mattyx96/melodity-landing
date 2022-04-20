@@ -76,10 +76,11 @@
 					</div>
 				</div>-->
 
+				<!--invisible-->
 				<a :href="buyMeldUrl" id="buy-meld"
 				   class="text-white text-center font-bold rounded-full w-full bg-gradient-to-tr from-[#f56ec6] to-[#e94ac8]
 							via-[#f56ec6] bg-left flex items-center justify-center p-4 lg:w-[20%] md:w-1/3 w-2/3 mx-auto lg:my-4 my-12
-						 font-medium w-full tracking-wider">
+						 font-medium w-full tracking-wider invisible">
 					Buy MELD
 				</a>
 

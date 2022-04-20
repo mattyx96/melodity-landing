@@ -3,47 +3,50 @@
 		<div class="md:backdrop-filter md:backdrop-blur px-6 pt-8 md:p-10 w-11/12 md:w-10/12 md:rounded-[4rem]
 				rounded-[3rem] relative custom-background">
 			<a :href="url ? url : ''">
-				<img class="object-contain w-full h-28" src="@/assets/images/presale.png" alt="melodity presale is live">
-				<div class="mt-10"/>
-				<span class="w-3/5 mx-auto text-center text-white hidden md:block">
-				Don't miss this huge opportunity before time is over,
-				<a class="font-normal text-lg text-[#22F3F3]" :href="url ? url : ''"> Join Now!</a>
-			</span>
-				<div class="my-2 md:mt-4"/>
-				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] mt-4
-						overflow-hidden">
+				<img v-if="false" class="object-contain w-full h-28" src="@/assets/images/presale.png" alt="melodity presale">
+				<h1 class="text-5xl text-white font-syne text-center font-bold">
+					IDO <br> postponed
+				</h1>
+
+				<span class="w-3/5 mx-auto text-center text-white hidden md:block mt-10 opacity-50">
+					Don't miss this huge opportunity before time is over,
+					<a class="font-normal text-lg text-[#22F3F3]" :href="url ? url : ''"> Join Now!</a>
+				</span>
+
+				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] mt-8
+						md:mt-4 overflow-hidden opacity-50">
 					<div class=" bg-gray-800 rounded-full h-10 md:h-14"
-					     :style="percentageWidth">
+					     :style="true ? {width: 0} : percentageWidth">
 						<!--{{percentageWidth}}-->
 					</div>
 				</div>
 				<div class="mt-2">
-					<p class="flex justify-center text-xs md:text-lg text-[#22F3F3]">
-						IDO: April 4th - April 18th
+					<p class="flex justify-center text-xs md:text-lg text-[#22F3F3] opacity-50">
+						IDO: ? - ?
 					</p>
 				</div>
-				<div class="flex justify-around items-center px-4 md:w-2/3 xl:w-full mx-auto mt-10">
+				<div class="flex justify-around items-center px-4 md:w-2/3 xl:w-full mx-auto mt-10 opacity-50">
 					<div class="flex items-end mx-2 xl:mx-0">
 						<span class="font-bebas text-bold text-4xl md:text-6xl md:text-[#FF9ACD]">
-							{{ daysSpan }}
+							{{ true ? 0 : daysSpan }}
 						</span>
 						<div class="text-bold text-2xl text-white mb-1">D</div>
 					</div>
 					<div class="flex items-end mx-2 xl:mx-0">
 						<span class="font-bebas text-bold text-4xl md:text-6xl md:text-[#FF9ACD]">
-							{{ hoursSpan }}
+							{{ true ? 0 : hoursSpan }}
 						</span>
 						<div class="text-bold text-2xl text-white mb-1">H</div>
 					</div>
 					<div class="flex items-end mx-2 xl:mx-0">
 						<span class="font-bebas text-bold text-4xl md:text-6xl md:text-[#FF9ACD]">
-							{{ minutesSpan }}
+							{{ true ? 0 : minutesSpan }}
 						</span>
 						<div class="text-bold text-2xl text-white mb-1">M</div>
 					</div>
 					<div class="flex items-end mx-2 xl:mx-0">
 						<span class="font-bebas text-bold text-4xl md:text-6xl md:text-[#FF9ACD]">
-							{{ secondsSpan }}
+							{{ true ? 0 : secondsSpan }}
 						</span>
 						<div class="text-bold text-2xl text-white mb-1">S</div>
 					</div>

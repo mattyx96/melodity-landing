@@ -155,7 +155,7 @@ export default {
 		}
 	},
 	data: () => ({
-		buy_meld_url: "https://www.pinksale.finance/#/launchpad/0xfFAc14749eb6b86163C580F384757bb786490ED8?chain=BSC",
+		buy_meld_url: "#",
 		initial_logos: false,
 		token_stats: {
 			current_holders: 66,

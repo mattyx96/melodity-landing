@@ -32,9 +32,10 @@
 							Participate to the Token Generation Event.
 						</p>
 					</div>
+					<!--invisible-->
 					<div class="flex flex-wrap xl:mt-16 md:mt-4 lg:mb-8  font-medium">
 						<a class="mx-auto rounded-full my-1 py-4 px-6 border border-2 bg-[#f56ec6] border-[#f56ec6] text-center
-								font-bold text-lg flex items-center justify-center"
+								font-bold text-lg flex items-center justify-center invisible"
 						   :href="buyMeldUrl">
 							Buy MELD
 						</a>

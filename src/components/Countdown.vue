@@ -6,13 +6,14 @@
 				<h1 class="text-4xl text-white montserrat text-center font-bold">
 					Private sale is Live!
 				</h1>
-				<div class="mt-10"/>
-				<span class="w-3/5 mx-auto text-center text-white hidden md:block">
-				Don't miss this huge opportunity before time is over,
-				<a class="font-normal text-lg text-[#22F3F3]" href="https://www.pinksale.finance/#/launchpad/0xfFAc14749eb6b86163C580F384757bb786490ED8?chain=BSC"> Join Now!</a>
-			</span>
-				<div class="my-2 md:mt-4"/>
-				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gray-800 mt-4">
+				<span class="w-3/5 mx-auto mt-10 text-center text-white hidden md:block">
+					Don't miss this huge opportunity before time is over,
+					<a class="font-normal text-lg text-[#22F3F3]"
+					   href="#">
+						Join Now!
+					</a>
+				</span>
+				<div class="w-10/12 md:w-full mx-auto rounded-full bg-gray-800 mt-8 md:mt-4">
 					<div class="bg-gradient-to-r from-[#FE84C1] to-[#DF38C6] rounded-full h-10 md:h-14"
 					     :style="percentageWidth">
 						<!--{{percentageWidth}}-->
